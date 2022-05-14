@@ -12,7 +12,7 @@ const Jumbo = (): JSX.Element => {
       <a
         target="_blank"
         href="mailto:anthonyfdez23@gmail.com"
-        className="main-button"
+        className={styles.button}
         rel="noreferrer"
       >
         Contact Me

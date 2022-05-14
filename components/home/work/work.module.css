@@ -1,0 +1,105 @@
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .project_container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .project_image_container {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .project_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .project_info_container {
+    width: calc(80% - 20px);
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .learn_more_button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 200ms;
+  }
+  .learn_more_button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 200ms;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .project_container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .project_image_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .project_info_container {
+    width: calc(80% - 20px);
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .learn_more_button {
+    width: 200px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 200ms;
+  }
+  .learn_more_button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 200ms;
+  }
+} ;

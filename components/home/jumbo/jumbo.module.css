@@ -4,17 +4,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding: 20px;
+    padding-top: 30vh;
+    padding-bottom: 20vh;
   }
   .container h3 {
-    font-weight: bold;
+    font-weight: normal;
   }
   .container h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 0;
+  }
+  .button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-top: 50px;
+    text-align: center;
+    transition: 200ms;
+  }
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 200ms;
   }
 }
 
@@ -37,5 +50,19 @@
     text-align: center;
     font-size: 3rem;
     margin-top: 0;
+  }
+  .button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: 200ms;
+    margin-top: 30px;
+  }
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    transition: 200ms;
   }
 }
