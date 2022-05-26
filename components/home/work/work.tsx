@@ -3,7 +3,7 @@ import styles from "./work.module.css";
 
 const Work = (): JSX.Element => {
   return (
-    <div className={styles.container}>
+    <div id="work" className={styles.container}>
       {/* @ts-ignore */}
       <Fade>
         <h2 className={styles.header}>My Work.</h2>

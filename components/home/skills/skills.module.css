@@ -19,5 +19,19 @@
 
 @media only screen and (max-width: 900px) {
   .content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  .columns > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .columns > ul > li {
+    width: 50%;
+    margin: 0px;
+    list-style-type: none;
+    margin: auto;
   }
 }
