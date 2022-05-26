@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./about.module.css";
 
-const About = () => {
+const About = (): JSX.Element => {
   return (
     <div className={styles.about_container}>
       <h1>Abbout & Expirience</h1>
