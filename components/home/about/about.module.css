@@ -1,0 +1,25 @@
+@media only screen and (min-width: 901px) {
+  .about_container {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    padding: 20px;
+  }
+  .about_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+  .about_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

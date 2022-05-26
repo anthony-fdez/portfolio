@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import About from "../components/home/about/about";
 import Jumbo from "../components/home/jumbo/jumbo";
 import Work from "../components/home/work/work";
 import styles from "../styles/Home.module.css";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Jumbo />
         <Work />
+        <About />
       </main>
 
       <footer className={styles.footer}></footer>

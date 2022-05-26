@@ -1,0 +1,107 @@
+@media only screen and (max-width: 900px) {
+  .header_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .navigation_list {
+    display: flex;
+    list-style-type: none;
+  }
+  .navigation_list li {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .navigation_button {
+    width: auto;
+    background-color: transparent !important;
+    padding: 0px;
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+    margin-right: 10px;
+    text-align: center;
+    width: auto;
+    border-bottom: 2px solid transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
+    margin-left: 10px;
+  }
+  .navigation_button:hover {
+    border-bottom: 2px solid black;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .header_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 99;
+    padding: 20px;
+  }
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .navigation_list {
+    display: flex;
+    list-style-type: none;
+  }
+  .navigation_list li {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header_title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .navigation_button {
+    width: auto;
+    background-color: transparent !important;
+    padding: 0px;
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+    margin-right: 10px;
+    text-align: center;
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
+  }
+  .navigation_button:hover {
+    border-bottom: 2px solid black;
+    transition: 100ms;
+  }
+}
