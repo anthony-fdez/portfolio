@@ -10,6 +10,17 @@ import { AiFillApple } from "react-icons/ai";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper";
 
 const BasketballCenter: NextPage = () => {
   return (
@@ -35,7 +46,13 @@ const BasketballCenter: NextPage = () => {
           with other people and discuss the game.
         </p>
         <br></br>
-        <Swiper slidesPerView="auto" spaceBetween={10}>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          navigation={true}
+          pagination={{ clickable: true }}
+          spaceBetween={10}
+          slidesPerView="auto"
+        >
           <SwiperSlide className={styles.slide}>
             <img
               className={styles.image}

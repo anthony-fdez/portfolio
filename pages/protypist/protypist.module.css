@@ -36,4 +36,13 @@
     height: 100%;
     width: 100%;
   }
+  .github_container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .github_container > svg {
+    font-size: 20px;
+    margin-right: 5px;
+  }
 }
