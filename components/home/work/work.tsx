@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
 
@@ -25,7 +26,9 @@ const Work = (): JSX.Element => {
                 Basketball Center is a mobile app built to help basketball fans
                 to stay up to date with everything in the league
               </p>
-              <button className={styles.learn_more_button}>Learn More</button>
+              <Link passHref href="/basketball-center">
+                <button className={styles.learn_more_button}>Learn More</button>
+              </Link>
             </div>
           </div>
         </Fade>
@@ -45,7 +48,9 @@ const Work = (): JSX.Element => {
                 ProTypist is a fully featured typing game, with a multiplayer
                 mode and lots of other features
               </p>
-              <button className={styles.learn_more_button}>Learn More</button>
+              <Link passHref href="/protypist">
+                <button className={styles.learn_more_button}>Learn More</button>
+              </Link>
             </div>
           </div>
         </Fade>
