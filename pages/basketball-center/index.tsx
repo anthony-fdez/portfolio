@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import BackToHomeButton from "../../components/backToHomeButton/backToHomeButton";
 import styles from "./basketball-center.module.css";
 
 const BasketballCenter: NextPage = () => {
@@ -14,7 +15,9 @@ const BasketballCenter: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <BackToHomeButton />
+      </main>
 
       {/* <footer className={styles.footer}></footer> */}
     </div>

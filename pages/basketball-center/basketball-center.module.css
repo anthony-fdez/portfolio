@@ -1,0 +1,16 @@
+@media only screen and (min-width: 901px) {
+  .main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+@media only screen and (min-width: 901px) {
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    color: black;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 24px;
+    margin-right: 5px;
+    transition: 200ms;
+  }
+  .button:hover > .icon {
+    transform: translateX(-5px);
+    transition: 200ms;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: auto;
+    color: black;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icon {
+    font-size: 24px;
+    margin-right: 5px;
+    transition: 200ms;
+  }
+  .button:hover > .icon {
+    transform: translateX(-5px);
+    transition: 200ms;
+  }
+}
