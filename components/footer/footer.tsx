@@ -40,7 +40,7 @@ const Contact = () => {
             <BsCodeSlash />
             <a
               target="_blank"
-              href="https://github.com/anthony-fdez/developer-website"
+              href="https://github.com/anthony-fdez/portfolio"
               rel="noreferrer"
             >
               See the source code for this page.
