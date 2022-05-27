@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./header.module.css";
 
@@ -16,25 +17,31 @@ const Header = () => {
         <nav>
           <ul className={styles.navigation_list} role="navigation">
             <li>
+              <Link passHref href="/#work">
+                <button
+                  className={styles.navigation_button}
+                  onClick={() => scrollTo("work")}
+                >
+                  Work
+                </button>
+              </Link>
+            </li>
+            <Link passHref href="/#about">
               <button
                 className={styles.navigation_button}
-                onClick={() => scrollTo("work")}
+                onClick={() => scrollTo("about")}
               >
-                Work
+                About
               </button>
-            </li>
-            <button
-              className={styles.navigation_button}
-              onClick={() => scrollTo("about")}
-            >
-              About
-            </button>
-            <button
-              className={styles.navigation_button}
-              onClick={() => scrollTo("contact")}
-            >
-              Contact
-            </button>
+            </Link>
+            <Link passHref href="/#contact">
+              <button
+                className={styles.navigation_button}
+                onClick={() => scrollTo("contact")}
+              >
+                Contact
+              </button>
+            </Link>
           </ul>
         </nav>
       </div>
