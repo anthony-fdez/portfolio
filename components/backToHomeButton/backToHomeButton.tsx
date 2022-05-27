@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./backToHomebutton.module.css";
+import styles from "./backToHomeButton.module.css";
 
 import { IoMdArrowBack } from "react-icons/io";
 
