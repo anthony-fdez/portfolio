@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
@@ -5,12 +6,10 @@ import styles from "./work.module.css";
 const Work = (): JSX.Element => {
   return (
     <div id="work" className={styles.container}>
-      {/* @ts-ignore */}
       <Fade>
         <h2 className={styles.header}>My Work.</h2>
       </Fade>
       <div>
-        {/* @ts-ignore */}
         <Fade>
           <div className={styles.project_container}>
             <div className={styles.project_image_container}>
@@ -33,6 +32,30 @@ const Work = (): JSX.Element => {
           </div>
         </Fade>
         {/* @ts-ignore */}
+        <Fade>
+          <div className={styles.project_container}>
+            <div className={styles.project_image_container}>
+              <img
+                className={styles.project_image}
+                alt="Basketball Center Logo"
+                src="logos/protypist.png"
+              />
+            </div>
+            <div className={styles.project_info_container}>
+              <h2>ProTypist</h2>
+              <p>
+                ProTypist is a fully featured typing game, with a multiplayer
+                mode and lots of other features
+              </p>
+              <Link passHref href="/protypist">
+                <button className={styles.learn_more_button}>Learn More</button>
+              </Link>
+            </div>
+          </div>
+        </Fade>
+        <Fade>
+          <h2 className={styles.header}>Freelance Projects.</h2>
+        </Fade>
         <Fade>
           <div className={styles.project_container}>
             <div className={styles.project_image_container}>
