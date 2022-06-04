@@ -13,7 +13,11 @@ const Header = () => {
   return (
     <div className={styles.header_container}>
       <div className={styles.header_content}>
-        <span className={styles.header_title}>Portfolio.</span>
+        <Link passHref href="/">
+          <span style={{ cursor: "pointer" }} className={styles.header_title}>
+            Portfolio.
+          </span>
+        </Link>
         <nav>
           <ul className={styles.navigation_list} role="navigation">
             <li>
