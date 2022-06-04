@@ -1,9 +1,9 @@
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./jumbo.module.css";
 
 const Jumbo = (): JSX.Element => {
   return (
-    // @ts-ignore
     <Fade>
       <div className={styles.container}>
         <h3>Hi, I&apos;m Anthony!</h3>

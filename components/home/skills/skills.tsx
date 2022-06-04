@@ -5,7 +5,6 @@ import styles from "./skills.module.css";
 const Skills = () => {
   return (
     <div className={styles.content}>
-      {/* @ts-ignore */}
       <Fade>
         <h1>Skills.</h1>
         <br></br>

@@ -1,6 +1,6 @@
+import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import About from "../components/home/about/about";
 import Jumbo from "../components/home/jumbo/jumbo";
 import Skills from "../components/home/skills/skills";

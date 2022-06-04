@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,13 +14,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 const BasketballCenter: NextPage = () => {
   return (

@@ -4,7 +4,6 @@ import styles from "./about.module.css";
 
 const About = (): JSX.Element => {
   return (
-    //@ts-ignore
     <Fade>
       <div id="about" className={styles.about_container}>
         <h1>Abbout & Expirience.</h1>

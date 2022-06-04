@@ -9,7 +9,6 @@ import { BsCodeSlash } from "react-icons/bs";
 const Contact = () => {
   return (
     <div id="contact" className={styles.contact_container}>
-      {/* @ts-ignore */}
       <Fade>
         <div className={styles.contact_content}>
           <h1>Contact Me.</h1>
