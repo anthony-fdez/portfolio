@@ -1,8 +1,16 @@
 @media only screen and (min-width: 901px) {
   .container {
-    max-width: 1000px;
+    width: 1200px;
     margin: auto;
     color: black;
+    position: sticky;
+    top: 90px;
+    margin-left: -20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    padding-left: 30px;
   }
   .button {
     display: flex;
@@ -23,8 +31,16 @@
 
 @media only screen and (max-width: 900px) {
   .container {
-    margin: auto;
+    /* margin: auto; */
+    width: 100vw;
     color: black;
+    position: fixed;
+    top: 65px;
+    left: 0px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
   }
   .button {
     display: flex;
