@@ -31,7 +31,6 @@ const Work = (): JSX.Element => {
             </div>
           </div>
         </Fade>
-        {/* @ts-ignore */}
         <Fade>
           <div className={styles.project_container}>
             <div className={styles.project_image_container}>
@@ -53,6 +52,7 @@ const Work = (): JSX.Element => {
             </div>
           </div>
         </Fade>
+        <br></br>
         <Fade>
           <h2 className={styles.header}>Freelance Projects.</h2>
         </Fade>
@@ -62,16 +62,16 @@ const Work = (): JSX.Element => {
               <img
                 className={styles.project_image}
                 alt="Basketball Center Logo"
-                src="logos/protypist.png"
+                src="logos/dls.png"
               />
             </div>
             <div className={styles.project_info_container}>
-              <h2>ProTypist</h2>
+              <h2>DLS Fixit</h2>
               <p>
-                ProTypist is a fully featured typing game, with a multiplayer
-                mode and lots of other features
+                DLSFixis is a doors and locks repair and installation company
+                located in the south Florida area.
               </p>
-              <Link passHref href="/protypist">
+              <Link passHref href="/dls">
                 <button className={styles.learn_more_button}>Learn More</button>
               </Link>
             </div>

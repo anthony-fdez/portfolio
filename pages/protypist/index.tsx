@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,13 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 const Protypist: NextPage = () => {
   return (
@@ -41,6 +35,18 @@ const Protypist: NextPage = () => {
           ProTypist is a fully featured typing game. With a multiplayer mode,
           custom games, quotes, top most common words in 7 languages and
           multiple themes.
+        </p>
+        <br></br>
+        <p>
+          Live Website:{" "}
+          <a
+            className="link"
+            target="_blank"
+            href="https://protypist.app/"
+            rel="noreferrer"
+          >
+            https://protypist.app/
+          </a>
         </p>
         <br></br>
         <Swiper

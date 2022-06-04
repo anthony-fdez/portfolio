@@ -31,6 +31,7 @@
   }
   .slide {
     width: 500px !important;
+    max-width: 100% !important;
   }
   .image {
     height: 100%;

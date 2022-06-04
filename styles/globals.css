@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+.link {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
