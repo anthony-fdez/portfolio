@@ -3,6 +3,7 @@
     margin: auto;
     max-width: 1200px;
     padding: 20px;
+    position: relative;
   }
   .header {
     text-align: center;
@@ -29,7 +30,7 @@
     object-fit: contain;
   }
   .project_info_container {
-    width: calc(80% - 20px);
+    width: calc(100%);
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -49,6 +50,10 @@
   .learn_more_button:hover {
     background-color: rgba(0, 0, 0, 0.7);
     transition: 200ms;
+  }
+
+  .bg_image {
+    display: none;
   }
 }
 @media only screen and (min-width: 901px) {
@@ -94,11 +99,12 @@
     cursor: pointer;
   }
   .bg_image:hover {
-    z-index: 110;
+    /* z-index: 110; */
     transform: scale(1.01);
     transition: 200ms;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
   }
+
   .project_info_container {
     width: calc(80% - 20px);
     margin-left: 2rem;
