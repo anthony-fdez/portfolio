@@ -1,0 +1,26 @@
+.animated_arrow,
+.hidden_animated_arrow {
+  animation: MoveUpDown 2000ms ease-in-out infinite;
+  position: absolute;
+  width: 100px;
+
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  font-size: 26px;
+  transition: 500ms;
+  opacity: 1;
+  text-align: center;
+}
+.hidden_animated_arrow {
+  opacity: 0;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}

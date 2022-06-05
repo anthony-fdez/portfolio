@@ -12,6 +12,11 @@ const Work = (): JSX.Element => {
       <div>
         <Fade>
           <div className={styles.project_container}>
+            <img
+              className={styles.bg_image}
+              alt="Basketball Center Logo"
+              src="basketball-center/home.png"
+            />{" "}
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
@@ -33,6 +38,11 @@ const Work = (): JSX.Element => {
         </Fade>
         <Fade>
           <div className={styles.project_container}>
+            <img
+              className={styles.bg_image}
+              alt="Basketball Center Logo"
+              src="protypist/home.png"
+            />
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
@@ -58,6 +68,14 @@ const Work = (): JSX.Element => {
         </Fade>
         <Fade>
           <div className={styles.project_container}>
+            <Link passHref href="/dls">
+              <img
+                className={styles.bg_image}
+                alt="Basketball Center Logo"
+                src="dls/home.png"
+              />
+            </Link>
+
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
