@@ -8,7 +8,7 @@
     margin-left: -20px;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     padding: 20px;
     padding-left: 30px;
   }
@@ -39,7 +39,7 @@
     left: 0px;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     padding: 20px;
   }
   .button {
