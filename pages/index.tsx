@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <title>Anthony Fernandez Web Developer Portfolio</title>
         <meta
           lang="en"
-          name="Anthony Fernandez Web Developer Portfolio"
+          name="description"
           content="Main page of Anthony Fernandez's portfolio showcasing work, expirience, skills and contact information"
         />
         <link rel="icon" href="/favicon.ico" />

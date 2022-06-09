@@ -22,7 +22,8 @@ const Protypist: NextPage = () => {
       <Head>
         <title>ProTypist | Anthony Fernandez Developer Portfolio</title>
         <meta
-          name="ProTypist"
+          lang="en"
+          name="description"
           content="Description and information about the project ProTypist, developed by Anthony Fernandez"
         />
         <link rel="icon" href="/favicon.ico" />

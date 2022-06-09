@@ -20,7 +20,8 @@ const Dls: NextPage = () => {
       <Head>
         <title>DLS Fixit | Anthony Fernandez Developer Portfolio</title>
         <meta
-          name="DLS Fixit"
+          lang="en"
+          name="description"
           content="Description and information about the project DLSFixit, developed by Anthony Fernandez"
         />
         <link rel="icon" href="/favicon.ico" />

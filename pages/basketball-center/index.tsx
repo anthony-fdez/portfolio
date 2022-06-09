@@ -23,7 +23,8 @@ const BasketballCenter: NextPage = () => {
       <Head>
         <title>Basketball Center | Anthony Fernandez Developer Portfolio</title>
         <meta
-          name="Basketball Center"
+          lang="en"
+          name="description"
           content="Description and information about the project Basketball Center, developed by Anthony Fernandez"
         />
         <link rel="icon" href="/favicon.ico" />
