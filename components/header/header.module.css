@@ -7,6 +7,17 @@
     background-color: white;
     border-bottom: 1px solid darkgray;
     z-index: 99;
+    transition: 300ms;
+  }
+  .header_container_light {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(169, 169, 169, 0);
+    z-index: 99;
+    transition: 300ms;
   }
   .header_content {
     display: flex;
@@ -63,6 +74,18 @@
     border-bottom: 1px solid darkgray;
     z-index: 99;
     padding: 20px;
+    transition: 300ms;
+  }
+  .header_container_light {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    z-index: 99;
+    padding: 20px;
+    transition: 300ms;
   }
   .header_content {
     display: flex;

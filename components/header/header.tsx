@@ -1,8 +1,23 @@
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import React from "react";
 import styles from "./header.module.css";
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const scrollTo = (elementId: string) => {
     const section = document.querySelector(`#${elementId}`);
 
@@ -11,7 +26,13 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.header_container}>
+    <div
+      className={
+        scrollPosition < 10
+          ? styles.header_container_light
+          : styles.header_container
+      }
+    >
       <div className={styles.header_content}>
         <Link passHref href="/">
           <span style={{ cursor: "pointer" }} className={styles.header_title}>
