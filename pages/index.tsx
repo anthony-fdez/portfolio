@@ -25,10 +25,11 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div lang="en" className={styles.container}>
       <Head>
         <title>Anthony Fernandez Web Developer Portfolio</title>
         <meta
+          lang="en"
           name="Anthony Fernandez Web Developer Portfolio"
           content="Main page of Anthony Fernandez's portfolio showcasing work, expirience, skills and contact information"
         />
@@ -50,8 +51,6 @@ const Home: NextPage = () => {
         <About />
         <Skills />
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 };

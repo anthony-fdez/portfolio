@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <div
+    <header
       className={
         scrollPosition < 10
           ? styles.header_container_light
@@ -40,7 +40,7 @@ const Header = () => {
           </span>
         </Link>
         <nav>
-          <ul className={styles.navigation_list} role="navigation">
+          <ul className={styles.navigation_list}>
             <li>
               <Link passHref href="/#work">
                 <button
@@ -51,26 +51,30 @@ const Header = () => {
                 </button>
               </Link>
             </li>
-            <Link passHref href="/#about">
-              <button
-                className={styles.navigation_button}
-                onClick={() => scrollTo("about")}
-              >
-                About
-              </button>
-            </Link>
-            <Link passHref href="/#contact">
-              <button
-                className={styles.navigation_button}
-                onClick={() => scrollTo("contact")}
-              >
-                Contact
-              </button>
-            </Link>
+            <li>
+              <Link passHref href="/#about">
+                <button
+                  className={styles.navigation_button}
+                  onClick={() => scrollTo("about")}
+                >
+                  About
+                </button>
+              </Link>
+            </li>
+            <li>
+              <Link passHref href="/#contact">
+                <button
+                  className={styles.navigation_button}
+                  onClick={() => scrollTo("contact")}
+                >
+                  Contact
+                </button>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

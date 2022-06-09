@@ -8,7 +8,7 @@ import { BsCodeSlash } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div id="contact" className={styles.contact_container}>
+    <footer id="contact" className={styles.contact_container}>
       <Fade>
         <div className={styles.contact_content}>
           <h1>Contact Me.</h1>
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
       </Fade>
-    </div>
+    </footer>
   );
 };
 
