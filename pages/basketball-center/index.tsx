@@ -157,8 +157,6 @@ const BasketballCenter: NextPage = () => {
           </p>
         </main>
       </Fade>
-
-      {/* <footer className={styles.footer}></footer> */}
     </div>
   );
 };
