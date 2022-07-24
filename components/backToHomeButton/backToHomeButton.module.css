@@ -3,7 +3,7 @@
     width: 1200px;
     margin: auto;
     color: black;
-    position: sticky;
+    /* position: sticky; */
     top: 90px;
     margin-left: -20px;
     z-index: 10;
@@ -34,13 +34,13 @@
     /* margin: auto; */
     width: 100vw;
     color: black;
-    position: fixed;
+    /* position: fixed; */
     top: 65px;
     left: 0px;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    padding: 20px;
+    /* padding: 20px; */
   }
   .button {
     display: flex;
