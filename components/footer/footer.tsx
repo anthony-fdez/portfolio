@@ -5,6 +5,7 @@ import styles from "./footer.module.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -31,6 +32,16 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 anthony-fdez
+              </a>
+            </li>
+            <li>
+              <AiFillLinkedin className={styles.icon} />
+              <a
+                href="https://www.linkedin.com/in/anthony-fernandez-556622201/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                My LinkedIn Profile
               </a>
             </li>
           </ul>
