@@ -6,6 +6,7 @@
     align-items: center;
     padding: 30px;
     height: 100vh;
+    padding-bottom: 150px;
   }
   .container h3 {
     font-weight: normal;
