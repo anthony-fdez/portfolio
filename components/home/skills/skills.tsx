@@ -31,7 +31,6 @@ const Skills = () => {
             <li>
               <span>JavaScript</span>
             </li>
-
             <li>
               <span>REST APIs</span>
             </li>
@@ -58,6 +57,21 @@ const Skills = () => {
             </li>
             <li>
               <span>Fluent in Spanish</span>
+            </li>
+            <li>
+              <span>SQL</span>
+            </li>
+            <li>
+              <span>PHP</span>
+            </li>
+            <li>
+              <span>Web sockets</span>
+            </li>
+            <li>
+              <span>APIs</span>
+            </li>
+            <li>
+              <span>Jest</span>
             </li>
           </ul>
         </div>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./header.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -20,6 +23,8 @@ const Header = () => {
 
   const scrollTo = (elementId: string) => {
     const section = document.querySelector(`#${elementId}`);
+
+    setIsMenuOpen(false);
 
     if (section)
       section.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -39,7 +44,27 @@ const Header = () => {
             Portfolio.
           </span>
         </Link>
-        <nav>
+        <span
+          onClick={() => setIsMenuOpen(true)}
+          className={styles.hamburger_menu}
+        >
+          <GiHamburgerMenu />
+        </span>
+        <div
+          onClick={() => {
+            setIsMenuOpen(false);
+          }}
+          className={isMenuOpen ? styles.nav_bg_open : styles.nav_bg_closed}
+        />
+        <nav
+          className={
+            isMenuOpen ? styles.nav_container_open : styles.nav_container_closed
+          }
+        >
+          <AiOutlineClose
+            onClick={() => setIsMenuOpen(false)}
+            className={styles.close_menu_button}
+          />
           <ul className={styles.navigation_list}>
             <li>
               <Link passHref href="/#work">
