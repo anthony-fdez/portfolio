@@ -12,9 +12,11 @@
   opacity: 1;
   text-align: center;
 }
+
 .hidden_animated_arrow {
   opacity: 0;
 }
+
 @keyframes MoveUpDown {
   0%,
   100% {
