@@ -44,7 +44,7 @@ const About = (): JSX.Element => {
             <a
               className="link"
               target="_blank"
-              href="https://uaic.net"
+              href="https://uaig.net"
               rel="noreferrer"
             >
               home page.{" "}
