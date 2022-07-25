@@ -2,11 +2,9 @@
 .hidden_animated_arrow {
   animation: MoveUpDown 2000ms ease-in-out infinite;
   position: fixed;
-  width: 100px;
-  margin: auto;
+  width: 100vw;
   bottom: 0px;
   left: 0px;
-  right: 0px;
   font-size: 26px;
   transition: 500ms;
   opacity: 1;
