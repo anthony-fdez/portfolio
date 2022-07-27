@@ -52,6 +52,28 @@
     margin-top: 100px;
     padding: 20px;
   }
+  .header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .header > h1 {
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 10px;
+  }
+  .live_preview_link {
+    margin-bottom: 10px;
+  }
+  .project_info {
+    margin-top: 20px;
+  }
+  .project_info > h2 {
+    margin-bottom: 10px;
+  }
+  .project_info > ul {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
   .github_container {
     display: flex;
     align-items: center;

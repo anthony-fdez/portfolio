@@ -1,26 +1,59 @@
-.animated_arrow,
-.hidden_animated_arrow {
-  animation: MoveUpDown 2000ms ease-in-out infinite;
-  position: fixed;
-  width: 100vw;
-  bottom: 0px;
-  left: 0px;
-  font-size: 26px;
-  transition: 500ms;
-  opacity: 1;
-  text-align: center;
-}
-
-.hidden_animated_arrow {
-  opacity: 0;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    bottom: 0;
+@media only screen and (min-width: 901px) {
+  .animated_arrow,
+  .hidden_animated_arrow {
+    animation: MoveUpDown 2500ms ease-in-out infinite;
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    font-size: 26px;
+    transition: 800ms;
+    opacity: 1;
+    text-align: center;
   }
-  50% {
-    bottom: 10px;
+
+  .hidden_animated_arrow {
+    opacity: 0;
+  }
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      bottom: 0px;
+    }
+    50% {
+      bottom: 15px;
+      transform: scale(1.3);
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .animated_arrow,
+  .hidden_animated_arrow {
+    animation: MoveUpDown 2500ms ease-in-out infinite;
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    font-size: 26px;
+    transition: 800ms;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .hidden_animated_arrow {
+    opacity: 0;
+  }
+
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      bottom: 0px;
+    }
+    50% {
+      bottom: 15px;
+      transform: scale(1.3);
+    }
   }
 }
