@@ -1,20 +1,20 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Swiper, SwiperSlide } from "swiper/react";
 import BackToHomeButton from "../../components/backToHomeButton/backToHomeButton";
-import styles from "./dls.module.css";
+import styles from "../../styles/project.module.css";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Fade } from "react-awesome-reveal";
+import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 
 const Dls: NextPage = () => {
+  const images: string[] = [
+    "/dls/1.png",
+    "/dls/2.png",
+    "/dls/3.png",
+    "/dls/4.png",
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -29,14 +29,14 @@ const Dls: NextPage = () => {
       <Fade>
         <main className={styles.main}>
           <BackToHomeButton />
-          <br></br>
-          <h1>DLS Fixit</h1>
-          <p>
-            DLS Fixit is an informational website showcasing the the services
-            that the company offers, and information about the company.
-          </p>
-          <br></br>
-          <p>
+          <div className={styles.header}>
+            <h1>DLS Fixit</h1>
+            <p>
+              DLS Fixit is an informational website showcasing the the services
+              that the company offers, and information about the company.
+            </p>
+          </div>
+          <p className={styles.live_preview_link}>
             Live Website:{" "}
             <a
               className="link"
@@ -47,60 +47,20 @@ const Dls: NextPage = () => {
               https://dlsfixit.com/
             </a>
           </p>
-          <br></br>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            navigation={true}
-            pagination={{ clickable: true }}
-            spaceBetween={10}
-            slidesPerView="auto"
-          >
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/dls/1.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/dls/2.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/dls/3.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/dls/4.png"
-              />
-            </SwiperSlide>
-          </Swiper>
-          <br></br>{" "}
-          <div className={styles.modal_content_container}>
-            <h2>Technologies Used</h2>
-            <br></br>
-            <h3>Front End / App:</h3>
+          <ImagesCarousel images={images} altText="DLSFixit Screenshot" />
+          <div className={styles.project_info}>
+            <h2>Technologies used:</h2>
             <ul>
               <li>React</li>
               <li>Typescript</li>
               <li>Redux</li>
               <li>Google Analytics</li>
+              <li>Bootstrap</li>
             </ul>
             <br></br>
           </div>
         </main>
       </Fade>
-
-      {/* <footer className={styles.footer}></footer> */}
     </div>
   );
 };

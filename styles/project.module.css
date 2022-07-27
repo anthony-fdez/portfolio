@@ -3,13 +3,23 @@
     max-width: 1000px;
     margin: auto;
     margin-top: 100px;
+    padding: 20px;
   }
-  .slide {
-    width: 500px !important;
+  .header {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-  .image {
-    height: 100%;
-    width: 100%;
+  .header > h1 {
+    font-size: 3em;
+  }
+  .live_preview_link {
+    margin-bottom: 10px;
+  }
+  .project_info {
+    margin-top: 20px;
+  }
+  .project_info > h2 {
+    margin-bottom: 10px;
   }
   .github_container {
     display: flex;
@@ -28,14 +38,6 @@
     margin: auto;
     margin-top: 100px;
     padding: 20px;
-  }
-  .slide {
-    width: 500px !important;
-    max-width: 100% !important;
-  }
-  .image {
-    height: 100%;
-    width: 100%;
   }
   .github_container {
     display: flex;

@@ -7,16 +7,18 @@ import styles from "./protypist.module.css";
 
 import { BsGithub } from "react-icons/bs";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Fade } from "react-awesome-reveal";
+import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 
 const Protypist: NextPage = () => {
+  const images: string[] = [
+    "/protypist/1.png",
+    "/protypist/2.png",
+    "/protypist/3.png",
+    "/protypist/4.png",
+    "/protypist/5.png",
+  ];
   return (
     <div className={styles.container}>
       <Head>
@@ -51,49 +53,7 @@ const Protypist: NextPage = () => {
             </a>
           </p>
           <br></br>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            navigation={true}
-            pagination={{ clickable: true }}
-            spaceBetween={10}
-            slidesPerView="auto"
-          >
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/protypist/1.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/protypist/2.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/protypist/3.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/protypist/4.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/protypist/5.png"
-              />
-            </SwiperSlide>
-          </Swiper>
+          <ImagesCarousel images={images} altText={"ProTypist Screenshot"} />
           <br></br>{" "}
           <div className={styles.modal_content_container}>
             <h2>Technologies Used</h2>

@@ -1,23 +1,27 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Swiper, SwiperSlide } from "swiper/react";
 import BackToHomeButton from "../../components/backToHomeButton/backToHomeButton";
 import styles from "./basketball-center.module.css";
 
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Fade } from "react-awesome-reveal";
+import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 
 const BasketballCenter: NextPage = () => {
+  const images: string[] = [
+    "/basketball-center/1.png",
+    "/basketball-center/2.png",
+    "/basketball-center/3.png",
+    "/basketball-center/4.png",
+    "/basketball-center/5.png",
+    "/basketball-center/6.png",
+    "/basketball-center/7.png",
+    "/basketball-center/8.png",
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -43,70 +47,11 @@ const BasketballCenter: NextPage = () => {
             interact with other people and discuss the game.
           </p>
           <br></br>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            navigation={true}
-            pagination={{ clickable: true }}
-            spaceBetween={10}
-            slidesPerView="auto"
-          >
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/1.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/2.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/3.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/4.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/5.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/6.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/7.png"
-              />
-            </SwiperSlide>
-            <SwiperSlide className={styles.slide}>
-              <img
-                className={styles.image}
-                alt="Basketball Center screenshot 1"
-                src="/basketball-center/8.png"
-              />
-            </SwiperSlide>
-          </Swiper>
+          <ImagesCarousel
+            orientation="portrait"
+            images={images}
+            altText={"Basketball Center Screenshot"}
+          />
           <br></br>
           <h2>Technologies Used</h2>
           <br></br>
