@@ -21,6 +21,10 @@
   .project_info > h2 {
     margin-bottom: 10px;
   }
+  .project_info > ul {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
   .github_container {
     display: flex;
     align-items: center;
@@ -28,6 +32,15 @@
   }
   .github_container > svg {
     font-size: 20px;
+    margin-right: 5px;
+  }
+  .download_container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .download_container > svg {
+    font-size: 22px;
     margin-right: 5px;
   }
 }
@@ -46,6 +59,16 @@
   }
   .github_container > svg {
     font-size: 20px;
+    margin-right: 5px;
+  }
+  .download_container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .download_container > svg {
+    font-size: 22px;
     margin-right: 5px;
   }
 }
