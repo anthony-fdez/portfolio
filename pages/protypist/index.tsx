@@ -1,13 +1,11 @@
 import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Swiper, SwiperSlide } from "swiper/react";
 import BackToHomeButton from "../../components/backToHomeButton/backToHomeButton";
-import styles from "./protypist.module.css";
+import styles from "../../styles/project.module.css";
 
 import { BsGithub } from "react-icons/bs";
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 
@@ -19,6 +17,7 @@ const Protypist: NextPage = () => {
     "/protypist/4.png",
     "/protypist/5.png",
   ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -33,15 +32,15 @@ const Protypist: NextPage = () => {
       <Fade>
         <main className={styles.main}>
           <BackToHomeButton />
-          <br></br>
-          <h1>ProTypist</h1>
-          <p>
-            ProTypist is a fully featured typing game. With a multiplayer mode,
-            custom games, quotes, top most common words in 7 languages and
-            multiple themes.
-          </p>
-          <br></br>
-          <p>
+          <div className={styles.header}>
+            <h1>ProTypist</h1>
+            <p>
+              ProTypist is a fully featured typing game. With a multiplayer
+              mode, custom games, quotes, top most common words in 7 languages
+              and multiple themes.
+            </p>
+          </div>
+          <p className={styles.live_preview_link}>
             Live Website:{" "}
             <a
               className="link"
@@ -52,10 +51,8 @@ const Protypist: NextPage = () => {
               https://protypist.app/
             </a>
           </p>
-          <br></br>
           <ImagesCarousel images={images} altText={"ProTypist Screenshot"} />
-          <br></br>{" "}
-          <div className={styles.modal_content_container}>
+          <div className={styles.project_info}>
             <h2>Technologies Used</h2>
             <br></br>
             <h3>Front End / App:</h3>
