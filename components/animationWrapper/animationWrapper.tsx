@@ -6,9 +6,9 @@ type Props = {
 };
 
 const variants = {
-  hidden: { opacity: 0, x: -100, y: 0 },
+  hidden: { opacity: 0, x: 0, y: 20 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 100, y: 0 },
+  exit: { opacity: 0, x: 0, y: -150 },
 };
 
 const AnimationWrapper = ({ children }: Props): JSX.Element => {
@@ -19,7 +19,7 @@ const AnimationWrapper = ({ children }: Props): JSX.Element => {
         initial="hidden" // Set the initial state to variants.hidden
         animate="enter" // Animated state to variants.enter
         exit="exit" // Exit state (used later) to variants.exit
-        transition={{ type: "spring", stiffness: 100 }} // Set the transition to linear
+        transition={{ type: "linear" }} // Set the transition to linear
       >
         {children}
       </motion.main>

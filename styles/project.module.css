@@ -57,9 +57,11 @@
     margin-bottom: 20px;
   }
   .header > h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1em;
     margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .live_preview_link {
     margin-bottom: 10px;
