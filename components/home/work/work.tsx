@@ -1,9 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
 import NoScrollLink from "../../noScrollLink/noScrollLink";
-import MyButton from "../../myButton/MyButton";
+import MyButton from "../../myButton/myButton";
 
 const Work = (): JSX.Element => {
   return (

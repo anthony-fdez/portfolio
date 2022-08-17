@@ -6,7 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { BsCodeSlash } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
-import MyButton from "../myButton/MyButton";
+import MyButton from "../myButton/myButton";
 
 const Contact = () => {
   return (

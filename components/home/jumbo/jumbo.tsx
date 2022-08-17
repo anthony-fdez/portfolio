@@ -1,6 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import MyButton from "../../myButton/MyButton";
+import MyButton from "../../myButton/myButton";
 import styles from "./jumbo.module.css";
 
 const Jumbo = (): JSX.Element => {

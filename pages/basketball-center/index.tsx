@@ -9,7 +9,7 @@ import { AiFillApple } from "react-icons/ai";
 
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
-import MyButton from "../../components/myButton/MyButton";
+import MyButton from "../../components/myButton/myButton";
 
 const BasketballCenter: NextPage = () => {
   const images: string[] = [
