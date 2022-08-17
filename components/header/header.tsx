@@ -3,6 +3,21 @@ import Link from "next/link";
 import styles from "./header.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
+
+const sideMenuVariants = {
+  open: {
+    opacity: 1,
+    x: "-100%",
+    transition: { duration: 0.7, type: "spring" },
+  },
+  closed: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, type: "spring" },
+  },
+};
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -56,10 +71,11 @@ const Header = () => {
           }}
           className={isMenuOpen ? styles.nav_bg_open : styles.nav_bg_closed}
         />
-        <nav
-          className={
-            isMenuOpen ? styles.nav_container_open : styles.nav_container_closed
-          }
+        <motion.div
+          animate={isMobile && (isMenuOpen ? "open" : "closed")}
+          variants={sideMenuVariants}
+          className={styles.nav_container_open}
+          initial={false}
         >
           <AiOutlineClose
             onClick={() => setIsMenuOpen(false)}
@@ -97,7 +113,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+        </motion.div>
       </div>
     </header>
   );
