@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// components
-import Header from "../header/header";
-import Footer from "../footer/footer";
-
 type Props = {
   children: React.ReactNode;
 };
@@ -15,7 +11,7 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
-const Layout = ({ children }: Props): JSX.Element => {
+const AnimationWrapper = ({ children }: Props): JSX.Element => {
   return (
     <>
       <motion.main
@@ -31,4 +27,4 @@ const Layout = ({ children }: Props): JSX.Element => {
   );
 };
 
-export default Layout;
+export default AnimationWrapper;

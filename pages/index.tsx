@@ -8,7 +8,7 @@ import Work from "../components/home/work/work";
 import styles from "../styles/Home.module.css";
 
 import { BsChevronDown } from "react-icons/bs";
-import Layout from "../components/layout/layout";
+import AnimationWrapper from "../components/layout/animationWrapper";
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <AnimationWrapper>
       <div lang="en" className={styles.container}>
         <Head>
           <title>Anthony Fernandez Web Developer Portfolio</title>
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
           <Skills />
         </main>
       </div>
-    </Layout>
+    </AnimationWrapper>
   );
 };
 

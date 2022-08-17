@@ -9,7 +9,7 @@ import { AiFillApple } from "react-icons/ai";
 
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
-import Layout from "../../components/layout/layout";
+import AnimationWrapper from "../../components/layout/animationWrapper";
 
 const BasketballCenter: NextPage = () => {
   const images: string[] = [
@@ -24,7 +24,7 @@ const BasketballCenter: NextPage = () => {
   ];
 
   return (
-    <Layout>
+    <AnimationWrapper>
       <div className={styles.container}>
         <Head>
           <title>
@@ -114,7 +114,7 @@ const BasketballCenter: NextPage = () => {
           </main>
         </Fade>
       </div>
-    </Layout>
+    </AnimationWrapper>
   );
 };
 

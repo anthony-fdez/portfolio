@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Layout from "../components/layout/layout";
+import Layout from "../components/layout/animationWrapper";
 import { AnimatePresence } from "framer-motion";
 
 import "react-medium-image-zoom/dist/styles.css";
@@ -16,8 +16,6 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
-  const url = `http://localhost:3000/${router.route}`;
-
   return (
     <>
       <Header />
