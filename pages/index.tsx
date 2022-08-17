@@ -8,7 +8,7 @@ import Work from "../components/home/work/work";
 import styles from "../styles/Home.module.css";
 
 import { BsChevronDown } from "react-icons/bs";
-import AnimationWrapper from "../components/layout/animationWrapper";
+import AnimationWrapper from "../components/animationWrapper/animationWrapper";
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
