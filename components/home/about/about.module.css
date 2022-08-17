@@ -1,3 +1,7 @@
+.center {
+  text-align: center;
+  margin-top: 40px;
+}
 @media only screen and (min-width: 901px) {
   .about_container {
     margin: auto;
@@ -10,6 +14,24 @@
     font-size: 2rem;
     text-align: center;
   }
+  .table {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid rgb(230, 230, 230);
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+  .first_td {
+    min-width: 200px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -21,5 +43,23 @@
   .about_container h1 {
     font-size: 2rem;
     text-align: center;
+  }
+  .table {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid rgb(230, 230, 230);
+    padding-top: 0px;
+    margin-top: 10px;
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
+  .first_td {
+    min-width: 100px;
   }
 }
