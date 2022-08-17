@@ -8,6 +8,7 @@ import Work from "../components/home/work/work";
 import styles from "../styles/Home.module.css";
 
 import { BsChevronDown } from "react-icons/bs";
+import Layout from "../components/layout/layout";
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -25,33 +26,35 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div lang="en" className={styles.container}>
-      <Head>
-        <title>Anthony Fernandez Web Developer Portfolio</title>
-        <meta
-          lang="en"
-          name="description"
-          content="Main page of Anthony Fernandez's portfolio showcasing work, experience, skills and contact information"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div lang="en" className={styles.container}>
+        <Head>
+          <title>Anthony Fernandez Web Developer Portfolio</title>
+          <meta
+            lang="en"
+            name="description"
+            content="Main page of Anthony Fernandez's portfolio showcasing work, experience, skills and contact information"
+          />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className={styles.main}>
-        <Jumbo />
-        <div
-          className={
-            scrollPosition > 20
-              ? styles.hidden_animated_arrow
-              : styles.animated_arrow
-          }
-        >
-          <BsChevronDown />
-        </div>
-        <Work />
-        <About />
-        <Skills />
-      </main>
-    </div>
+        <main className={styles.main}>
+          <Jumbo />
+          <div
+            className={
+              scrollPosition > 20
+                ? styles.hidden_animated_arrow
+                : styles.animated_arrow
+            }
+          >
+            <BsChevronDown />
+          </div>
+          <Work />
+          <About />
+          <Skills />
+        </main>
+      </div>
+    </Layout>
   );
 };
 

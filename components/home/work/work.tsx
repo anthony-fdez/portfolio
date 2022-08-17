@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
+import NoScrollLink from "../../noScrollLink/noScrollLink";
 
 const Work = (): JSX.Element => {
   return (
@@ -12,13 +13,13 @@ const Work = (): JSX.Element => {
       <div>
         <Fade>
           <div className={styles.project_container}>
-            <Link passHref href="/basketball-center">
+            <NoScrollLink passHref href="/basketball-center">
               <img
                 className={styles.bg_image}
                 alt="Basketball Center Logo"
                 src="basketball-center/home.png"
               />
-            </Link>
+            </NoScrollLink>
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
@@ -32,21 +33,21 @@ const Work = (): JSX.Element => {
                 Basketball Center is a mobile app built to help basketball fans
                 to stay up to date with everything in the league
               </p>
-              <Link passHref href="/basketball-center">
+              <NoScrollLink passHref href="/basketball-center">
                 <button className={styles.learn_more_button}>Learn More</button>
-              </Link>
+              </NoScrollLink>
             </div>
           </div>
         </Fade>
         <Fade>
           <div className={styles.project_container}>
-            <Link passHref href="/protypist">
+            <NoScrollLink passHref href="/protypist">
               <img
                 className={styles.bg_image}
                 alt="Basketball Center Logo"
                 src="protypist/home.png"
               />
-            </Link>
+            </NoScrollLink>
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
@@ -60,9 +61,9 @@ const Work = (): JSX.Element => {
                 ProTypist is a fully featured typing game, with a multiplayer
                 mode and lots of other features
               </p>
-              <Link passHref href="/protypist">
+              <NoScrollLink passHref href="/protypist">
                 <button className={styles.learn_more_button}>Learn More</button>
-              </Link>
+              </NoScrollLink>
             </div>
           </div>
         </Fade>
@@ -72,13 +73,13 @@ const Work = (): JSX.Element => {
         </Fade>
         <Fade>
           <div className={styles.project_container}>
-            <Link passHref href="/dls">
+            <NoScrollLink passHref href="/dls">
               <img
                 className={styles.bg_image}
                 alt="Basketball Center Logo"
                 src="dls/home.png"
               />
-            </Link>
+            </NoScrollLink>
 
             <div className={styles.project_image_container}>
               <img
@@ -93,9 +94,9 @@ const Work = (): JSX.Element => {
                 DLSFixis is a doors and locks repair and installation company
                 located in the south Florida area.
               </p>
-              <Link passHref href="/dls">
+              <NoScrollLink passHref href="/dls">
                 <button className={styles.learn_more_button}>Learn More</button>
-              </Link>
+              </NoScrollLink>
             </div>
           </div>
         </Fade>
