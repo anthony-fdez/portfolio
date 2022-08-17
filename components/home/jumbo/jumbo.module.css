@@ -15,6 +15,7 @@
     text-align: center;
     font-size: 2rem;
     margin-top: 0;
+    margin-bottom: 30px;
   }
   .button {
     background-color: black;
@@ -48,6 +49,7 @@
     text-align: center;
     font-size: 3rem;
     margin-top: 0;
+    margin-bottom: 30px;
   }
   .button {
     background-color: black;
@@ -56,7 +58,6 @@
     width: 180px;
     text-align: center;
     transition: 200ms;
-    margin-top: 30px;
   }
   .button:hover {
     background-color: rgba(0, 0, 0, 0.7);

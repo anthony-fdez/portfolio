@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
 import NoScrollLink from "../../noScrollLink/noScrollLink";
+import MyButton from "../../myButton/MyButton";
 
 const Work = (): JSX.Element => {
   return (
@@ -20,6 +21,7 @@ const Work = (): JSX.Element => {
                 src="basketball-center/home.png"
               />
             </NoScrollLink>
+
             <div className={styles.project_image_container}>
               <img
                 className={styles.project_image}
@@ -33,9 +35,13 @@ const Work = (): JSX.Element => {
                 Basketball Center is a mobile app built to help basketball fans
                 to stay up to date with everything in the league
               </p>
-              <NoScrollLink passHref href="/basketball-center">
-                <button className={styles.learn_more_button}>Learn More</button>
-              </NoScrollLink>
+              <MyButton>
+                <NoScrollLink passHref href="/basketball-center">
+                  <button className={styles.learn_more_button}>
+                    Learn More
+                  </button>
+                </NoScrollLink>
+              </MyButton>
             </div>
           </div>
         </Fade>
@@ -61,9 +67,13 @@ const Work = (): JSX.Element => {
                 ProTypist is a fully featured typing game, with a multiplayer
                 mode and lots of other features
               </p>
-              <NoScrollLink passHref href="/protypist">
-                <button className={styles.learn_more_button}>Learn More</button>
-              </NoScrollLink>
+              <MyButton>
+                <NoScrollLink passHref href="/protypist">
+                  <button className={styles.learn_more_button}>
+                    Learn More
+                  </button>
+                </NoScrollLink>
+              </MyButton>
             </div>
           </div>
         </Fade>
@@ -91,12 +101,16 @@ const Work = (): JSX.Element => {
             <div className={styles.project_info_container}>
               <h2>DLS Fixit</h2>
               <p>
-                DLSFixis is a doors and locks repair and installation company
+                DLSFixit is a doors and locks repair and installation company
                 located in the south Florida area.
               </p>
-              <NoScrollLink passHref href="/dls">
-                <button className={styles.learn_more_button}>Learn More</button>
-              </NoScrollLink>
+              <MyButton>
+                <NoScrollLink passHref href="/dls">
+                  <button className={styles.learn_more_button}>
+                    Learn More
+                  </button>
+                </NoScrollLink>
+              </MyButton>
             </div>
           </div>
         </Fade>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import MyButton from "../../myButton/MyButton";
 import styles from "./jumbo.module.css";
 
 const Jumbo = (): JSX.Element => {
@@ -11,15 +12,16 @@ const Jumbo = (): JSX.Element => {
           I&apos;m a fullstack developer. Focused on building better software
           every day.
         </h1>
-        <p></p>
-        <a
-          target="_blank"
-          href="mailto:anthonyfdez23@gmail.com"
-          className={styles.button}
-          rel="noreferrer"
-        >
-          Contact Me
-        </a>
+        <MyButton>
+          <a
+            target="_blank"
+            href="mailto:anthonyfdez23@gmail.com"
+            className={styles.button}
+            rel="noreferrer"
+          >
+            Contact Me
+          </a>
+        </MyButton>
       </div>
     </Fade>
   );
