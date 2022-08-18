@@ -7,8 +7,11 @@ import styles from "../../styles/project.module.css";
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
+import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 
 const Dls: NextPage = () => {
+  useScrollToTopOnLoad();
+
   const images: string[] = [
     "/dls/1.png",
     "/dls/2.png",

@@ -3,9 +3,12 @@ import Head from "next/head";
 import React from "react";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
 import Work from "../../components/home/work/work";
+import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 import styles from "./work.module.css";
 
 const WorkPage: NextPage = () => {
+  useScrollToTopOnLoad();
+
   return (
     <>
       <AnimationWrapper>

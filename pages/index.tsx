@@ -9,8 +9,11 @@ import styles from "../styles/Home.module.css";
 
 import { BsChevronDown } from "react-icons/bs";
 import AnimationWrapper from "../components/animationWrapper/animationWrapper";
+import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 
 const Home: NextPage = () => {
+  useScrollToTopOnLoad();
+
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const handleScroll = () => {
     const position = window.pageYOffset;

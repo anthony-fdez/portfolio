@@ -10,8 +10,11 @@ import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
 import { Parallax } from "react-scroll-parallax";
+import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 
 const Protypist: NextPage = () => {
+  useScrollToTopOnLoad();
+
   const images: string[] = [
     "/protypist/1.png",
     "/protypist/2.png",

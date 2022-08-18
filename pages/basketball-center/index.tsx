@@ -12,8 +12,11 @@ import AnimationWrapper from "../../components/animationWrapper/animationWrapper
 import MyButton from "../../components/myButton/myButton";
 import { GiBasketballBall } from "react-icons/gi";
 import { Parallax } from "react-scroll-parallax";
+import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 
 const BasketballCenter: NextPage = () => {
+  useScrollToTopOnLoad();
+
   const images: string[] = [
     "/basketball-center/1.png",
     "/basketball-center/2.png",

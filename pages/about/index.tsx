@@ -4,8 +4,11 @@ import React from "react";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
 import About from "../../components/home/about/about";
 import Skills from "../../components/home/skills/skills";
+import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 
 const AboutPage: NextPage = () => {
+  useScrollToTopOnLoad();
+
   return (
     <>
       <AnimationWrapper>
