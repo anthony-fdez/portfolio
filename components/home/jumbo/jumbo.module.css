@@ -105,4 +105,7 @@
     left: 0px;
     bottom: 100px;
   }
+  .background_text_mobile > span {
+    display: none;
+  }
 }

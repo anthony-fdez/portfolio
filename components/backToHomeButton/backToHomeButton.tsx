@@ -1,20 +1,18 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import styles from "./backToHomeButton.module.css";
 
 import { IoMdArrowBack } from "react-icons/io";
+import { useRouter } from "next/router";
 
 const BackToHomeButton = (): JSX.Element => {
-  const [helo, setHello] = useState(false);
+  const router = useRouter();
 
   return (
     <div className={styles.container}>
-      <Link passHref href="/">
-        <div className={styles.button}>
-          <IoMdArrowBack className={styles.icon} />
-          <p>Back To Home</p>
-        </div>
-      </Link>
+      <div onClick={() => router.back()} className={styles.button}>
+        <IoMdArrowBack className={styles.icon} />
+        <p>Back</p>
+      </div>
     </div>
   );
 };

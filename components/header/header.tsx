@@ -17,12 +17,12 @@ const sideMenuVariants = {
   open: {
     opacity: 1,
     x: "-100%",
-    transition: { duration: 0.7, type: "spring" },
+    transition: { duration: 0.6, type: "spring" },
   },
   closed: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5, type: "spring" },
+    transition: { duration: 0.4, type: "spring" },
   },
 };
 
@@ -94,43 +94,45 @@ const Header = () => {
 
           <ul className={styles.navigation_list}>
             <li>
-              <Link passHref href="/#work">
-                <MyButton>
+              <MyButton>
+                <Link passHref href="/work">
                   <button
                     className={styles.navigation_button}
-                    onClick={() => scrollTo("work")}
+                    // onClick={() => scrollTo("work")}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     <MdWeb className={styles.menu_icon} />
                     Work
                   </button>
-                </MyButton>
-              </Link>
+                </Link>
+              </MyButton>
             </li>
             <li>
-              <Link passHref href="/#about">
-                <MyButton>
+              <MyButton>
+                <Link passHref href="/about">
                   <button
                     className={styles.navigation_button}
-                    onClick={() => scrollTo("about")}
+                    // onClick={() => scrollTo("about")}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     <AiOutlineInfoCircle className={styles.menu_icon} />
                     About
                   </button>
-                </MyButton>
-              </Link>
+                </Link>
+              </MyButton>
             </li>
             <li>
-              <Link passHref href="/#contact">
-                <MyButton>
-                  <button
-                    className={styles.navigation_button}
-                    onClick={() => scrollTo("contact")}
-                  >
-                    <MdPermContactCalendar className={styles.menu_icon} />
-                    Contact
-                  </button>
-                </MyButton>
-              </Link>
+              <MyButton>
+                <button
+                  className={styles.navigation_button}
+                  id={styles.navigation_button_contact}
+                  onClick={() => scrollTo("contact")}
+                  // onClick={() => setIsMenuOpen(false)}
+                >
+                  <MdPermContactCalendar className={styles.menu_icon} />
+                  Contact
+                </button>
+              </MyButton>
             </li>
           </ul>
           <div className={styles.footer_container}>

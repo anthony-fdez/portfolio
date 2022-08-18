@@ -70,6 +70,9 @@
   .navigation_button:hover {
     border-bottom: 2px solid black;
   }
+  #navigation_button_contact {
+    display: none;
+  }
   .nav_container_open,
   .nav_container_closed {
     position: fixed;
@@ -198,6 +201,9 @@
     /* padding: 20px; */
   }
   .menu_icon {
+    display: none;
+  }
+  .footer_container {
     display: none;
   }
 }
