@@ -2,7 +2,7 @@
   .container {
     width: fit-content;
     margin: auto;
-    color: black;
+    color: white;
     top: 90px;
     margin-left: -20px;
     z-index: 10;
@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 900px) {
   .container {
-    color: black;
+    color: white;
     top: 65px;
     left: 0px;
     z-index: 10;

@@ -15,7 +15,8 @@
     margin-bottom: 20px;
   }
   .header > h1 {
-    font-size: 3em;
+    color: var(--secondary-color);
+    font-size: 4.5em;
   }
   .live_preview_link {
     margin-bottom: 10px;
@@ -62,7 +63,7 @@
     top: -150px;
     width: 120vw;
     left: -50px;
-    opacity: 0.03;
+    opacity: 0.01;
   }
 }
 
@@ -83,11 +84,12 @@
     margin-bottom: 20px;
   }
   .header > h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     line-height: 1em;
     margin-bottom: 10px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
   }
   .live_preview_link {
     margin-bottom: 10px;
@@ -135,7 +137,7 @@
     top: -150px;
     width: 170vw;
     left: -50px;
-    opacity: 0.02;
+    opacity: 0.015;
     line-height: 4rem;
   }
 }
