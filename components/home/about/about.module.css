@@ -30,7 +30,11 @@
     border-top: 1px solid rgb(230, 230, 230);
   }
   .first_td {
-    min-width: 200px;
+    width: 20% !important;
+  }
+  .second_td {
+    padding-left: 10px;
+    width: calc(80% - 20px);
   }
 }
 
@@ -54,12 +58,17 @@
   }
   .tr {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 10px;
     margin-top: 10px;
     border-top: 1px solid rgb(230, 230, 230);
   }
   .first_td {
-    min-width: 100px;
+    width: 25% !important;
+  }
+  .second_td {
+    padding-left: 10px;
+    width: calc(75% - 20px);
+    border-left: 1px solid rgb(230, 230, 230);
   }
 }
