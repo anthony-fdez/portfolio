@@ -18,6 +18,7 @@
     "react-icons": "^4.3.1",
     "react-medium-image-zoom": "^4.4.3",
     "react-scroll-parallax": "^3.3.1",
+    "react-wavify": "^1.6.1",
     "swiper": "^8.1.6",
     "vercel": "^27.2.0"
   },
