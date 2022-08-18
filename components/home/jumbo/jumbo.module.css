@@ -33,9 +33,10 @@
     margin-top: 50px;
     text-align: center;
     transition: 200ms;
+    border-radius: 5px;
   }
   .button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
     transition: 200ms;
   }
   .background_text_design {
@@ -99,10 +100,10 @@
     width: 180px;
     text-align: center;
     transition: 200ms;
+    border-radius: 5px;
   }
   .button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-
+    opacity: 0.7;
     transition: 200ms;
   }
   .background_text_design {

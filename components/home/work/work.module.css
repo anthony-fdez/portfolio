@@ -2,7 +2,7 @@
   .container {
     margin: auto;
     max-width: 1200px;
-    padding: 30px;
+    padding: 15px;
     position: relative;
   }
   .header {
@@ -48,6 +48,7 @@
     cursor: pointer;
     margin-top: 10px;
     transition: 200ms;
+    border-radius: 5px;
   }
   .learn_more_button:hover {
     opacity: 0.7;
@@ -61,6 +62,7 @@
     background-color: rgb(10, 10, 10);
     padding: 20px;
     border: 1px solid rgb(30, 30, 30);
+    border-radius: 20px;
   }
 }
 @media only screen and (min-width: 901px) {
@@ -123,6 +125,7 @@
     border: 1px solid rgb(30, 30, 30);
     padding: 20px;
     z-index: 100;
+    border-radius: 15px;
   }
   .learn_more_button {
     width: 200px;
@@ -134,6 +137,7 @@
     cursor: pointer;
     margin-top: 10px;
     transition: 200ms;
+    border-radius: 5px;
   }
   .learn_more_button:hover {
     opacity: 0.7;
