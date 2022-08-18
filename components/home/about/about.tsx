@@ -54,6 +54,41 @@ const About = (): JSX.Element => {
             <div className={styles.second_td}>
               <h3>Junior Web Developer</h3>
               <p>United Automobile Insurance Company, Miami Gardens, FL</p>
+              <br></br>
+              <h4>Key Responsibilities.</h4>
+              <ul>
+                <li>
+                  Design and develop a new{" "}
+                  <a
+                    className="link"
+                    target="_blank"
+                    href="https://uaig.net"
+                    rel="noreferrer"
+                  >
+                    home page.{" "}
+                  </a>
+                  It was built from scratch using ReactJs and TypeScript.
+                </li>
+                <li>
+                  Migrated several websites UIs from old and outdated JQuery to
+                  ReactJS.
+                  <ul>
+                    <li>
+                      This included sensitive websites such as the customer
+                      portal.
+                    </li>
+                  </ul>
+                </li>
+                <br></br>
+                <li>
+                  Worked on internal tools that increased the company&apos;s
+                  productivity.
+                </li>
+                <li>
+                  I worked integrating apis and did some backend coding as well.
+                  (NodeJs and PHP)
+                </li>
+              </ul>
             </div>
           </div>
           <div className={styles.tr}>
@@ -85,40 +120,6 @@ const About = (): JSX.Element => {
         <EducationTable />
         <br></br>
         <WorkTable />
-        <br></br>
-        <h2 className={styles.center}>Key Responsibilities.</h2>
-        <ul>
-          <li>
-            Design and develop a new{" "}
-            <a
-              className="link"
-              target="_blank"
-              href="https://uaig.net"
-              rel="noreferrer"
-            >
-              home page.{" "}
-            </a>
-            It was built from scratch using ReactJs and TypeScript.
-          </li>
-          <li>
-            Migrated several websites UIs from old and outdated JQuery to
-            ReactJS.
-            <ul>
-              <li>
-                This included sensitive websites such as the customer portal.
-              </li>
-            </ul>
-          </li>
-          <br></br>
-          <li>
-            Worked on internal tools that increased the company&apos;s
-            productivity.
-          </li>
-          <li>
-            I worked integrating apis and did some backend coding as well.
-            (NodeJs and PHP)
-          </li>
-        </ul>
       </div>
     </Fade>
   );
