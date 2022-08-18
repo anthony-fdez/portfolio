@@ -4,6 +4,11 @@
     margin: auto;
     margin-top: 100px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .container {
+    overflow: hidden;
   }
   .header {
     margin-top: 10px;
@@ -43,6 +48,22 @@
     font-size: 22px;
     margin-right: 5px;
   }
+  .background_icon {
+    height: 70vh;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    opacity: 0.03;
+    top: -150px;
+  }
+  .background_text_protypist {
+    position: absolute;
+    font-size: 5rem;
+    top: -150px;
+    width: 120vw;
+    left: -50px;
+    opacity: 0.03;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -51,6 +72,11 @@
     margin: auto;
     margin-top: 100px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .container {
+    overflow: hidden;
   }
   .header {
     margin-top: 10px;
@@ -94,5 +120,22 @@
   .download_container > svg {
     font-size: 22px;
     margin-right: 5px;
+  }
+  .background_icon {
+    height: auto;
+    width: 80vw;
+    position: absolute;
+    right: -100px;
+    opacity: 0.05;
+    top: -150px;
+  }
+  .background_text_protypist {
+    position: absolute;
+    font-size: 5rem;
+    top: -150px;
+    width: 170vw;
+    left: -50px;
+    opacity: 0.02;
+    line-height: 4rem;
   }
 }

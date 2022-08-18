@@ -12,6 +12,7 @@ import { MdPermContactCalendar } from "react-icons/md";
 import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import MyButton from "../myButton/myButton";
+import NoScrollLink from "../noScrollLink/noScrollLink";
 
 const sideMenuVariants = {
   open: {
@@ -95,7 +96,7 @@ const Header = () => {
           <ul className={styles.navigation_list}>
             <li>
               <MyButton>
-                <Link passHref href="/work">
+                <NoScrollLink passHref href="/work">
                   <button
                     className={styles.navigation_button}
                     // onClick={() => scrollTo("work")}
@@ -104,12 +105,12 @@ const Header = () => {
                     <MdWeb className={styles.menu_icon} />
                     Work
                   </button>
-                </Link>
+                </NoScrollLink>
               </MyButton>
             </li>
             <li>
               <MyButton>
-                <Link passHref href="/about">
+                <NoScrollLink passHref href="/about">
                   <button
                     className={styles.navigation_button}
                     // onClick={() => scrollTo("about")}
@@ -118,7 +119,7 @@ const Header = () => {
                     <AiOutlineInfoCircle className={styles.menu_icon} />
                     About
                   </button>
-                </Link>
+                </NoScrollLink>
               </MyButton>
             </li>
             <li>

@@ -10,6 +10,8 @@ import { AiFillApple } from "react-icons/ai";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
 import MyButton from "../../components/myButton/myButton";
+import { GiBasketballBall } from "react-icons/gi";
+import { Parallax } from "react-scroll-parallax";
 
 const BasketballCenter: NextPage = () => {
   const images: string[] = [
@@ -39,6 +41,9 @@ const BasketballCenter: NextPage = () => {
         </Head>
 
         <main className={styles.main}>
+          <Parallax speed={-20}>
+            <GiBasketballBall className={styles.background_icon} />
+          </Parallax>
           <MyButton>
             <BackToHomeButton />
           </MyButton>

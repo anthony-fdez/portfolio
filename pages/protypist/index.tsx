@@ -9,6 +9,7 @@ import { BsGithub } from "react-icons/bs";
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
+import { Parallax } from "react-scroll-parallax";
 
 const Protypist: NextPage = () => {
   const images: string[] = [
@@ -31,6 +32,13 @@ const Protypist: NextPage = () => {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <Parallax speed={-50}>
+          <h1 className={styles.background_text_protypist}>
+            DAY LATE MAY SO RIGHT CHANGE LAST INCREASE OWN NEED MUCH WHO COULD
+            OUT GOVERN CALL OPEN INTO WE EVEN SHOW WOULD WE NATION OR GROUP NEW
+            FACT WORK OVER PERSON THIS PLAN MOVE FEEL FACT EYE OR KEEP
+          </h1>
+        </Parallax>
         <Fade>
           <main className={styles.main}>
             <BackToHomeButton />
