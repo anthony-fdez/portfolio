@@ -10,6 +10,7 @@
     transition: 800ms;
     opacity: 1;
     text-align: center;
+    z-index: 50;
   }
 
   .hidden_animated_arrow {
@@ -40,6 +41,7 @@
     transition: 800ms;
     opacity: 1;
     text-align: center;
+    z-index: 50;
   }
 
   .hidden_animated_arrow {

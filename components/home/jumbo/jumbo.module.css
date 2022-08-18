@@ -1,7 +1,7 @@
 @media only screen and (max-width: 900px) {
   .container {
     width: 100vw;
-    background-color: rgb(130, 168, 160);
+    background-color: var(--main-color);
     height: 100vh;
   }
   .content {
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 30px;
     height: 100vh;
-    padding-bottom: 150px;
+    padding-bottom: 280px;
     position: relative;
   }
 
@@ -47,10 +47,10 @@
     position: absolute;
     font-size: 7rem;
     width: 300vw;
-    bottom: 70px;
+    bottom: 230px;
     left: 0px;
     font-weight: bolder;
-    opacity: 0.2;
+    opacity: 0.1;
   }
   .background_text_mobile > span {
   }
@@ -59,13 +59,14 @@
     position: absolute;
     bottom: -10px;
     width: 100vw !important;
+    height: 300px;
   }
 }
 
 @media only screen and (min-width: 901px) {
   .container {
     width: 100vw;
-    background-color: rgb(130, 168, 160);
+    background-color: var(--main-color);
     height: 100vh;
   }
   .content {
@@ -125,5 +126,6 @@
     position: absolute;
     bottom: -10px;
     width: 100vw !important;
+    height: 200px;
   }
 }

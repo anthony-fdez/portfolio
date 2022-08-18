@@ -1,5 +1,9 @@
 html,
 body {
+  /* theme */
+  --main-color: rgb(234, 113, 61);
+  --secondary-color: red;
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
