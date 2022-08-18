@@ -1,9 +1,12 @@
 html,
 body {
   /* theme */
-  --main-color: rgb(234, 113, 61);
-  --secondary-color: red;
+  --main-color: rgb(19, 48, 91);
+  --secondary-color: rgb(226, 70, 48);
+  --third-color: rgb(226, 70, 48);
 
+  background-color: rgb(20, 20, 20);
+  color: white;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -17,7 +20,7 @@ a {
 }
 
 .link {
-  color: dodgerblue;
+  color: var(--third-color);
   text-decoration: underline;
 }
 

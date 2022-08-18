@@ -26,7 +26,7 @@
     margin-bottom: 30px;
   }
   .button {
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
     padding: 10px;
     width: 200px;
@@ -93,7 +93,7 @@
     margin-bottom: 30px;
   }
   .button {
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
     padding: 15px;
     width: 180px;

@@ -41,7 +41,7 @@
   .learn_more_button {
     width: 100%;
     padding: 10px;
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
     outline: none;
     border: none;
@@ -50,7 +50,7 @@
     transition: 200ms;
   }
   .learn_more_button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
     transition: 200ms;
   }
 
@@ -58,9 +58,9 @@
     display: none;
   }
   .projects_section {
-    background-color: whitesmoke;
+    background-color: rgb(10, 10, 10);
     padding: 20px;
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid rgb(30, 30, 30);
   }
 }
 @media only screen and (min-width: 901px) {
@@ -118,16 +118,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(5px);
-    border: 1px solid darkgray;
+    border: 1px solid rgb(30, 30, 30);
     padding: 20px;
     z-index: 100;
   }
   .learn_more_button {
     width: 200px;
     padding: 15px;
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
     outline: none;
     border: none;
@@ -136,7 +136,7 @@
     transition: 200ms;
   }
   .learn_more_button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
     transition: 200ms;
   }
 } ;

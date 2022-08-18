@@ -1,11 +1,14 @@
 @media only screen and (max-width: 900px) {
   .contact_container {
     margin-top: 100px;
-    background-color: whitesmoke;
+    background-color: rgb(10, 10, 10);
     position: absolute;
     width: 100%;
     left: 0px;
     padding: 30px;
+  }
+  .contact_content > h1 {
+    color: var(--third-color);
   }
   .contact_content {
     max-width: 1000px;
@@ -43,13 +46,16 @@
 @media only screen and (min-width: 901px) {
   .contact_container {
     margin-top: 100px;
-    background-color: whitesmoke;
+    background-color: rgb(10, 10, 10);
     position: absolute;
     width: 100%;
     left: 0px;
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .contact_content > h1 {
+    color: var(--third-color);
   }
   .contact_content {
     max-width: 1000px;

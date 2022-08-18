@@ -4,11 +4,11 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: rgba(240, 240, 240, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     z-index: 99;
     transition: 300ms;
-    padding: 15px;
+    padding: 5px;
   }
   .header_container_light {
     position: fixed;
@@ -18,7 +18,7 @@
     background-color: rgba(255, 255, 255, 0);
     z-index: 99;
     transition: 300ms;
-    padding: 15px;
+    padding: 5px;
   }
   .header_content {
     display: flex;
@@ -48,7 +48,7 @@
     width: auto;
     background-color: transparent !important;
     padding: 0px;
-    color: black;
+    color: white;
     font-size: 18px;
     margin: 0px;
     margin-bottom: 10px;
@@ -80,7 +80,7 @@
     width: 80vw;
     top: 0px;
     right: -80vw;
-    background-color: whitesmoke;
+    background-color: rgb(10, 10, 10);
     padding: 20px;
     padding-left: 0px;
     padding-top: 100px;
@@ -102,7 +102,8 @@
   }
 
   .nav_bg_open {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
   }
   .nav_bg_closed {
     background-color: transparent;
@@ -137,10 +138,10 @@
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: rgba(240, 240, 240, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     z-index: 99;
-    padding: 20px;
+    padding: 5px;
     transition: 300ms;
   }
   .header_container_light {
@@ -150,7 +151,7 @@
     width: 100%;
     background-color: transparent;
     z-index: 99;
-    padding: 20px;
+    padding: 5px;
     transition: 300ms;
   }
   .header_content {
@@ -177,8 +178,8 @@
     width: auto;
     background-color: transparent !important;
     padding: 0px;
-    color: black;
     font-size: 18px;
+    color: white;
     margin: 0px;
     margin-right: 10px;
     text-align: center;
@@ -190,7 +191,7 @@
     transition: 100ms;
   }
   .navigation_button:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
     transition: 100ms;
   }
   .hamburger_menu {

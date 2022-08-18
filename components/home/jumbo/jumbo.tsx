@@ -18,7 +18,7 @@ const Jumbo = (): JSX.Element => {
         </Parallax>
         <Fade>
           <AnimatedText
-            color="black"
+            color="white"
             text={[
               { type: "heading3", text: "Hi, I'm Anthony!" },
               {
@@ -42,7 +42,7 @@ const Jumbo = (): JSX.Element => {
 
         <Wave
           className={styles.wave}
-          fill="white"
+          fill="rgb(20,20,20)"
           paused={false}
           options={{
             height: 20,
