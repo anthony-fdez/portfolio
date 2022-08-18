@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import "react-medium-image-zoom/dist/styles.css";
 import { fixTimeoutTransition } from "../utils/fixTimeoutTransition";
@@ -22,15 +23,17 @@ fixTimeoutTransition(TRANSITION_DURATION);
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
-      <Header />
-      <AnimatePresence
-        exitBeforeEnter
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
-      <Footer />
+      <ParallaxProvider>
+        <Header />
+        <AnimatePresence
+          exitBeforeEnter
+          initial={false}
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+        <Footer />
+      </ParallaxProvider>
     </>
   );
 }

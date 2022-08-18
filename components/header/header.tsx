@@ -5,6 +5,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { isMobile } from "react-device-detect";
+import Footer from "../footer/footer";
+
+// Icons
+import { MdPermContactCalendar } from "react-icons/md";
+import { MdWeb } from "react-icons/md";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import MyButton from "../myButton/myButton";
 
 const sideMenuVariants = {
   open: {
@@ -59,12 +66,15 @@ const Header = () => {
             Portfolio.
           </span>
         </Link>
-        <span
-          onClick={() => setIsMenuOpen(true)}
-          className={styles.hamburger_menu}
-        >
-          <GiHamburgerMenu />
-        </span>
+        <MyButton>
+          <span
+            onClick={() => setIsMenuOpen(true)}
+            className={styles.hamburger_menu}
+          >
+            <GiHamburgerMenu />
+          </span>
+        </MyButton>
+
         <div
           onClick={() => {
             setIsMenuOpen(false);
@@ -81,38 +91,51 @@ const Header = () => {
             onClick={() => setIsMenuOpen(false)}
             className={styles.close_menu_button}
           />
+
           <ul className={styles.navigation_list}>
             <li>
               <Link passHref href="/#work">
-                <button
-                  className={styles.navigation_button}
-                  onClick={() => scrollTo("work")}
-                >
-                  Work
-                </button>
+                <MyButton>
+                  <button
+                    className={styles.navigation_button}
+                    onClick={() => scrollTo("work")}
+                  >
+                    <MdWeb className={styles.menu_icon} />
+                    Work
+                  </button>
+                </MyButton>
               </Link>
             </li>
             <li>
               <Link passHref href="/#about">
-                <button
-                  className={styles.navigation_button}
-                  onClick={() => scrollTo("about")}
-                >
-                  About
-                </button>
+                <MyButton>
+                  <button
+                    className={styles.navigation_button}
+                    onClick={() => scrollTo("about")}
+                  >
+                    <AiOutlineInfoCircle className={styles.menu_icon} />
+                    About
+                  </button>
+                </MyButton>
               </Link>
             </li>
             <li>
               <Link passHref href="/#contact">
-                <button
-                  className={styles.navigation_button}
-                  onClick={() => scrollTo("contact")}
-                >
-                  Contact
-                </button>
+                <MyButton>
+                  <button
+                    className={styles.navigation_button}
+                    onClick={() => scrollTo("contact")}
+                  >
+                    <MdPermContactCalendar className={styles.menu_icon} />
+                    Contact
+                  </button>
+                </MyButton>
               </Link>
             </li>
           </ul>
+          <div className={styles.footer_container}>
+            <Footer />
+          </div>
         </motion.div>
       </div>
     </header>
