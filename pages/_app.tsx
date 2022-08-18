@@ -20,6 +20,8 @@ const TRANSITION_DURATION = 500;
 
 fixTimeoutTransition(TRANSITION_DURATION);
 
+window.history.scrollRestoration = "manual";
+
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
