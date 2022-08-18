@@ -1,0 +1,6 @@
+.word_wrapper {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  display: inline-block;
+}

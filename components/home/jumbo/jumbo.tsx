@@ -4,6 +4,7 @@ import MyButton from "../../myButton/myButton";
 import styles from "./jumbo.module.css";
 import { Parallax } from "react-scroll-parallax";
 import Wave from "react-wavify";
+import AnimatedText from "../../animatedText/animatedText";
 
 const Jumbo = (): JSX.Element => {
   return (
@@ -16,11 +17,17 @@ const Jumbo = (): JSX.Element => {
           <span>DESIGN, DEVELOP.</span>
         </Parallax>
         <Fade>
-          <h3>Hi, I&apos;m Anthony!</h3>
-          <h1>
-            I&apos;m a fullstack developer. Focused on building better software
-            every day.
-          </h1>
+          <AnimatedText
+            color="black"
+            text={[
+              { type: "heading3", text: "Hi, I'm Anthony!" },
+              {
+                type: "heading1",
+                text: " I'm a fullstack developer. Focused on building better software every day.",
+              },
+            ]}
+          />
+
           <MyButton>
             <a
               target="_blank"

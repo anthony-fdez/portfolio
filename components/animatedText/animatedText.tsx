@@ -1,27 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import styles from "./animatedText.module.css";
 import AnimatedCharacters from "./animatedCharacters";
 
 interface Props {
-  text: [
-    {
-      type: string;
-      text: string;
-    }
-  ];
+  color: string;
+  text: Text[];
 }
 
-const AnimatedText = (): JSX.Element | null => {
+interface Text {
+  type: string;
+  text: string;
+}
+
+const AnimatedText = ({ text, color }: Props): JSX.Element | null => {
   const [play, setPlay] = useState(false);
-  // Placeholder text data, as if from API
-  const placeholderText = [
-    { type: "heading1", text: "Framer Motion" },
-    {
-      type: "heading2",
-      text: "Animating responsive text!",
-    },
-  ];
 
   const container = {
     visible: {
@@ -52,8 +44,8 @@ const AnimatedText = (): JSX.Element | null => {
       variants={container}
     >
       <div className="container">
-        {placeholderText.map((item, index) => {
-          return <AnimatedCharacters {...item} key={index} />;
+        {text.map((item, index) => {
+          return <AnimatedCharacters color={color} {...item} key={index} />;
         })}
       </div>
     </motion.div>
