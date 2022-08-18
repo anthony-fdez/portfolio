@@ -62,11 +62,14 @@ const Header = () => {
       }
     >
       <div className={styles.header_content}>
-        <Link passHref href="/">
-          <span style={{ cursor: "pointer" }} className={styles.header_title}>
-            Portfolio.
-          </span>
-        </Link>
+        <MyButton>
+          <NoScrollLink passHref href="/">
+            <span style={{ cursor: "pointer" }} className={styles.header_title}>
+              Portfolio.
+            </span>
+          </NoScrollLink>
+        </MyButton>
+
         <MyButton>
           <span
             onClick={() => setIsMenuOpen(true)}
