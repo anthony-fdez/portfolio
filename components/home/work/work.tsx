@@ -25,6 +25,7 @@ const Work = (): JSX.Element => {
 
               <div className={styles.project_image_container}>
                 <LazyLoadImage
+                  effect="blur"
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/BBALL_CENTER.png"
@@ -58,6 +59,7 @@ const Work = (): JSX.Element => {
               </NoScrollLink>
               <div className={styles.project_image_container}>
                 <LazyLoadImage
+                  effect="blur"
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/protypist.png"
@@ -98,6 +100,7 @@ const Work = (): JSX.Element => {
 
               <div className={styles.project_image_container}>
                 <LazyLoadImage
+                  effect="blur"
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/dls.png"

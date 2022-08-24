@@ -38,6 +38,7 @@ const ImagesCarousel = ({
             >
               <Zoom>
                 <LazyLoadImage
+                  effect="blur"
                   className={
                     orientation === "portrait"
                       ? styles.image_portrait
