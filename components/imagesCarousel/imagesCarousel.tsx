@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Zoom from "react-medium-image-zoom";
 import { Navigation } from "swiper";
 import styles from "./imagesCarousel.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface Props {
   images: string[];
@@ -36,7 +37,7 @@ const ImagesCarousel = ({
               }
             >
               <Zoom>
-                <img
+                <LazyLoadImage
                   className={
                     orientation === "portrait"
                       ? styles.image_portrait

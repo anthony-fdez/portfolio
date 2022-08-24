@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
 import NoScrollLink from "../../noScrollLink/noScrollLink";
 import MyButton from "../../myButton/myButton";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Work = (): JSX.Element => {
   return (
@@ -15,15 +16,15 @@ const Work = (): JSX.Element => {
           <Fade>
             <div className={styles.project_container}>
               <NoScrollLink passHref href="/basketball-center">
-                <img
+                <LazyLoadImage
                   className={styles.bg_image}
                   alt="Basketball Center Logo"
-                  src="basketball-center/home.png"
+                  src="basketball-center/home.png "
                 />
               </NoScrollLink>
 
               <div className={styles.project_image_container}>
-                <img
+                <LazyLoadImage
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/BBALL_CENTER.png"
@@ -49,14 +50,14 @@ const Work = (): JSX.Element => {
           <Fade>
             <div className={styles.project_container}>
               <NoScrollLink passHref href="/protypist">
-                <img
+                <LazyLoadImage
                   className={styles.bg_image}
                   alt="Basketball Center Logo"
                   src="protypist/home.png"
                 />
               </NoScrollLink>
               <div className={styles.project_image_container}>
-                <img
+                <LazyLoadImage
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/protypist.png"
@@ -88,7 +89,7 @@ const Work = (): JSX.Element => {
           <Fade>
             <div className={styles.project_container}>
               <NoScrollLink passHref href="/dls">
-                <img
+                <LazyLoadImage
                   className={styles.bg_image}
                   alt="Basketball Center Logo"
                   src="dls/home.png"
@@ -96,7 +97,7 @@ const Work = (): JSX.Element => {
               </NoScrollLink>
 
               <div className={styles.project_image_container}>
-                <img
+                <LazyLoadImage
                   className={styles.project_image}
                   alt="Basketball Center Logo"
                   src="logos/dls.png"
