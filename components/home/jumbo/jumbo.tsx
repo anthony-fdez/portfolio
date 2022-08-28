@@ -10,12 +10,12 @@ const Jumbo = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Parallax
+        {/* <Parallax
           translateX={[50, -80]}
           className={styles.background_text_mobile}
         >
           <span>DESIGN, DEVELOP.</span>
-        </Parallax>
+        </Parallax> */}
         <Fade>
           <AnimatedText
             color="white"

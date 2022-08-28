@@ -2,75 +2,44 @@
   text-align: center;
   margin-top: 40px;
 }
-@media only screen and (min-width: 901px) {
-  .about_container {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 1000px;
-    padding: 30px;
-  }
-  .about_container h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .table {
-    width: 100%;
-    background-color: rgb(10, 10, 10);
-    padding: 20px;
-    border: 1px solid rgb(30, 30, 30);
-    padding-top: 0px;
-    margin-top: 10px;
-    border-radius: 20px;
-  }
-  .tr {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    margin-top: 10px;
-    border-top: 1px solid rgb(30, 30, 30);
-  }
-  .first_td {
-    width: 20% !important;
-  }
-  .second_td {
-    padding-left: 10px;
-    width: calc(80% - 20px);
-  }
+.about_container {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 15px;
+  max-width: 600px;
+}
+.about_container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.table {
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  padding: 20px;
+  border: 1px solid rgb(30, 30, 30);
+  padding-top: 0px;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+.tr {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgb(30, 30, 30);
+}
+.first_td {
+  width: 25% !important;
+}
+.second_td {
+  padding-left: 10px;
+  width: calc(75% - 20px);
+  border-left: 1px solid rgb(30, 30, 30);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 1201px) {
   .about_container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 15px;
-  }
-  .about_container h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .table {
-    width: 100%;
-    background-color: rgb(10, 10, 10);
-    padding: 20px;
-    border: 1px solid rgb(30, 30, 30);
-    padding-top: 0px;
-    margin-top: 10px;
-    border-radius: 25px;
-  }
-  .tr {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 10px;
-    margin-top: 10px;
-    border-top: 1px solid rgb(30, 30, 30);
-  }
-  .first_td {
-    width: 25% !important;
-  }
-  .second_td {
-    padding-left: 10px;
-    width: calc(75% - 20px);
-    border-left: 1px solid rgb(30, 30, 30);
+    max-width: 1000px;
   }
 }
