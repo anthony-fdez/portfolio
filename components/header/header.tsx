@@ -44,15 +44,6 @@ const Header = () => {
     };
   }, []);
 
-  const scrollTo = (elementId: string) => {
-    const section = document.querySelector(`#${elementId}`);
-
-    setIsMenuOpen(false);
-
-    if (section)
-      section.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
-
   return (
     <header
       className={
@@ -130,8 +121,6 @@ const Header = () => {
                 <button
                   className={styles.navigation_button}
                   id={styles.navigation_button_contact}
-                  onClick={() => scrollTo("contact")}
-                  // onClick={() => setIsMenuOpen(false)}
                 >
                   <MdPermContactCalendar className={styles.menu_icon} />
                   Contact
