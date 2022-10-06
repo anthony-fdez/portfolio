@@ -59,6 +59,14 @@ const BasketballCenter: NextPage = () => {
               time as well. It also has a chat built in per game, allowing users
               to interact with other people and discuss the game.
             </p>
+            <br />
+            <ul>
+              <li>Rated 5 stars on the AppStore</li>
+              <li>
+                250+ monthly active users during the NBA season, all organic
+                growth.
+              </li>
+            </ul>
           </div>
           <ImagesCarousel
             orientation="portrait"
