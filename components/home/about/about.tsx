@@ -5,31 +5,18 @@ import styles from "./about.module.css";
 const About = (): JSX.Element => {
   const EducationTable = (): JSX.Element => {
     // I had to make my own table using div's because for some reason
-    // I get a hidration error when using a table. This seems like a problem
+    // I get a hydration error when using a table. This seems like a problem
     // not fixed yet in react 18.
 
     return (
       <>
         <h2 className={styles.center}>Education.</h2>
         <div className={styles.table}>
-          <div style={{ border: "none" }} className={styles.tr}>
-            <div className={styles.first_td}>2022-01 - Present</div>
-            <div className={styles.second_td}>
-              <h3>
-                Majoring in Computer Science (Bachelor of Computer Science)
-              </h3>
-              <p>Florida International University South Campus, Miami, FL</p>
-              <br></br>
-              <p>
-                <strong>Expected Graduation:</strong> 2023
-              </p>
-            </div>
-          </div>
           <div className={styles.tr}>
             <div className={styles.first_td}>2019-08 - 2021-12</div>
             <div className={styles.second_td}>
-              <h3>Major in Computer Science (Associates Degree)</h3>
-              <p>Miami Dade College Kendall Campus, Miami, FL</p>
+              <h3>Major in Computer Science (AA)</h3>
+              <p>Miami Dade College, Miami, FL</p>
               <br></br>
               <p>
                 <strong>Graduation:</strong> 2021
@@ -52,7 +39,7 @@ const About = (): JSX.Element => {
           <div style={{ border: "none" }} className={styles.tr}>
             <div className={styles.first_td}>2021-10 - Present </div>
             <div className={styles.second_td}>
-              <h3>Junior Web Developer</h3>
+              <h3>Junior Web Developer/Analyst</h3>
               <p>United Automobile Insurance Company, Miami Gardens, FL</p>
               <br></br>
               <h4>Key Responsibilities.</h4>
@@ -117,9 +104,9 @@ const About = (): JSX.Element => {
           in Computer Science.
         </p>
         <br></br>
-        <EducationTable />
-        <br></br>
         <WorkTable />
+        <br></br>
+        <EducationTable />
       </div>
     </Fade>
   );
