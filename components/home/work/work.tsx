@@ -81,6 +81,41 @@ const Work = (): JSX.Element => {
               </div>
             </div>
           </Fade>
+          <Fade>
+            <div className={styles.project_container}>
+              <NoScrollLink passHref href="/protypist">
+                <LazyLoadImage
+                  className={styles.bg_image}
+                  alt="Algo Saurus Logo"
+                  src="algo-saurus/1.webp"
+                />
+              </NoScrollLink>
+              <div className={styles.project_image_container}>
+                <LazyLoadImage
+                  effect="blur"
+                  className={styles.project_image}
+                  alt="Basketball Center Logo"
+                  src="logos/dino.gif"
+                />
+              </div>
+              <div className={styles.project_info_container}>
+                <h2>AlgoSaurus</h2>
+                <p>
+                  AlgoSaurus is a complex algorithms visualization tool to help
+                  people learn the basics about the most famous sorting
+                  algorithms. This project placed top 3 at ShellHacks, one of
+                  the largest florida hackathons.
+                </p>
+                <MyButton>
+                  <NoScrollLink passHref href="/protypist">
+                    <button className={styles.learn_more_button}>
+                      Learn More
+                    </button>
+                  </NoScrollLink>
+                </MyButton>
+              </div>
+            </div>
+          </Fade>
         </section>
 
         <br></br>

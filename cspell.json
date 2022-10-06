@@ -3,7 +3,15 @@
   "ignorePaths": [],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": ["fixit", "protypist", "swiper", "fdez"],
+  "words": [
+    "fdez",
+    "fixit",
+    "hackathons",
+    "protypist",
+    "Saurus",
+    "swiper",
+    "webp"
+  ],
   "ignoreWords": [],
   "import": []
 }
