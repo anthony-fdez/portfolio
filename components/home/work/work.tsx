@@ -83,7 +83,7 @@ const Work = (): JSX.Element => {
           </Fade>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/protypist">
+              <NoScrollLink passHref href="/algoSaurus">
                 <LazyLoadImage
                   className={styles.bg_image}
                   alt="Algo Saurus Logo"
@@ -107,7 +107,7 @@ const Work = (): JSX.Element => {
                   the largest florida hackathons.
                 </p>
                 <MyButton>
-                  <NoScrollLink passHref href="/protypist">
+                  <NoScrollLink passHref href="/algoSaurus">
                     <button className={styles.learn_more_button}>
                       Learn More
                     </button>
