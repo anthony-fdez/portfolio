@@ -5,6 +5,7 @@
   "dictionaries": [],
   "words": [
     "codebases",
+    "downvote",
     "fdez",
     "fixit",
     "Hackathon",
@@ -12,7 +13,10 @@
     "protypist",
     "Saurus",
     "swiper",
-    "webp"
+    "upvote",
+    "upvoting",
+    "webp",
+    "weeatcode"
   ],
   "ignoreWords": [],
   "import": []

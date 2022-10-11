@@ -54,6 +54,43 @@ const Work = (): JSX.Element => {
           <br></br>
           <Fade>
             <div className={styles.project_container}>
+              <NoScrollLink passHref href="/weeatcode">
+                <LazyLoadImage
+                  className={styles.bg_image}
+                  alt="WeEatCode Logo"
+                  src="weeatcode/1.png "
+                />
+              </NoScrollLink>
+
+              <div className={styles.project_image_container}>
+                <LazyLoadImage
+                  effect="blur"
+                  className={styles.project_image}
+                  alt="WeEatCode Logo"
+                  src="logos/weeatcode.png"
+                />
+              </div>
+              <div className={styles.project_info_container}>
+                <h2>WeEatCode</h2>
+                <p>
+                  WeEatCode is a fullstack blog web application. Users can
+                  create an account, create a blog post, start a conversation
+                  under any post and downvote and upvote any post or comment.
+                  Among many other features.
+                </p>
+                <MyButton>
+                  <NoScrollLink passHref href="/weeatcode">
+                    <button className={styles.learn_more_button}>
+                      Learn More
+                    </button>
+                  </NoScrollLink>
+                </MyButton>
+              </div>
+            </div>
+          </Fade>
+          <br></br>
+          <Fade>
+            <div className={styles.project_container}>
               <NoScrollLink passHref href="/protypist">
                 <LazyLoadImage
                   className={styles.bg_image}
