@@ -44,6 +44,14 @@ const Header = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo(0, 100000);
+  };
+
   return (
     <header
       className={
@@ -55,7 +63,11 @@ const Header = () => {
       <div className={styles.header_content}>
         <MyButton>
           <NoScrollLink passHref href="/">
-            <span style={{ cursor: "pointer" }} className={styles.header_title}>
+            <span
+              onClick={scrollToTop}
+              style={{ cursor: "pointer" }}
+              className={styles.header_title}
+            >
               Portfolio.
             </span>
           </NoScrollLink>
@@ -119,6 +131,7 @@ const Header = () => {
             <li>
               <MyButton>
                 <button
+                  onClick={scrollToBottom}
                   className={styles.navigation_button}
                   id={styles.navigation_button_contact}
                 >
