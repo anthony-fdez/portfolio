@@ -45,11 +45,11 @@ const Header = () => {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const scrollToBottom = () => {
-    window.scrollTo(0, 100000);
+    window.scrollTo({ top: 100000, behavior: "smooth" });
   };
 
   return (
