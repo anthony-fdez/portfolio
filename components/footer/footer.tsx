@@ -63,7 +63,7 @@ const Contact = () => {
                 href="https://github.com/anthony-fdez/portfolio"
                 rel="noreferrer"
               >
-                See the source code for this page.
+                See source code.
               </a>
             </div>
           </MyButton>

@@ -52,8 +52,8 @@ const Home: NextPage = () => {
           >
             <BsChevronDown />
           </div>
-          <Work />
           <About />
+          <Work />
           <Skills />
         </main>
       </div>

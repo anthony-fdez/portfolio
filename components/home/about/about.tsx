@@ -34,55 +34,52 @@ const About = (): JSX.Element => {
   const WorkTable = (): JSX.Element => {
     return (
       <>
-        <h2 className={styles.center}>Work Experience.</h2>
+        <h2 className={styles.center}>Professional Experience.</h2>
         <div className={styles.table}>
           <div style={{ border: "none" }} className={styles.tr}>
-            <div className={styles.first_td}>2021-10 - Present </div>
+            <div className={styles.first_td}>2020 - Present</div>
             <div className={styles.second_td}>
-              <h3>Junior Web Developer/Analyst</h3>
+              <h3>Frontend Software Engineer/Analyst</h3>
               <p>United Automobile Insurance Company, Miami Gardens, FL</p>
               <br></br>
               <h4>Key Responsibilities.</h4>
+
               <ul>
                 <li>
-                  Design and develop a new{" "}
-                  <a
-                    className="link"
-                    target="_blank"
-                    href="https://uaig.net"
-                    rel="noreferrer"
-                  >
-                    home page.{" "}
-                  </a>
-                  It was built from scratch using ReactJs and TypeScript.
-                </li>
-                <li>
-                  Migrated several websites UIs from old and outdated JQuery to
-                  ReactJS.
+                  As a front-end engineer, I was assigned to design and develop
+                  robust user experiences.
                   <ul>
                     <li>
-                      This included sensitive websites such as the customer
-                      portal.
+                      Designed and developed{" "}
+                      <a
+                        className="link"
+                        target="_blank"
+                        href="https://uaig.net"
+                        rel="noreferrer"
+                      >
+                        a new homepage
+                      </a>
+                      . Built from scratch using ReactJS and TypeScript. With
+                      much improved SEO and user interaction.
+                    </li>
+                    <li>
+                      Migrated several internal websites and tools from old
+                      codebases to use new technologies, up to the new industry
+                      standards.
                     </li>
                   </ul>
                 </li>
                 <br></br>
                 <li>
-                  Worked on internal tools that increased the company&apos;s
-                  productivity.
+                  Integrated backend APIs (PHP, NodeJS, JAVA). And worked with
+                  the backend team directly to create the best infrastructure
+                  possible for our APIs.
                 </li>
                 <li>
-                  I worked integrating apis and did some backend coding as well.
-                  (NodeJs and PHP)
+                  Worked with object oriented (OOP) backend codebases in PHP and
+                  JAVA
                 </li>
               </ul>
-            </div>
-          </div>
-          <div className={styles.tr}>
-            <div className={styles.first_td}>2021-04 – 2021-10</div>
-            <div className={styles.second_td}>
-              <h3>Web Development Intern</h3>
-              <p>United Automobile Insurance Company, Miami Gardens, FL</p>
             </div>
           </div>
         </div>
@@ -97,7 +94,7 @@ const About = (): JSX.Element => {
         <br></br>
         <p>
           My biggest passion is creating software. I experienced programming for
-          the first time in 2019. It all started by making little websites with
+          the first time in 2018. It all started by making little websites with
           HTML and CSS just for fun; however, after a couple of weeks I got more
           invested, and I started learning JavaScript. At that point, I realized
           that this was what I wanted to do for a living, so I decided to major

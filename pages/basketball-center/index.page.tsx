@@ -76,6 +76,11 @@ const BasketballCenter: NextPage = () => {
           <div className={styles.project_info}>
             <h2>Technologies Used</h2>
             <h3>Front End / App:</h3>
+            <p>
+              App&apos;s front-end is made with ReactNative, using native design
+              patterns to provide the closest to a native application experience
+              possible for users in both Android and iOS.
+            </p>
             <ul>
               <li>React Native</li>
               <li>Redux</li>

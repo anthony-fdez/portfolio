@@ -35,7 +35,11 @@ const Work = (): JSX.Element => {
                 <h2>Basketball Center</h2>
                 <p>
                   Basketball Center is a mobile app built to help basketball
-                  fans to stay up to date with everything in the league
+                  fans to stay up to date with everything in the league.
+                  Features an in-game chat, personalized notifications for
+                  favorite teams and players, real time shot-chart that can be
+                  targeted to specific players with play-by-play info alongside
+                  it.
                 </p>
                 <MyButton>
                   <NoScrollLink passHref href="/basketball-center">
@@ -81,6 +85,7 @@ const Work = (): JSX.Element => {
               </div>
             </div>
           </Fade>
+          <br></br>
           <Fade>
             <div className={styles.project_container}>
               <NoScrollLink passHref href="/algoSaurus">
@@ -104,7 +109,7 @@ const Work = (): JSX.Element => {
                   AlgoSaurus is a complex algorithms visualization tool to help
                   people learn the basics about the most famous sorting
                   algorithms. This project placed top 3 at ShellHacks, one of
-                  the largest florida hackathons.
+                  the largest hackathons at Florida.
                 </p>
                 <MyButton>
                   <NoScrollLink passHref href="/algoSaurus">
