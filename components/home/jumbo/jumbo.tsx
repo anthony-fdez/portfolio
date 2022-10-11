@@ -10,12 +10,6 @@ const Jumbo = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* <Parallax
-          translateX={[50, -80]}
-          className={styles.background_text_mobile}
-        >
-          <span>DESIGN, DEVELOP.</span>
-        </Parallax> */}
         <Fade>
           <AnimatedText
             color="white"
@@ -23,7 +17,7 @@ const Jumbo = (): JSX.Element => {
               { type: "heading3", text: "Hi, I'm Anthony!" },
               {
                 type: "heading1",
-                text: " I'm a web developer. Focused on building better software every day.",
+                text: "I'm a fullstack software engineer with 3+ years of experience building production ready applications.",
               },
             ]}
           />
