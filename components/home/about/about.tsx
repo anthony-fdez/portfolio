@@ -93,12 +93,13 @@ const About = (): JSX.Element => {
         <h1 className={styles.center}>About & Experience.</h1>
         <br></br>
         <p>
-          My biggest passion is creating software. I experienced programming for
-          the first time in 2018. It all started by making little websites with
-          HTML and CSS just for fun; however, after a couple of weeks I got more
-          invested, and I started learning JavaScript. At that point, I realized
-          that this was what I wanted to do for a living, so I decided to major
-          in Computer Science.
+          I am a full stack software engineer with 3+ years of experience
+          building fullstack websites and mobile applications. I have worked
+          alone, and with other teams of professional developers creating modern
+          and robust software. I mainly work on frontend codebases using ReactJS
+          , but I can most certainly learn any JS framework and tool. I am also
+          experienced with backend languages and frameworks like NodeJS, as well
+          as SQL and noSQL databases.
         </p>
         <br></br>
         <WorkTable />
