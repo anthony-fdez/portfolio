@@ -18,7 +18,7 @@ const AnimatedText = ({ text, color }: Props): JSX.Element | null => {
   const container = {
     visible: {
       transition: {
-        staggerChildren: 0.025,
+        staggerChildren: 0.005,
       },
     },
   };
