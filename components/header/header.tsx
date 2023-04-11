@@ -1,28 +1,10 @@
-import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
-import { motion } from "framer-motion";
-import { isMobile } from "react-device-detect";
-import Footer from "../footer/footer";
-import { Book, Mail, Menu, User, X } from "react-feather";
-
-import NoScrollLink from "../noScrollLink/noScrollLink";
-
-const sideMenuVariants = {
-  open: {
-    opacity: 1,
-    x: "-100%",
-    transition: { duration: 0.6, type: "spring" },
-  },
-  closed: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.4, type: "spring" },
-  },
-};
+import NavigationMenuComponent from "./NavigationMenu/NavigationMenu";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -41,10 +23,6 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const scrollToBottom = () => {
-    window.scrollTo({ top: 100000, behavior: "smooth" });
-  };
-
   return (
     <header
       className={
@@ -54,7 +32,7 @@ const Header = () => {
       }
     >
       <div className={styles.header_content}>
-        <NoScrollLink passHref href="/">
+        <Link href="/">
           <span
             onClick={scrollToTop}
             style={{ cursor: "pointer" }}
@@ -62,72 +40,8 @@ const Header = () => {
           >
             Portfolio.
           </span>
-        </NoScrollLink>
-
-        <span
-          onClick={() => setIsMenuOpen(true)}
-          className={styles.hamburger_menu}
-        >
-          <Menu />
-        </span>
-
-        <div
-          onClick={() => {
-            setIsMenuOpen(false);
-          }}
-          className={isMenuOpen ? styles.nav_bg_open : styles.nav_bg_closed}
-        />
-        <motion.div
-          animate={isMobile && (isMenuOpen ? "open" : "closed")}
-          variants={sideMenuVariants}
-          className={styles.nav_container_open}
-          initial={false}
-        >
-          <X
-            onClick={() => setIsMenuOpen(false)}
-            className={styles.close_menu_button}
-          />
-
-          <ul className={styles.navigation_list}>
-            <li>
-              <NoScrollLink passHref href="/work">
-                <button
-                  className={styles.navigation_button}
-                  // onClick={() => scrollTo("work")}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <Book className={styles.menu_icon} />
-                  Work
-                </button>
-              </NoScrollLink>
-            </li>
-            <li>
-              <NoScrollLink passHref href="/about">
-                <button
-                  className={styles.navigation_button}
-                  // onClick={() => scrollTo("about")}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <User className={styles.menu_icon} />
-                  About
-                </button>
-              </NoScrollLink>
-            </li>
-            <li>
-              <button
-                onClick={scrollToBottom}
-                className={styles.navigation_button}
-                id={styles.navigation_button_contact}
-              >
-                <Mail className={styles.menu_icon} />
-                Contact
-              </button>
-            </li>
-          </ul>
-          <div className={styles.footer_container}>
-            <Footer />
-          </div>
-        </motion.div>
+        </Link>
+        <NavigationMenuComponent />
       </div>
     </header>
   );
