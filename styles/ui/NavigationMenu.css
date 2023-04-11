@@ -1,8 +1,5 @@
 @import "@radix-ui/colors/blackA.css";
-@import "@radix-ui/colors/indigo.css";
 @import "@radix-ui/colors/mauve.css";
-@import "@radix-ui/colors/purple.css";
-@import "@radix-ui/colors/violet.css";
 
 /* reset */
 button,
@@ -11,11 +8,12 @@ p {
 }
 
 .NavigationMenuRoot {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100vw;
+  width: calc(100vw - 40px);
+  right: 0px;
   z-index: 1;
 }
 
@@ -41,11 +39,11 @@ p {
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {
-  box-shadow: 0 0 0 2px var(--violet7);
+  box-shadow: 0 0 0 2px var(--secondary-color);
 }
 .NavigationMenuTrigger:hover,
 .NavigationMenuLink:hover {
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgb(100, 100, 100, 0.4);
 }
 
 .NavigationMenuTrigger {
@@ -167,7 +165,7 @@ p {
   margin-right: 15px;
 }
 .ListItemLink:focus {
-  box-shadow: 0 0 0 2px var(--violet7);
+  box-shadow: 0 0 0 2px var(--secondary-color);
 }
 .ListItemLink:hover {
   background-color: var(--mauve3);
@@ -186,38 +184,6 @@ p {
   font-weight: initial;
 }
 
-.Callout {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--purple9) 0%, var(--indigo9) 100%);
-  border-radius: 6px;
-  padding: 25px;
-  text-decoration: none;
-  outline: none;
-  user-select: none;
-}
-.Callout:focus {
-  box-shadow: 0 0 0 2px var(--violet7);
-}
-
-.CalloutHeading {
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-top: 16px;
-  margin-bottom: 7px;
-}
-
-.CalloutText {
-  color: var(--mauve4);
-  font-size: 14px;
-  line-height: 1.3;
-}
-
 .ViewportPosition {
   position: absolute;
   display: flex;
@@ -230,7 +196,7 @@ p {
 
 .CaretDown {
   position: relative;
-  color: var(--violet10);
+  color: var(--secondary-color);
   top: 1px;
   transition: transform 250ms ease;
 }

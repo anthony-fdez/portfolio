@@ -44,6 +44,15 @@ const NavigationMenuComponent = () => {
               <ListItem href="https://icons.radix-ui.com/" title="Icons">
                 A crisp set of 15x15 icons, balanced and consistent.
               </ListItem>
+              <ListItem href="https://icons.radix-ui.com/" title="Icons">
+                A crisp set of 15x15 icons, balanced and consistent.
+              </ListItem>
+              <ListItem href="https://icons.radix-ui.com/" title="Icons">
+                A crisp set of 15x15 icons, balanced and consistent.
+              </ListItem>
+              <ListItem href="https://icons.radix-ui.com/" title="Icons">
+                A crisp set of 15x15 icons, balanced and consistent.
+              </ListItem>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
