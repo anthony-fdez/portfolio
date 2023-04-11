@@ -23,7 +23,7 @@ const NavigationMenuComponent = () => {
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item>
-          <NavigationMenu.Link className="NavigationMenuTrigger">
+          <NavigationMenu.Link href="#about" className="NavigationMenuTrigger">
             Experience
           </NavigationMenu.Link>
         </NavigationMenu.Item>

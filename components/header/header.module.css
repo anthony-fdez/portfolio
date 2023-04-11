@@ -32,6 +32,7 @@
 }
 .header_title {
   font-size: 20px;
+  z-index: 50;
 }
 
 @media only screen and (min-width: 901px) {
