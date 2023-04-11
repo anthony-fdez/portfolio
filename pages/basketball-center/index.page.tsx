@@ -9,7 +9,7 @@ import { AiFillApple } from "react-icons/ai";
 
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
-import MyButton from "../../components/myButton/myButton";
+import MyButton from "../../components/ui/Button/Button";
 import { GiBasketballBall } from "react-icons/gi";
 import { Parallax } from "react-scroll-parallax";
 import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
@@ -47,9 +47,7 @@ const BasketballCenter: NextPage = () => {
           <Parallax speed={-20}>
             <GiBasketballBall className={styles.background_icon} />
           </Parallax>
-          <MyButton>
-            <BackToHomeButton />
-          </MyButton>
+          <BackToHomeButton />
           <div className={styles.header}>
             <h1>Basketball Center</h1>
             <p>

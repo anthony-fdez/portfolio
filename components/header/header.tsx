@@ -11,7 +11,7 @@ import Footer from "../footer/footer";
 import { MdPermContactCalendar } from "react-icons/md";
 import { MdWeb } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import MyButton from "../myButton/myButton";
+import MyButton from "../ui/Button/Button";
 import NoScrollLink from "../noScrollLink/noScrollLink";
 
 const sideMenuVariants = {
@@ -61,26 +61,22 @@ const Header = () => {
       }
     >
       <div className={styles.header_content}>
-        <MyButton>
-          <NoScrollLink passHref href="/">
-            <span
-              onClick={scrollToTop}
-              style={{ cursor: "pointer" }}
-              className={styles.header_title}
-            >
-              Portfolio.
-            </span>
-          </NoScrollLink>
-        </MyButton>
-
-        <MyButton>
+        <NoScrollLink passHref href="/">
           <span
-            onClick={() => setIsMenuOpen(true)}
-            className={styles.hamburger_menu}
+            onClick={scrollToTop}
+            style={{ cursor: "pointer" }}
+            className={styles.header_title}
           >
-            <GiHamburgerMenu />
+            Portfolio.
           </span>
-        </MyButton>
+        </NoScrollLink>
+
+        <span
+          onClick={() => setIsMenuOpen(true)}
+          className={styles.hamburger_menu}
+        >
+          <GiHamburgerMenu />
+        </span>
 
         <div
           onClick={() => {
@@ -101,44 +97,38 @@ const Header = () => {
 
           <ul className={styles.navigation_list}>
             <li>
-              <MyButton>
-                <NoScrollLink passHref href="/work">
-                  <button
-                    className={styles.navigation_button}
-                    // onClick={() => scrollTo("work")}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <MdWeb className={styles.menu_icon} />
-                    Work
-                  </button>
-                </NoScrollLink>
-              </MyButton>
-            </li>
-            <li>
-              <MyButton>
-                <NoScrollLink passHref href="/about">
-                  <button
-                    className={styles.navigation_button}
-                    // onClick={() => scrollTo("about")}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <AiOutlineInfoCircle className={styles.menu_icon} />
-                    About
-                  </button>
-                </NoScrollLink>
-              </MyButton>
-            </li>
-            <li>
-              <MyButton>
+              <NoScrollLink passHref href="/work">
                 <button
-                  onClick={scrollToBottom}
                   className={styles.navigation_button}
-                  id={styles.navigation_button_contact}
+                  // onClick={() => scrollTo("work")}
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  <MdPermContactCalendar className={styles.menu_icon} />
-                  Contact
+                  <MdWeb className={styles.menu_icon} />
+                  Work
                 </button>
-              </MyButton>
+              </NoScrollLink>
+            </li>
+            <li>
+              <NoScrollLink passHref href="/about">
+                <button
+                  className={styles.navigation_button}
+                  // onClick={() => scrollTo("about")}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <AiOutlineInfoCircle className={styles.menu_icon} />
+                  About
+                </button>
+              </NoScrollLink>
+            </li>
+            <li>
+              <button
+                onClick={scrollToBottom}
+                className={styles.navigation_button}
+                id={styles.navigation_button_contact}
+              >
+                <MdPermContactCalendar className={styles.menu_icon} />
+                Contact
+              </button>
             </li>
           </ul>
           <div className={styles.footer_container}>

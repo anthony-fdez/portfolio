@@ -1,6 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import MyButton from "../../myButton/myButton";
+import MyButton from "../../ui/Button/Button";
 import styles from "./jumbo.module.css";
 import { Parallax } from "react-scroll-parallax";
 import Wave from "react-wavify";
@@ -22,16 +22,14 @@ const Jumbo = (): JSX.Element => {
             ]}
           />
 
-          <MyButton>
-            <a
-              target="_blank"
-              href="mailto:anthonyfdez23@gmail.com"
-              className={styles.button}
-              rel="noreferrer"
-            >
-              Contact Me
-            </a>
-          </MyButton>
+          <a
+            target="_blank"
+            href="mailto:anthonyfdez23@gmail.com"
+            className={styles.button}
+            rel="noreferrer"
+          >
+            Contact Me
+          </a>
         </Fade>
 
         <Wave

@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./work.module.css";
 import NoScrollLink from "../../noScrollLink/noScrollLink";
-import MyButton from "../../myButton/myButton";
+import MyButton from "../../ui/Button/Button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Work = (): JSX.Element => {
@@ -15,13 +15,11 @@ const Work = (): JSX.Element => {
         <section className={styles.projects_section}>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/basketball-center">
-                <LazyLoadImage
-                  className={styles.bg_image}
-                  alt="Basketball Center Logo"
-                  src="basketball-center/home.png "
-                />
-              </NoScrollLink>
+              <LazyLoadImage
+                className={styles.bg_image}
+                alt="Basketball Center Logo"
+                src="basketball-center/home.png "
+              />
 
               <div className={styles.project_image_container}>
                 <LazyLoadImage
@@ -41,26 +39,18 @@ const Work = (): JSX.Element => {
                   targeted to specific players with play-by-play info alongside
                   it.
                 </p>
-                <MyButton>
-                  <NoScrollLink passHref href="/basketball-center">
-                    <button className={styles.learn_more_button}>
-                      Learn More
-                    </button>
-                  </NoScrollLink>
-                </MyButton>
+                <button className={styles.learn_more_button}>Learn More</button>
               </div>
             </div>
           </Fade>
           <br></br>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/weeatcode">
-                <LazyLoadImage
-                  className={styles.bg_image}
-                  alt="WeEatCode Logo"
-                  src="weeatcode/1.png "
-                />
-              </NoScrollLink>
+              <LazyLoadImage
+                className={styles.bg_image}
+                alt="WeEatCode Logo"
+                src="weeatcode/1.png "
+              />
 
               <div className={styles.project_image_container}>
                 <LazyLoadImage
@@ -78,26 +68,18 @@ const Work = (): JSX.Element => {
                   under any post and downvote and upvote any post or comment.
                   Among many other features.
                 </p>
-                <MyButton>
-                  <NoScrollLink passHref href="/weeatcode">
-                    <button className={styles.learn_more_button}>
-                      Learn More
-                    </button>
-                  </NoScrollLink>
-                </MyButton>
+                <button className={styles.learn_more_button}>Learn More</button>
               </div>
             </div>
           </Fade>
           <br></br>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/protypist">
-                <LazyLoadImage
-                  className={styles.bg_image}
-                  alt="Basketball Center Logo"
-                  src="protypist/home.png"
-                />
-              </NoScrollLink>
+              <LazyLoadImage
+                className={styles.bg_image}
+                alt="Basketball Center Logo"
+                src="protypist/home.png"
+              />
               <div className={styles.project_image_container}>
                 <LazyLoadImage
                   effect="blur"
@@ -112,26 +94,18 @@ const Work = (): JSX.Element => {
                   ProTypist is a fully featured typing game, with a multiplayer
                   mode and lots of other features
                 </p>
-                <MyButton>
-                  <NoScrollLink passHref href="/protypist">
-                    <button className={styles.learn_more_button}>
-                      Learn More
-                    </button>
-                  </NoScrollLink>
-                </MyButton>
+                <button className={styles.learn_more_button}>Learn More</button>
               </div>
             </div>
           </Fade>
           <br></br>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/algoSaurus">
-                <LazyLoadImage
-                  className={styles.bg_image}
-                  alt="Algo Saurus Logo"
-                  src="algo-saurus/1.webp"
-                />
-              </NoScrollLink>
+              <LazyLoadImage
+                className={styles.bg_image}
+                alt="Algo Saurus Logo"
+                src="algo-saurus/1.webp"
+              />
               <div className={styles.project_image_container}>
                 <LazyLoadImage
                   effect="blur"
@@ -148,13 +122,7 @@ const Work = (): JSX.Element => {
                   algorithms. This project placed top 3 at ShellHacks, one of
                   the largest hackathons at Florida.
                 </p>
-                <MyButton>
-                  <NoScrollLink passHref href="/algoSaurus">
-                    <button className={styles.learn_more_button}>
-                      Learn More
-                    </button>
-                  </NoScrollLink>
-                </MyButton>
+                <button className={styles.learn_more_button}>Learn More</button>
               </div>
             </div>
           </Fade>
@@ -167,13 +135,11 @@ const Work = (): JSX.Element => {
         <section className={styles.projects_section}>
           <Fade>
             <div className={styles.project_container}>
-              <NoScrollLink passHref href="/dls">
-                <LazyLoadImage
-                  className={styles.bg_image}
-                  alt="Basketball Center Logo"
-                  src="dls/home.png"
-                />
-              </NoScrollLink>
+              <LazyLoadImage
+                className={styles.bg_image}
+                alt="Basketball Center Logo"
+                src="dls/home.png"
+              />
 
               <div className={styles.project_image_container}>
                 <LazyLoadImage
@@ -189,13 +155,7 @@ const Work = (): JSX.Element => {
                   DLSFixit is a doors and locks repair and installation company
                   located in the south Florida area.
                 </p>
-                <MyButton>
-                  <NoScrollLink passHref href="/dls">
-                    <button className={styles.learn_more_button}>
-                      Learn More
-                    </button>
-                  </NoScrollLink>
-                </MyButton>
+                <button className={styles.learn_more_button}>Learn More</button>
               </div>
             </div>
           </Fade>
