@@ -18,6 +18,7 @@ import "../styles/ui/NavigationMenu.css";
 
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import ProjectsDialog from "../components/ui/Dialog/Dialog";
 
 const TRANSITION_DURATION = 500;
 
@@ -40,6 +41,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
+        <ProjectsDialog />
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
       <Footer />

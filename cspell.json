@@ -4,9 +4,11 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [
+    "anthony",
     "codebases",
     "downvote",
     "fdez",
+    "fernandez",
     "fixit",
     "Hackathon",
     "hackathons",
@@ -18,7 +20,8 @@
     "upvote",
     "upvoting",
     "webp",
-    "weeatcode"
+    "weeatcode",
+    "zustand"
   ],
   "ignoreWords": [],
   "import": []

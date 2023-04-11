@@ -20,6 +20,7 @@ p {
 .NavigationMenuList {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
@@ -136,8 +137,8 @@ p {
 }
 @media only screen and (min-width: 600px) {
   .List.one {
-    width: 700px;
-    grid-template-columns: 0.75fr 1fr;
+    width: 800px;
+    grid-template-columns: 1fr 1fr;
   }
   .List.two {
     width: 300px;

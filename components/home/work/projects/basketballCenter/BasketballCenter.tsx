@@ -32,11 +32,13 @@ const BasketballCenter = (): JSX.Element => {
         <div className={styles.header}>
           <h1>Basketball Center</h1>
           <p>
-            Basketball Center is a full stack application built for Android and
-            IOS, it provides stats, real time and historical information about
-            players and teams. All the NBA games stats are updated real time as
-            well. It also has a chat built in per game, allowing users to
-            interact with other people and discuss the game.
+            Basketball Center is a sophisticated mobile application designed to
+            keep basketball enthusiasts informed on the latest happenings within
+            the league. The app boasts an array of features, including an
+            in-game chat for real-time discussions, customizable notifications
+            tailored to users&apos; preferred teams and players, and an
+            interactive shot-chart that provides detailed, player-specific data
+            accompanied by play-by-play information.
           </p>
           <br />
           <ul>

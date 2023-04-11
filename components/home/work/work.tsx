@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Dialog from "../../ui/Dialog/Dialog";
 import BasketballCenter from "./projects/basketballCenter/BasketballCenter";
 import styles from "./work.module.css";
 import WeEatCode from "./projects/weeatcode/WeEatCode";
 import AlgoSaurus from "./projects/algoSaurus/AlgoSaurus";
 import Dls from "./projects/dls/Dls";
 import Protypist from "./projects/protypist/Protypist";
+import useGlobalStore from "../../../utils/store/useGlobalStore";
 
 const Work = (): JSX.Element => {
-  const [isMoreInfoModalOpen, setIsMoreInfoModalOpen] = useState(false);
-  const [selectedMoreInfoComponent, setSelectedMoreInfoComponent] =
-    useState<JSX.Element | null>(null);
+  const { setProjects } = useGlobalStore();
 
   const handleOpenMoreInfoDrawer = (component: JSX.Element) => {
-    setIsMoreInfoModalOpen(true);
-    setSelectedMoreInfoComponent(component);
+    setProjects({
+      isModalOpen: true,
+      selectedProjectComponent: component,
+    });
   };
 
   return (
     <div id="work" className={styles.container}>
-      {selectedMoreInfoComponent && (
-        <Dialog setIsOpen={setIsMoreInfoModalOpen} isOpen={isMoreInfoModalOpen}>
-          {selectedMoreInfoComponent}
-        </Dialog>
-      )}
       <Fade>
         <h2 className={styles.header}>My Work.</h2>
       </Fade>

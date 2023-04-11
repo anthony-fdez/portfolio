@@ -1,23 +1,26 @@
 import React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "react-feather";
+import useGlobalStore from "../../../utils/store/useGlobalStore";
 
-interface Props {
-  isOpen: boolean;
-  children: JSX.Element;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+const ProjectsDialog = () => {
+  const { projects, setProjects } = useGlobalStore();
 
-const CustomDialog = ({ isOpen, children, setIsOpen }: Props) => {
+  const handleOpenChange = (isOpen: boolean) => {
+    setProjects({ isModalOpen: isOpen });
+  };
+
   return (
-    <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog.Root open={projects.isModalOpen} onOpenChange={handleOpenChange}>
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay">
           <Dialog.Content className="DialogContent">
-            {children}
+            {projects.selectedProjectComponent}
             <Dialog.Close asChild>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  handleOpenChange(false);
+                }}
                 className="IconButton"
                 aria-label="Close"
               >
@@ -31,4 +34,4 @@ const CustomDialog = ({ isOpen, children, setIsOpen }: Props) => {
   );
 };
 
-export default CustomDialog;
+export default ProjectsDialog;
