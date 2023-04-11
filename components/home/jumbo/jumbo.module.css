@@ -1,7 +1,9 @@
 .container {
   width: 100vw;
-  background-color: var(--main-color);
+  background-color: black;
+  /* background-color: var(--main-color); */
   height: 100vh;
+  position: relative;
 }
 .content {
   display: flex;
@@ -67,8 +69,53 @@
   margin-top: calc(100vh - 150px);
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 10vw 10vh 1000px 60vh rgb(34, 139, 230, 0.4);
+    transform: scaleX(2.5);
+  }
+  20% {
+    box-shadow: 30vw 10vh 1000px 50vh rgb(34, 139, 230, 0.5);
+    transform: scaleX(2);
+  }
+  40% {
+    box-shadow: 20vw 40vh 1000px 30vh rgb(34, 197, 230, 0.4);
+    transform: scaleX(1.7);
+  }
+  60% {
+    box-shadow: 10vw 10vh 1000px 60vh rgb(19, 73, 211, 0.5);
+    transform: scaleX(2.5);
+  }
+  90% {
+    box-shadow: 40vw 20vh 1000px 60vh rgb(14, 104, 178, 0.3);
+    transform: scaleX(2);
+  }
+  100% {
+    box-shadow: 10vw 10vh 1000px 60vh rgb(34, 139, 230, 0.4);
+    transform: scaleX(2.5);
+  }
+}
+
+.glow_1_container {
+  position: absolute;
+}
+
+.glow_1 {
+  box-shadow: 10vw 10vh 1000px 60vh rgb(34, 139, 230, 0.4);
+  transform: scaleX(2.5);
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  z-index: 0;
+  animation: glow 50s infinite !important;
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+}
+
 .wave_bg {
   background-color: rgb(20, 20, 20);
+
   height: 150vh;
   margin-top: -5px;
 }

@@ -4,6 +4,7 @@ import Wave from "react-wavify";
 import AnimatedText from "../../animatedText/animatedText";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import useWindowDimensions from "../../../utils/hooks/useWindowDimentions";
+import { Fade } from "react-awesome-reveal";
 
 const Jumbo = (): JSX.Element => {
   const windowDimensions = useWindowDimensions();
@@ -20,6 +21,13 @@ const Jumbo = (): JSX.Element => {
 
   return (
     <div className={styles.container}>
+      <Fade triggerOnce delay={1500} className={styles.glow_1_container}>
+        <div className={styles.glow_1} />
+      </Fade>
+      <Fade className={styles.glow_2_container}>
+        <div className={styles.glow_2} />
+      </Fade>
+      <div className={styles.glow_2} />
       <div className={styles.content}>
         <AnimatedText
           color="white"
