@@ -7,8 +7,8 @@ import styles from "../../styles/project.module.css";
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
-import { Parallax } from "react-scroll-parallax";
 import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
+import { GitHub } from "react-feather";
 
 const Protypist: NextPage = () => {
   useScrollToTopOnLoad();
@@ -33,13 +33,11 @@ const Protypist: NextPage = () => {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Parallax speed={-50}>
-          <h1 className={styles.background_text_protypist}>
-            DAY LATE MAY SO RIGHT CHANGE LAST INCREASE OWN NEED MUCH WHO COULD
-            OUT GOVERN CALL OPEN INTO WE EVEN SHOW WOULD WE NATION OR GROUP NEW
-            FACT WORK OVER PERSON THIS PLAN MOVE FEEL FACT EYE OR KEEP
-          </h1>
-        </Parallax>
+        <h1 className={styles.background_text_protypist}>
+          DAY LATE MAY SO RIGHT CHANGE LAST INCREASE OWN NEED MUCH WHO COULD OUT
+          GOVERN CALL OPEN INTO WE EVEN SHOW WOULD WE NATION OR GROUP NEW FACT
+          WORK OVER PERSON THIS PLAN MOVE FEEL FACT EYE OR KEEP
+        </h1>
         <Fade>
           <main className={styles.main}>
             <BackToHomeButton />
@@ -85,7 +83,7 @@ const Protypist: NextPage = () => {
               <br></br>
               <h2>Source Code</h2>
               <div className={styles.github_container}>
-                <Github />
+                <GitHub />
                 <a
                   target="_blank"
                   href="https://github.com/anthony-fdez/protypist"

@@ -7,7 +7,6 @@ import styles from "../../styles/project.module.css";
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";
-import { Parallax } from "react-scroll-parallax";
 import { useScrollToTopOnLoad } from "../../utils/useScrollToTopOnLoad";
 
 const AlgoSaurus: NextPage = () => {

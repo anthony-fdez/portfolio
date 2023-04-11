@@ -42,7 +42,9 @@ const Home: NextPage = () => {
         </Head>
 
         <main className={styles.main}>
-          <Jumbo />
+          <div style={{ zIndex: 50 }}>
+            <Jumbo />
+          </div>
           <div
             className={
               scrollPosition > 20
@@ -52,9 +54,11 @@ const Home: NextPage = () => {
           >
             <ChevronDown />
           </div>
-          <About />
-          <Work />
-          <Skills />
+          <div style={{ zIndex: 51 }}>
+            <About />
+            <Work />
+            <Skills />
+          </div>
         </main>
       </div>
     </AnimationWrapper>

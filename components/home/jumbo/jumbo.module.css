@@ -55,15 +55,22 @@
   font-weight: bolder;
   opacity: 0.1;
 }
-.background_text_mobile > span {
-}
-.wave {
-  z-index: 10;
+.wave_container {
   position: absolute;
-  bottom: -10px;
-  width: 100vw !important;
-  max-height: 250px;
-  height: 30%;
+  bottom: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: calc(100vh - 150px);
+}
+
+.wave_bg {
+  background-color: rgb(20, 20, 20);
+  height: 150vh;
+  margin-top: -5px;
 }
 
 @media only screen and (min-width: 901px) {
