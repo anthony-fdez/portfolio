@@ -83,21 +83,21 @@ const NavigationMenuComponent = () => {
             <ul className="List two">
               <ListItem
                 icon={<Mail size={18} />}
-                href="https://icons.radix-ui.com/"
+                href="mailto:anthonyfdez23@gmail.com"
                 title="Email"
               >
                 anthonyfdez23@gmail.com
               </ListItem>
               <ListItem
                 icon={<GitHub size={18} />}
-                href="https://icons.radix-ui.com/"
+                href="https://github.com/anthony-fdez"
                 title="GitHub"
               >
                 anthony-fdez
               </ListItem>
               <ListItem
                 icon={<Linkedin size={18} />}
-                href="https://icons.radix-ui.com/"
+                href="https://www.linkedin.com/in/anthony-fernandez-556622201/"
                 title="LinkedIn"
               >
                 Anthony Fernandez
@@ -149,8 +149,10 @@ const ListItem = React.forwardRef(
             onClick={(e) => {
               if (!href) return e.preventDefault;
             }}
-            // @ts-ignore
+            // @ts-expect-error
             ref={forwardedRef}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {icon && <div className="ListItemIcon">{icon}</div>}
             <div>

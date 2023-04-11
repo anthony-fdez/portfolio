@@ -161,6 +161,10 @@ p {
   display: flex;
   align-items: center;
 }
+.ListItemLink p {
+  line-height: normal !important;
+}
+
 .ListItemIcon {
   margin-right: 15px;
 }
