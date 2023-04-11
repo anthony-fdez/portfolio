@@ -10,6 +10,8 @@ const ProjectsDialog = () => {
     setProjects({ isModalOpen: isOpen });
   };
 
+  if (!projects.selectedProjectComponent) return null;
+
   return (
     <Dialog.Root open={projects.isModalOpen} onOpenChange={handleOpenChange}>
       <Dialog.Portal>

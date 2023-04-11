@@ -2,8 +2,23 @@ import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
 import { ChevronDown, GitHub, Linkedin, Mail } from "react-feather";
+import useGlobalStore from "../../../utils/store/useGlobalStore";
+import BasketballCenter from "../../home/work/projects/basketballCenter/BasketballCenter";
+import WeEatCode from "../../home/work/projects/weeatcode/WeEatCode";
+import Protypist from "../../home/work/projects/protypist/Protypist";
+import AlgoSaurus from "../../home/work/projects/algoSaurus/AlgoSaurus";
+import Dls from "../../home/work/projects/dls/Dls";
 
 const NavigationMenuComponent = () => {
+  const { setProjects } = useGlobalStore();
+
+  const handleOpenProjectModal = (component: JSX.Element) => {
+    setProjects({
+      isModalOpen: true,
+      selectedProjectComponent: component,
+    });
+  };
+
   return (
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
@@ -18,32 +33,44 @@ const NavigationMenuComponent = () => {
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List one">
-              <ListItem href="https://stitches.dev/" title="Basketball Center">
-                Basketball Center is a mobile app that keeps fans updated on
-                league events, offering in-game chat, personalized
-                notifications, and real-time player-specific shot-charts with
-                play-by-play details.
-              </ListItem>
-              <ListItem href="/colors" title="WeEatCode">
-                WeEatCode is a fullstack blog web application. Users can create
-                an account, create a blog post, start a conversation under any
-                post and downvote and upvote any post or comment. Among many
-                other features.
-              </ListItem>
-              <ListItem href="https://icons.radix-ui.com/" title="ProTypist">
-                ProTypist is a fully featured typing game, with a multiplayer
-                mode and lots of other features
-              </ListItem>
-              <ListItem href="https://icons.radix-ui.com/" title="AlgoSaurus">
-                AlgoSaurus is a complex algorithms visualization tool to help
-                people learn the basics about the most famous sorting
-                algorithms. This project placed top 3 at ShellHacks, one of the
-                largest hackathons at Florida.
-              </ListItem>
-              <ListItem href="https://icons.radix-ui.com/" title="DLS Fixit">
-                DLSFixit is a doors and locks repair and installation company
-                located in the south Florida area.
-              </ListItem>
+              <span
+                onClick={() => handleOpenProjectModal(<BasketballCenter />)}
+              >
+                <ListItem title="Basketball Center">
+                  Basketball Center is a mobile app that keeps fans updated on
+                  league events, offering in-game chat, personalized
+                  notifications, and real-time player-specific shot-charts with
+                  play-by-play details.
+                </ListItem>
+              </span>
+              <span onClick={() => handleOpenProjectModal(<WeEatCode />)}>
+                <ListItem title="WeEatCode">
+                  WeEatCode is a fullstack blog web application. Users can
+                  create an account, create a blog post, start a conversation
+                  under any post and downvote and upvote any post or comment.
+                  Among many other features.
+                </ListItem>
+              </span>
+              <span onClick={() => handleOpenProjectModal(<Protypist />)}>
+                <ListItem title="ProTypist">
+                  ProTypist is a fully featured typing game, with a multiplayer
+                  mode and lots of other features
+                </ListItem>
+              </span>
+              <span onClick={() => handleOpenProjectModal(<AlgoSaurus />)}>
+                <ListItem title="AlgoSaurus">
+                  AlgoSaurus is a complex algorithms visualization tool to help
+                  people learn the basics about the most famous sorting
+                  algorithms. This project placed top 3 at ShellHacks, one of
+                  the largest hackathons at Florida.
+                </ListItem>
+              </span>
+              <span onClick={() => handleOpenProjectModal(<Dls />)}>
+                <ListItem title="DLS Fixit">
+                  DLSFixit is a doors and locks repair and installation company
+                  located in the south Florida area.
+                </ListItem>
+              </span>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
@@ -100,24 +127,41 @@ interface ListItemProps {
 }
 
 const ListItem = React.forwardRef(
-  ({ className, children, title, href, icon }: ListItemProps, forwardedRef) => (
-    <li>
-      <NavigationMenu.Link asChild>
-        <a
-          className={classNames("ListItemLink", className)}
-          href={href}
-          // @ts-ignore
-          ref={forwardedRef}
-        >
-          {icon && <div className="ListItemIcon">{icon}</div>}
-          <div>
-            <div className="ListItemHeading">{title}</div>
-            <p className="ListItemText">{children}</p>
-          </div>
-        </a>
-      </NavigationMenu.Link>
-    </li>
-  )
+  (
+    {
+      className,
+      children,
+      title,
+      href,
+      icon,
+
+      ...props
+    }: ListItemProps,
+    forwardedRef
+  ) => {
+    return (
+      <li>
+        <NavigationMenu.Link asChild>
+          <a
+            {...props}
+            className={classNames("ListItemLink", className)}
+            href={href}
+            onClick={(e) => {
+              if (!href) return e.preventDefault;
+            }}
+            // @ts-ignore
+            ref={forwardedRef}
+          >
+            {icon && <div className="ListItemIcon">{icon}</div>}
+            <div>
+              <div className="ListItemHeading">{title}</div>
+              <p className="ListItemText">{children}</p>
+            </div>
+          </a>
+        </NavigationMenu.Link>
+      </li>
+    );
+  }
 );
 
 ListItem.displayName = "ListItem";
