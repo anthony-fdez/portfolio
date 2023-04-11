@@ -9,11 +9,11 @@ const NavigationMenuComponent = () => {
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Learn <ChevronDown className="CaretDown" aria-hidden />
+            Projects <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List one">
-              <li style={{ gridRow: "span 3" }}>
+              <li style={{ gridRow: "span 6" }}>
                 <NavigationMenu.Link asChild>
                   <a className="Callout" href="/">
                     <svg
@@ -59,7 +59,7 @@ const NavigationMenuComponent = () => {
 
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Overview <ChevronDown className="CaretDown" aria-hidden />
+            Contact <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List two">

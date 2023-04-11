@@ -108,11 +108,10 @@ p {
   transform-origin: top center;
   margin-top: 10px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(30, 30, 30);
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
   height: var(--radix-navigation-menu-viewport-height);
   transition: width, height, 300ms ease;
 }
@@ -137,7 +136,7 @@ p {
 }
 @media only screen and (min-width: 600px) {
   .List.one {
-    width: 500px;
+    width: 700px;
     grid-template-columns: 0.75fr 1fr;
   }
   .List.two {
@@ -168,7 +167,7 @@ p {
   box-shadow: 0 0 0 2px var(--secondary-color);
 }
 .ListItemLink:hover {
-  background-color: var(--mauve3);
+  background-color: rgb(50, 50, 50);
 }
 
 .ListItemHeading {
@@ -207,7 +206,7 @@ p {
 .Arrow {
   position: relative;
   top: 70%;
-  background-color: white;
+  background-color: var(--secondary-color);
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
