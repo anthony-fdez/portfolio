@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import styles from "./header.module.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { isMobile } from "react-device-detect";
 import Footer from "../footer/footer";
+import { Book, Mail, Menu, User, X } from "react-feather";
 
-// Icons
-import { MdPermContactCalendar } from "react-icons/md";
-import { MdWeb } from "react-icons/md";
-import { AiOutlineInfoCircle } from "react-icons/ai";
-import MyButton from "../ui/Button/Button";
 import NoScrollLink from "../noScrollLink/noScrollLink";
 
 const sideMenuVariants = {
@@ -75,7 +68,7 @@ const Header = () => {
           onClick={() => setIsMenuOpen(true)}
           className={styles.hamburger_menu}
         >
-          <GiHamburgerMenu />
+          <Menu />
         </span>
 
         <div
@@ -90,7 +83,7 @@ const Header = () => {
           className={styles.nav_container_open}
           initial={false}
         >
-          <AiOutlineClose
+          <X
             onClick={() => setIsMenuOpen(false)}
             className={styles.close_menu_button}
           />
@@ -103,7 +96,7 @@ const Header = () => {
                   // onClick={() => scrollTo("work")}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <MdWeb className={styles.menu_icon} />
+                  <Book className={styles.menu_icon} />
                   Work
                 </button>
               </NoScrollLink>
@@ -115,7 +108,7 @@ const Header = () => {
                   // onClick={() => scrollTo("about")}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <AiOutlineInfoCircle className={styles.menu_icon} />
+                  <User className={styles.menu_icon} />
                   About
                 </button>
               </NoScrollLink>
@@ -126,7 +119,7 @@ const Header = () => {
                 className={styles.navigation_button}
                 id={styles.navigation_button_contact}
               >
-                <MdPermContactCalendar className={styles.menu_icon} />
+                <Mail className={styles.menu_icon} />
                 Contact
               </button>
             </li>

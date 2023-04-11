@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import styles from "./work.module.css";
-import NoScrollLink from "../../noScrollLink/noScrollLink";
-import MyButton from "../../ui/Button/Button";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Dialog from "../../ui/Dialog/Dialog";
+import BasketballCenter from "./projects/basketballCenter/BasketballCenter";
+import styles from "./work.module.css";
+import WeEatCode from "./projects/weeatcode/WeEatCode";
 
 const Work = (): JSX.Element => {
+  const [isMoreInfoModalOpen, setIsMoreInfoModalOpen] = useState(false);
+  const [selectedMoreInfoComponent, setSelectedMoreInfoComponent] =
+    useState<JSX.Element | null>(null);
+
+  const handleOpenMoreInfoDrawer = (component: JSX.Element) => {
+    setIsMoreInfoModalOpen(true);
+    setSelectedMoreInfoComponent(component);
+  };
+
   return (
     <div id="work" className={styles.container}>
+      <Dialog setIsOpen={setIsMoreInfoModalOpen} isOpen={isMoreInfoModalOpen}>
+        {selectedMoreInfoComponent}
+      </Dialog>
       <Fade>
         <h2 className={styles.header}>My Work.</h2>
       </Fade>
@@ -39,7 +52,14 @@ const Work = (): JSX.Element => {
                   targeted to specific players with play-by-play info alongside
                   it.
                 </p>
-                <button className={styles.learn_more_button}>Learn More</button>
+                <button
+                  onClick={() => {
+                    handleOpenMoreInfoDrawer(BasketballCenter);
+                  }}
+                  className={styles.learn_more_button}
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </Fade>
@@ -68,7 +88,14 @@ const Work = (): JSX.Element => {
                   under any post and downvote and upvote any post or comment.
                   Among many other features.
                 </p>
-                <button className={styles.learn_more_button}>Learn More</button>
+                <button
+                  onClick={() => {
+                    handleOpenMoreInfoDrawer(WeEatCode);
+                  }}
+                  className={styles.learn_more_button}
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </Fade>

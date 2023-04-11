@@ -7,9 +7,9 @@ import Skills from "../components/home/skills/skills";
 import Work from "../components/home/work/work";
 import styles from "../styles/Home.module.css";
 
-import { BsChevronDown } from "react-icons/bs";
 import AnimationWrapper from "../components/animationWrapper/animationWrapper";
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
+import { ChevronDown } from "react-feather";
 
 const Home: NextPage = () => {
   useScrollToTopOnLoad();
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
                 : styles.animated_arrow
             }
           >
-            <BsChevronDown />
+            <ChevronDown />
           </div>
           <About />
           <Work />

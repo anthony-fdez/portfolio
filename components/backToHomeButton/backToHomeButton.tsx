@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./backToHomeButton.module.css";
-
-import { IoMdArrowBack } from "react-icons/io";
+import FeatherIcon from "feather-icons-react";
 import { useRouter } from "next/router";
 
 const BackToHomeButton = (): JSX.Element => {
@@ -10,7 +9,7 @@ const BackToHomeButton = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div onClick={() => router.back()} className={styles.button}>
-        <IoMdArrowBack className={styles.icon} />
+        <FeatherIcon className={styles.icon} />
         <p>Back</p>
       </div>
     </div>

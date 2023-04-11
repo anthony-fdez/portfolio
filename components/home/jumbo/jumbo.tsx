@@ -1,8 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import MyButton from "../../ui/Button/Button";
 import styles from "./jumbo.module.css";
-import { Parallax } from "react-scroll-parallax";
 import Wave from "react-wavify";
 import AnimatedText from "../../animatedText/animatedText";
 

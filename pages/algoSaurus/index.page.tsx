@@ -4,8 +4,6 @@ import Head from "next/head";
 import BackToHomeButton from "../../components/backToHomeButton/backToHomeButton";
 import styles from "../../styles/project.module.css";
 
-import { BsGithub } from "react-icons/bs";
-
 import { Fade } from "react-awesome-reveal";
 import ImagesCarousel from "../../components/imagesCarousel/imagesCarousel";
 import AnimationWrapper from "../../components/animationWrapper/animationWrapper";

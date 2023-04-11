@@ -13,6 +13,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+// Global UI styles
+import "../styles/ui/Dialog.css";
+
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 
