@@ -5,6 +5,9 @@ import Dialog from "../../ui/Dialog/Dialog";
 import BasketballCenter from "./projects/basketballCenter/BasketballCenter";
 import styles from "./work.module.css";
 import WeEatCode from "./projects/weeatcode/WeEatCode";
+import AlgoSaurus from "./projects/algoSaurus/AlgoSaurus";
+import Dls from "./projects/dls/Dls";
+import Protypist from "./projects/protypist/Protypist";
 
 const Work = (): JSX.Element => {
   const [isMoreInfoModalOpen, setIsMoreInfoModalOpen] = useState(false);
@@ -18,9 +21,11 @@ const Work = (): JSX.Element => {
 
   return (
     <div id="work" className={styles.container}>
-      <Dialog setIsOpen={setIsMoreInfoModalOpen} isOpen={isMoreInfoModalOpen}>
-        {selectedMoreInfoComponent}
-      </Dialog>
+      {selectedMoreInfoComponent && (
+        <Dialog setIsOpen={setIsMoreInfoModalOpen} isOpen={isMoreInfoModalOpen}>
+          {selectedMoreInfoComponent}
+        </Dialog>
+      )}
       <Fade>
         <h2 className={styles.header}>My Work.</h2>
       </Fade>
@@ -54,7 +59,7 @@ const Work = (): JSX.Element => {
                 </p>
                 <button
                   onClick={() => {
-                    handleOpenMoreInfoDrawer(BasketballCenter);
+                    handleOpenMoreInfoDrawer(<BasketballCenter />);
                   }}
                   className={styles.learn_more_button}
                 >
@@ -90,7 +95,7 @@ const Work = (): JSX.Element => {
                 </p>
                 <button
                   onClick={() => {
-                    handleOpenMoreInfoDrawer(WeEatCode);
+                    handleOpenMoreInfoDrawer(<WeEatCode />);
                   }}
                   className={styles.learn_more_button}
                 >
@@ -121,7 +126,14 @@ const Work = (): JSX.Element => {
                   ProTypist is a fully featured typing game, with a multiplayer
                   mode and lots of other features
                 </p>
-                <button className={styles.learn_more_button}>Learn More</button>
+                <button
+                  onClick={() => {
+                    handleOpenMoreInfoDrawer(<Protypist />);
+                  }}
+                  className={styles.learn_more_button}
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </Fade>
@@ -149,7 +161,14 @@ const Work = (): JSX.Element => {
                   algorithms. This project placed top 3 at ShellHacks, one of
                   the largest hackathons at Florida.
                 </p>
-                <button className={styles.learn_more_button}>Learn More</button>
+                <button
+                  onClick={() => {
+                    handleOpenMoreInfoDrawer(<AlgoSaurus />);
+                  }}
+                  className={styles.learn_more_button}
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </Fade>
@@ -182,7 +201,14 @@ const Work = (): JSX.Element => {
                   DLSFixit is a doors and locks repair and installation company
                   located in the south Florida area.
                 </p>
-                <button className={styles.learn_more_button}>Learn More</button>
+                <button
+                  onClick={() => {
+                    handleOpenMoreInfoDrawer(<Dls />);
+                  }}
+                  className={styles.learn_more_button}
+                >
+                  Learn More
+                </button>
               </div>
             </div>
           </Fade>
