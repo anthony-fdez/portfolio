@@ -18,7 +18,7 @@ import "../styles/ui/NavigationMenu.css";
 
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import ProjectsDialog from "../components/ui/ProjectsDialog/ProjectsDialog";
+import ProjectsDialog from "../components/ProjectsDialog/ProjectsDialog";
 
 const TRANSITION_DURATION = 500;
 

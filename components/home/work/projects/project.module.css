@@ -1,141 +1,45 @@
-@media only screen and (min-width: 901px) {
-  .main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-  }
-  .container {
-    overflow: hidden;
-  }
-  .header {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .header > h1 {
-    color: var(--secondary-color);
-    font-size: 4.5em;
-  }
-  .live_preview_link {
-    margin-bottom: 10px;
-  }
-  .project_info {
-    margin-top: 20px;
-  }
-  .project_info > h2 {
-    margin-bottom: 10px;
-  }
-  .project_info > ul {
-    margin-top: 5px;
-    margin-bottom: 25px;
-  }
-  .github_container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .github_container > svg {
-    font-size: 20px;
-    margin-right: 5px;
-  }
-  .download_container {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-  }
-  .download_container > svg {
-    font-size: 22px;
-    margin-right: 5px;
-  }
-  .background_icon {
-    height: 70vh;
-    width: auto;
-    position: absolute;
-    right: 0px;
-    opacity: 0.03;
-    top: -150px;
-  }
-  .background_text_protypist {
-    position: absolute;
-    font-size: 5rem;
-    top: -150px;
-    width: 120vw;
-    left: -50px;
-    opacity: 0.01;
-  }
+.container {
+  padding: 0px;
+  padding-top: 2rem;
+}
+.header {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+.live_preview_link {
+  margin-top: 10px;
+  margin-top: 10px;
+}
+.paragraph {
+  margin-top: 1rem;
+  text-indent: 10px;
+}
+.secondary_header {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgb(50, 50, 50);
+  padding-bottom: 1rem;
+}
+.tertiary_header {
+  margin-top: 2rem;
+}
+.images_container {
+  margin-top: 1rem;
+}
+.github_container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.link {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.link:hover {
+  opacity: 0.8;
 }
 
-@media only screen and (max-width: 900px) {
-  .main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-  }
+@media only screen and (min-width: 600px) {
   .container {
-    overflow: hidden;
-  }
-  .header {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .header > h1 {
-    font-size: 4em;
-    line-height: 1em;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: var(--secondary-color);
-  }
-  .live_preview_link {
-    margin-bottom: 10px;
-  }
-  .project_info {
-    margin-top: 20px;
-  }
-  .project_info > h2 {
-    margin-bottom: 10px;
-  }
-  .project_info > ul {
-    margin-top: 5px;
-    margin-bottom: 25px;
-  }
-  .github_container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .github_container > svg {
-    font-size: 20px;
-    margin-right: 5px;
-  }
-  .download_container {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-    padding: 5px;
-  }
-  .download_container > svg {
-    font-size: 22px;
-    margin-right: 5px;
-  }
-  .background_icon {
-    height: auto;
-    width: 80vw;
-    position: absolute;
-    right: -100px;
-    opacity: 0.05;
-    top: -150px;
-  }
-  .background_text_protypist {
-    position: absolute;
-    font-size: 5rem;
-    top: -150px;
-    width: 170vw;
-    left: -50px;
-    opacity: 0.015;
-    line-height: 4rem;
+    padding: 1rem;
   }
 }

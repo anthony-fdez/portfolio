@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import styles from "../project.module.css";
 
 import ImagesCarousel from "../../../../imagesCarousel/imagesCarousel";
@@ -14,25 +13,9 @@ const WeEatCode = (): JSX.Element => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>WeEatCode | Anthony Fernandez Developer Portfolio</title>
-        <meta
-          lang="en"
-          name="description"
-          content="Description and information about the project WeEatCode, developed by Anthony Fernandez"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className={styles.main}>
-        <div className={styles.header}>
-          <h1>WeEatCode</h1>
-          <p>
-            WeEatCode is a fullstack blog web application. Users can create an
-            account, create a blog post, start a conversation under any post and
-            downvote and upvote any post or comment.
-          </p>
-        </div>
-        <p className={styles.live_preview_link}>
+        <h1 className={styles.header}>WeEatCode</h1>
+        <span className={styles.live_preview_link}>
           Live Website:{" "}
           <a
             className="link"
@@ -42,28 +25,37 @@ const WeEatCode = (): JSX.Element => {
           >
             https://weeatcode.com/
           </a>
-        </p>
-        <ImagesCarousel images={images} altText="DLSFixit Screenshot" />
-        <div className={styles.project_info}>
-          <h2>Technical details:</h2>
-          <ul>
-            <li>
-              Implemented key infrastructure on the backend and created routes
-              and models to handle user authentication, CRUD actions to the
-              databases such as following users, and upvoting posts.
-            </li>
-            <li>
-              Front End was created with NextJS, so each post created by the
-              users is indexed by google, improving SEO significantly.
-              Implemented a what-you-see-is-what-you-get text editor for
-              creating posts.
-            </li>
-            <li>
-              Created a fully functional comment section with nested comments,
-              similar to reddit.com.
-            </li>
-          </ul>
-          <h2>Technologies used:</h2>
+        </span>
+        <div className={styles.images_container}>
+          <ImagesCarousel images={images} altText="DLSFixit Screenshot" />
+        </div>
+        <div className={styles.paragraph}>
+          <p>
+            WeEatCode is a fullstack blog web application. Users can create an
+            account, create a blog post, start a conversation under any post and
+            downvote and upvote any post or comment.
+          </p>
+        </div>
+
+        <h2 className={styles.secondary_header}>Technical details:</h2>
+        <ul>
+          <li>
+            Implemented key infrastructure on the backend and created routes and
+            models to handle user authentication, CRUD actions to the databases
+            such as following users, and upvoting posts.
+          </li>
+          <li>
+            Front End was created with NextJS, so each post created by the users
+            is indexed by google, improving SEO significantly. Implemented a
+            what-you-see-is-what-you-get text editor for creating posts.
+          </li>
+          <li>
+            Created a fully functional comment section with nested comments,
+            similar to reddit.com.
+          </li>
+        </ul>
+        <h2 className={styles.secondary_header}>Technologies used:</h2>
+        <h3 className={styles.tertiary_header}>
           <a
             className="link"
             href="https://github.com/anthony-fdez/weeatcode-frontend"
@@ -72,28 +64,29 @@ const WeEatCode = (): JSX.Element => {
           >
             Frontend:
           </a>
-          <ul>
-            <li>React</li>
-            <li>Typescript</li>
-            <li>NextJS</li>
-            <li>Redux</li>
-            <li>TipTap Text Editor</li>
-          </ul>
-          <br></br>
+        </h3>
+        <ul>
+          <li>React</li>
+          <li>Typescript</li>
+          <li>NextJS</li>
+          <li>Redux</li>
+          <li>TipTap Text Editor</li>
+        </ul>
+        <h3 className={styles.tertiary_header}>
           <a
             className="link"
             href="https://github.com/anthony-fdez/weeatcode-backend"
             target="_blank"
             rel="noreferrer"
           >
-            Backend
+            Backend:
           </a>
-          <ul>
-            <li>NodeJS</li>
-            <li>PostgreSQL</li>
-            <li>Jest</li>
-          </ul>
-        </div>
+        </h3>
+        <ul>
+          <li>NodeJS</li>
+          <li>PostgreSQL</li>
+          <li>Jest</li>
+        </ul>
       </main>
     </div>
   );

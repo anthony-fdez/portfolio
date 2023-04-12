@@ -13,14 +13,8 @@ const Dls = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <div className={styles.header}>
-          <h1>DLS Fixit</h1>
-          <p>
-            DLS Fixit is an informational website showcasing the the services
-            that the company offers, and information about the company.
-          </p>
-        </div>
-        <p className={styles.live_preview_link}>
+        <h1 className={styles.header}>DLS Fixit</h1>
+        <span className={styles.live_preview_link}>
           Live Website:{" "}
           <a
             className="link"
@@ -30,19 +24,26 @@ const Dls = (): JSX.Element => {
           >
             https://dlsfixit.com/
           </a>
-        </p>
-        <ImagesCarousel images={images} altText="DLSFixit Screenshot" />
-        <div className={styles.project_info}>
-          <h2>Technologies used:</h2>
-          <ul>
-            <li>React</li>
-            <li>Typescript</li>
-            <li>Redux</li>
-            <li>Google Analytics</li>
-            <li>Bootstrap</li>
-          </ul>
-          <br></br>
+        </span>
+        <div className={styles.images_container}>
+          <ImagesCarousel images={images} altText="DLSFixit Screenshot" />
         </div>
+        <div className={styles.paragraph}>
+          <p>
+            DLS Fixit is an informational website showcasing the the services
+            that the company offers, and information about the company.
+          </p>
+        </div>
+
+        <h2 className={styles.secondary_header}>Technologies used:</h2>
+        <ul>
+          <li>React</li>
+          <li>Typescript</li>
+          <li>Redux</li>
+          <li>Google Analytics</li>
+          <li>Bootstrap</li>
+        </ul>
+        <br></br>
       </main>
     </div>
   );
