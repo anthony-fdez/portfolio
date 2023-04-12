@@ -109,7 +109,7 @@ p {
   transform-origin: top center;
   margin-top: 10px;
   width: 100%;
-  background-color: rgb(30, 30, 30);
+  background-color: white;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
@@ -169,17 +169,17 @@ p {
   margin-right: 15px;
 }
 .ListItemLink:focus {
-  box-shadow: 0 0 0 2px var(--secondary-color);
+  box-shadow: 0 0 0 2px white;
 }
 .ListItemLink:hover {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(240, 240, 240);
 }
 
 .ListItemHeading {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 5px;
-  color: var(--violet12);
+  color: var(--secondary-color);
 }
 
 .ListItemText {
@@ -211,7 +211,7 @@ p {
 .Arrow {
   position: relative;
   top: 70%;
-  background-color: var(--secondary-color);
+  background-color: white;
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
