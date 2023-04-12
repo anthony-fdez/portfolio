@@ -57,7 +57,7 @@ const Jumbo = (): JSX.Element => {
           options={{
             height: 30,
             amplitude: 80,
-            speed: 0.15,
+            speed: 0.05,
             points: 3,
           }}
         />
