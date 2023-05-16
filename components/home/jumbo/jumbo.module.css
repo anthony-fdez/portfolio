@@ -57,7 +57,8 @@
   font-weight: bolder;
   opacity: 0.1;
 }
-.wave_container {
+
+.wave_container_hidden {
   position: absolute;
   bottom: 0px;
   top: 0px;
@@ -66,7 +67,19 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: calc(100vh - 150px);
+  margin-top: calc(100vh);
+}
+.wave_container_shown {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: calc(100vh - 200px);
+  transition: margin-top 2s;
 }
 
 @keyframes glow {

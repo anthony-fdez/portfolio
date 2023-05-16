@@ -6,6 +6,7 @@ const useIsLoaded = () => {
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
   return isLoaded;
 };
 

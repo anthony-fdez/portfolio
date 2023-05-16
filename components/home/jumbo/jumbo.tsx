@@ -5,6 +5,7 @@ import AnimatedText from "../../animatedText/animatedText";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import useWindowDimensions from "../../../utils/hooks/useWindowDimentions";
 import { Fade } from "react-awesome-reveal";
+import useIsLoaded from "../../../utils/hooks/useIsLoader";
 
 const Jumbo = (): JSX.Element => {
   const windowDimensions = useWindowDimensions();
@@ -12,6 +13,9 @@ const Jumbo = (): JSX.Element => {
   const { scrollY } = useScroll();
   // @ts-ignore
   const y = useTransform(scrollY, [0, 300], [0, -windowDimensions.height]);
+  const isLoaded = useIsLoaded();
+
+  console.log(isLoaded);
 
   const smoothY = useSpring(y, {
     stiffness: 100,
@@ -49,7 +53,12 @@ const Jumbo = (): JSX.Element => {
           Contact Me
         </a>
       </div>
-      <motion.div style={{ y: smoothY }} className={styles.wave_container}>
+      <motion.div
+        style={{ y: smoothY }}
+        className={
+          isLoaded ? styles.wave_container_shown : styles.wave_container_hidden
+        }
+      >
         <Wave
           className={styles.wave}
           fill="rgb(20,20,20)"
