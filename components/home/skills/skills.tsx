@@ -3,6 +3,51 @@ import { Fade } from "react-awesome-reveal";
 import styles from "./skills.module.css";
 
 const Skills = () => {
+  const skills = [
+    "React JS",
+    "NextJs",
+    "React Native",
+    "NodeJS",
+    "JavaScript",
+    "REST APIs",
+    "CI/CD",
+    "JSON",
+    "Redux",
+    "Zustand",
+    "React Hook Form",
+    "Git/Github",
+    "Linux",
+    "Express JS",
+    "UI Design",
+    "Component Libraries",
+    "Fluent in Spanish",
+    "SQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Firebase",
+    "Supabase",
+    "GraphQL",
+    "TypeScript",
+    "Zod",
+    "Material UI",
+    "Radix Primitives",
+    "SASS",
+    "HTML5/CSS",
+    "Emotion JS",
+    "Styled Components",
+    "Storybook",
+    "Docker",
+    "AWS",
+    "Vercel",
+    "Travis CI",
+    "PHP",
+    "Web sockets",
+    "APIs",
+    "Jest",
+    "React Testing Library",
+    "Content Management Systems (CMS)",
+  ];
+
   return (
     <div className={styles.content}>
       <Fade>
@@ -10,69 +55,11 @@ const Skills = () => {
         <br></br>
         <div className={styles.columns}>
           <ul>
-            <li>
-              <span>HTML5/CSS</span>
-            </li>
-            <li>
-              <span>TypeScript</span>
-            </li>
-            <li>
-              <span>React</span>
-            </li>
-            <li>
-              <span>NextJs</span>
-            </li>
-            <li>
-              <span>React Native</span>
-            </li>
-            <li>
-              <span>NodeJS</span>
-            </li>
-            <li>
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <span>REST APIs</span>
-            </li>
-            <li>
-              <span>JSON</span>
-            </li>
-            <li>
-              <span>Redux</span>
-            </li>
-            <li>
-              <span>Git</span>
-            </li>
-            <li>
-              <span>Linux</span>
-            </li>
-            <li>
-              <span>Express JS</span>
-            </li>
-            <li>
-              <span>UI Design</span>
-            </li>
-            <li>
-              <span>Bootstrap</span>
-            </li>
-            <li>
-              <span>Fluent in Spanish</span>
-            </li>
-            <li>
-              <span>SQL</span>
-            </li>
-            <li>
-              <span>PHP</span>
-            </li>
-            <li>
-              <span>Web sockets</span>
-            </li>
-            <li>
-              <span>APIs</span>
-            </li>
-            <li>
-              <span>Jest</span>
-            </li>
+            {skills.map((skill) => (
+              <li key={`skill-${skill}`}>
+                <span>{skill}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </Fade>
