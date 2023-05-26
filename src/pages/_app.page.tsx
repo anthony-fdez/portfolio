@@ -16,9 +16,9 @@ import "swiper/css/scrollbar";
 import "../styles/ui/Dialog.css";
 import "../styles/ui/NavigationMenu.css";
 
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import ProjectsDialog from "../components/ProjectsDialog/ProjectsDialog";
+import Header from "../components/ui/header/header";
+import Footer from "../components/ui/footer/footer";
+import ProjectsDialog from "../components/ui/ProjectsDialog/ProjectsDialog";
 
 const TRANSITION_DURATION = 500;
 

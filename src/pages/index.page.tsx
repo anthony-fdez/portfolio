@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import About from "../components/home/about/about";
-import Jumbo from "../components/home/jumbo/jumbo";
-import Skills from "../components/home/skills/skills";
-import Work from "../components/home/work/work";
+import About from "../components/sections/about/about";
+import Jumbo from "../components/sections/jumbo/jumbo";
+import Skills from "../components/sections/skills/skills";
+import Work from "../components/sections/work/work";
 import styles from "../styles/Home.module.css";
 
-import AnimationWrapper from "../components/animationWrapper/animationWrapper";
+import AnimationWrapper from "../components/ui/animationWrapper/animationWrapper";
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 import { ChevronDown } from "react-feather";
 

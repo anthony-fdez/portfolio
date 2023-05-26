@@ -1,8 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./footer.module.css";
-
-import MyButton from "../ui/Button/Button";
 import { Code, GitHub, Linkedin, Mail } from "react-feather";
 
 const Contact = () => {

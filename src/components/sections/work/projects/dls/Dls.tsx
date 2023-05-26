@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../project.module.css";
-import ImagesCarousel from "../../../../imagesCarousel/imagesCarousel";
+import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
 
 const Dls = (): JSX.Element => {
   const images: string[] = [

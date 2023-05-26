@@ -2,12 +2,12 @@ import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
 import { ChevronDown, GitHub, Linkedin, Mail } from "react-feather";
-import useGlobalStore from "../../../utils/store/useGlobalStore";
-import BasketballCenter from "../../home/work/projects/basketballCenter/BasketballCenter";
-import WeEatCode from "../../home/work/projects/weeatcode/WeEatCode";
-import Protypist from "../../home/work/projects/protypist/Protypist";
-import AlgoSaurus from "../../home/work/projects/algoSaurus/AlgoSaurus";
-import Dls from "../../home/work/projects/dls/Dls";
+import useGlobalStore from "../../../../utils/store/useGlobalStore";
+import BasketballCenter from "../../../sections/work/projects/basketballCenter/BasketballCenter";
+import WeEatCode from "../../../sections/work/projects/weeatcode/WeEatCode";
+import Protypist from "../../../sections/work/projects/protypist/Protypist";
+import AlgoSaurus from "../../../sections/work/projects/algoSaurus/AlgoSaurus";
+import Dls from "../../../sections/work/projects/dls/Dls";
 
 const NavigationMenuComponent = () => {
   const { setProjects } = useGlobalStore();

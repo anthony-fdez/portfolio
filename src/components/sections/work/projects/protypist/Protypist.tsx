@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import styles from "../project.module.css";
 
 import { GitHub } from "react-feather";
-import ImagesCarousel from "../../../../imagesCarousel/imagesCarousel";
+import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
 
 const Protypist: NextPage = () => {
   const images: string[] = [

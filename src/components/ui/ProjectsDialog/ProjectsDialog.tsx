@@ -1,7 +1,7 @@
 import React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "react-feather";
-import useGlobalStore from "../../utils/store/useGlobalStore";
+import useGlobalStore from "../../../utils/store/useGlobalStore";
 
 const ProjectsDialog = () => {
   const { projects, setProjects } = useGlobalStore();

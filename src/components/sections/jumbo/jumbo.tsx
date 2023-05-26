@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./jumbo.module.css";
 import Wave from "react-wavify";
-import AnimatedText from "../../animatedText/animatedText";
+import AnimatedText from "../../ui/animatedText/animatedText";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import useWindowDimensions from "../../../utils/hooks/useWindowDimentions";
 import { Fade } from "react-awesome-reveal";
