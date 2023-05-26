@@ -10,6 +10,7 @@ import styles from "../styles/Home.module.css";
 import AnimationWrapper from "../components/ui/animationWrapper/animationWrapper";
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 import { ChevronDown } from "react-feather";
+import Work2 from "../components/sections/work2/work2";
 
 const Home: NextPage = () => {
   useScrollToTopOnLoad();
@@ -56,6 +57,7 @@ const Home: NextPage = () => {
           </div>
           <div style={{ zIndex: 51 }}>
             <About />
+            <Work2 />
             <Work />
             <Skills />
           </div>
