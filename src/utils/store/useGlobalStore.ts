@@ -12,7 +12,6 @@ interface IGlobalStateValues {
 
 interface IGlobalState extends IGlobalStateValues {
   setProjects: (state: Partial<IProjects>) => void;
-  setState: (state: Partial<IGlobalStateValues>) => void;
   clearState: () => void;
 }
 
@@ -37,9 +36,6 @@ const useGlobalStore = create<IGlobalState>()(
         }));
       },
 
-      setState: (newState): void => {
-        set((state) => ({ ...state, ...newState }));
-      },
       clearState: (): void => {
         set({ ...initialState });
       },
