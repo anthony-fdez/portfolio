@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
@@ -31,6 +31,29 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         window.history.scrollRestoration = "manual";
       }
     }, 100);
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "Tab") {
+        requestAnimationFrame(() => {
+          const activeElement = document.activeElement;
+
+          if (!activeElement) return;
+
+          const elementRect = activeElement.getBoundingClientRect();
+          const absoluteElementTop = elementRect.top + window.pageYOffset;
+          const middle = absoluteElementTop - window.innerHeight / 2;
+          window.scrollTo({ top: middle, behavior: "smooth" });
+        });
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, []);
 
   return (

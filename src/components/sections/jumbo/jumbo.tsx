@@ -6,6 +6,7 @@ import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import useWindowDimensions from "../../../utils/hooks/useWindowDimentions";
 import { Fade } from "react-awesome-reveal";
 import useIsLoaded from "../../../utils/hooks/useIsLoader";
+import Button from "../../ui/Button/Button";
 
 const Jumbo = (): JSX.Element => {
   const windowDimensions = useWindowDimensions();
@@ -44,6 +45,7 @@ const Jumbo = (): JSX.Element => {
           ]}
         />
 
+        <Button>Contact me</Button>
         <a
           target="_blank"
           href="mailto:anthonyfdez23@gmail.com"
