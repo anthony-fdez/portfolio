@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./work2.module.css";
 import { Fade } from "react-awesome-reveal";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Image from "next/image";
 import { ArrowRight } from "react-feather";
 import Button from "../../ui/Button/Button";
