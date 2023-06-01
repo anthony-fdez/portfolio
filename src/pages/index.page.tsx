@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           <meta
             lang="en"
             name="description"
-            content="Anthony Fernandez, fullstack software engineer with 3+ years of experience building production ready applications."
+            content="Anthony Fernandez, fullstack software engineer with 3+ years of experience building enterprise applications."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -1,6 +1,9 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./about.module.css";
+import * as Accordion from "@radix-ui/react-accordion";
+import AccordionTrigger from "./helpers/AccordionTrigger";
+import AccordionContent from "./helpers/AccordionContent";
 
 const About = (): JSX.Element => {
   return (
@@ -17,54 +20,69 @@ const About = (): JSX.Element => {
           experienced with backend languages and frameworks like NodeJS, as well
           as SQL and noSQL databases.
         </p>
-
-        <h2 className={styles.professional_experience_title}>
-          Professional Experience
-        </h2>
-        <div className={styles.job_container}>
-          <span>Unicity International, 2022-present</span>
-        </div>
-        <div className={styles.job_container}>
-          <span>United Automobile Insurance Company, 2020-2022</span>
-          <h3>Frontend Software Engineer/Analyst</h3>
-
-          <ul>
-            <li>
-              As a front-end engineer, I was assigned to design and develop
-              robust user experiences.
-              <ul>
-                <li>
-                  Designed and developed{" "}
-                  <a
-                    className="link"
-                    target="_blank"
-                    href="https://uaig.net"
-                    rel="noreferrer"
-                  >
-                    a new homepage
-                  </a>
-                  . Built from scratch using ReactJS and TypeScript. With much
-                  improved SEO and user interaction.
-                </li>
-                <li>
-                  Migrated several internal websites and tools from old
-                  codebases to use new technologies, up to the new industry
-                  standards.
-                </li>
-              </ul>
-            </li>
-            <br></br>
-            <li>
-              Integrated backend APIs (PHP, NodeJS, JAVA). And worked with the
-              backend team directly to create the best infrastructure possible
-              for our APIs.
-            </li>
-            <li>
-              Worked with object oriented (OOP) backend codebases in PHP and
-              JAVA
-            </li>
-          </ul>
-        </div>
+        <Accordion.Root
+          className={styles.AccordionRoot}
+          type="single"
+          defaultValue="item-1"
+          collapsible
+        >
+          <Accordion.Item className={styles.AccordionItem} value="item-2">
+            <AccordionTrigger>
+              2022-present Unicity International
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className={styles.job_container}>
+                <h3>Frontend Software Engineer</h3>
+              </div>
+            </AccordionContent>
+          </Accordion.Item>
+          <Accordion.Item className={styles.AccordionItem} value="item-1">
+            <AccordionTrigger>
+              2020-2022 United Automobile Insurance Company
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className={styles.job_container}>
+                <h3>Frontend Software Engineer</h3>
+                <ul>
+                  <li>
+                    As a front-end engineer, I was assigned to design and
+                    develop robust user experiences.
+                    <ul>
+                      <li>
+                        Designed and developed{" "}
+                        <a
+                          className="link"
+                          target="_blank"
+                          href="https://uaig.net"
+                          rel="noreferrer"
+                        >
+                          a new homepage
+                        </a>
+                        . Built from scratch using ReactJS and TypeScript. With
+                        much improved SEO and user interaction.
+                      </li>
+                      <li>
+                        Migrated several internal websites and tools from old
+                        codebases to use new technologies, up to the new
+                        industry standards.
+                      </li>
+                    </ul>
+                  </li>
+                  <br></br>
+                  <li>
+                    Integrated backend APIs (PHP, NodeJS, JAVA). And worked with
+                    the backend team directly to create the best infrastructure
+                    possible for our APIs.
+                  </li>
+                  <li>
+                    Worked with object oriented (OOP) backend codebases in PHP
+                    and JAVA
+                  </li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </Accordion.Item>
+        </Accordion.Root>
       </div>
     </Fade>
   );
