@@ -58,7 +58,12 @@
 .AccordionItem:focus-within {
   position: relative;
   z-index: 1;
-  box-shadow: 0 0 0 2px var(--mauve12);
+  box-shadow: 0 0 20px rgb(10, 10, 10, 0.5);
+}
+
+.AccordionItem:focus-visible {
+  outline: 2px solid var(--third-color);
+  outline-offset: 2px;
 }
 
 .AccordionHeader {
