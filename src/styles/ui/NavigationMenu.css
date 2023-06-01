@@ -38,8 +38,9 @@ p {
   font-size: 15px;
   color: white;
 }
-.NavigationMenuTrigger:focus,
-.NavigationMenuLink:focus {
+
+.NavigationMenuTrigger:focus-within,
+.NavigationMenuLink:focus-within {
   box-shadow: 0 0 0 2px var(--secondary-color);
 }
 .NavigationMenuTrigger:hover,

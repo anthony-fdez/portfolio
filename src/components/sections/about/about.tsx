@@ -23,10 +23,9 @@ const About = (): JSX.Element => {
         <Accordion.Root
           className={styles.AccordionRoot}
           type="single"
-          defaultValue="item-1"
           collapsible
         >
-          <Accordion.Item className={styles.AccordionItem} value="item-2">
+          <Accordion.Item className={styles.AccordionItem} value="item-1">
             <AccordionTrigger>
               2022-present Unicity International
             </AccordionTrigger>
@@ -36,7 +35,7 @@ const About = (): JSX.Element => {
               </div>
             </AccordionContent>
           </Accordion.Item>
-          <Accordion.Item className={styles.AccordionItem} value="item-1">
+          <Accordion.Item className={styles.AccordionItem} value="item-2">
             <AccordionTrigger>
               2020-2022 United Automobile Insurance Company
             </AccordionTrigger>
