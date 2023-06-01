@@ -15,6 +15,9 @@
   outline: 1px solid var(--third-color);
   outline-offset: 2px;
 }
+.button:active {
+  transform: translateY(1px);
+}
 
 .icon_right {
   margin-left: 5px;
