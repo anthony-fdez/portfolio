@@ -161,6 +161,11 @@ p {
   display: flex;
   align-items: center;
 }
+.ListItemLink:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
 .ListItemLink p {
   line-height: normal !important;
 }

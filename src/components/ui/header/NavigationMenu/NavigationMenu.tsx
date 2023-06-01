@@ -33,7 +33,8 @@ const NavigationMenuComponent = () => {
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List one">
-              <span
+              <button
+                tabIndex={-1}
                 onClick={() => handleOpenProjectModal(<BasketballCenter />)}
               >
                 <ListItem title="Basketball Center">
@@ -42,35 +43,48 @@ const NavigationMenuComponent = () => {
                   notifications, and real-time player-specific shot-charts with
                   play-by-play details.
                 </ListItem>
-              </span>
-              <span onClick={() => handleOpenProjectModal(<WeEatCode />)}>
+              </button>
+
+              <button
+                tabIndex={-1}
+                onClick={() => handleOpenProjectModal(<WeEatCode />)}
+              >
                 <ListItem title="WeEatCode">
                   WeEatCode is a fullstack blog web application. Users can
                   create an account, create a blog post, start a conversation
                   under any post and downvote and upvote any post or comment.
                   Among many other features.
                 </ListItem>
-              </span>
-              <span onClick={() => handleOpenProjectModal(<Protypist />)}>
+              </button>
+              <button
+                tabIndex={-1}
+                onClick={() => handleOpenProjectModal(<Protypist />)}
+              >
                 <ListItem title="ProTypist">
                   ProTypist is a fully featured typing game, with a multiplayer
                   mode and lots of other features
                 </ListItem>
-              </span>
-              <span onClick={() => handleOpenProjectModal(<AlgoSaurus />)}>
+              </button>
+              <button
+                tabIndex={-1}
+                onClick={() => handleOpenProjectModal(<AlgoSaurus />)}
+              >
                 <ListItem title="AlgoSaurus">
                   AlgoSaurus is a complex algorithms visualization tool to help
                   people learn the basics about the most famous sorting
                   algorithms. This project placed top 3 at ShellHacks, one of
                   the largest hackathons at Florida.
                 </ListItem>
-              </span>
-              <span onClick={() => handleOpenProjectModal(<Dls />)}>
+              </button>
+              <button
+                tabIndex={-1}
+                onClick={() => handleOpenProjectModal(<Dls />)}
+              >
                 <ListItem title="DLS Fixit">
                   DLSFixit is a doors and locks repair and installation company
                   located in the south Florida area.
                 </ListItem>
-              </span>
+              </button>
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
@@ -143,6 +157,7 @@ const ListItem = React.forwardRef(
       <li>
         <NavigationMenu.Link asChild>
           <a
+            tabIndex={1}
             {...props}
             className={classNames("ListItemLink", className)}
             href={href}
