@@ -7,6 +7,7 @@ import useWindowDimensions from "../../../utils/hooks/useWindowDimentions";
 import { Fade } from "react-awesome-reveal";
 import useIsLoaded from "../../../utils/hooks/useIsLoader";
 import Button from "../../ui/Button/Button";
+import { Mail } from "react-feather";
 
 const Jumbo = (): JSX.Element => {
   const windowDimensions = useWindowDimensions();
@@ -45,14 +46,18 @@ const Jumbo = (): JSX.Element => {
           ]}
         />
 
-        <Button>Contact me</Button>
         <a
           target="_blank"
           href="mailto:anthonyfdez23@gmail.com"
-          className={styles.button}
           rel="noreferrer"
         >
-          Contact Me
+          <Button
+            iconRight={
+              <Mail style={{ marginLeft: 10, marginRight: 5 }} size={18} />
+            }
+          >
+            Contact me
+          </Button>
         </a>
       </div>
       <motion.div
