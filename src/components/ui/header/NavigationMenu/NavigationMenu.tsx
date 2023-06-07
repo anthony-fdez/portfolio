@@ -1,13 +1,9 @@
-import React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import classNames from "classnames";
+import React from "react";
 import { ChevronDown, GitHub, Linkedin, Mail } from "react-feather";
-import useGlobalStore from "../../../../utils/store/useGlobalStore";
-import BasketballCenter from "../../../sections/work/projects/basketballCenter/BasketballCenter";
-import WeEatCode from "../../../sections/work/projects/weeatcode/WeEatCode";
-import Protypist from "../../../sections/work/projects/protypist/Protypist";
-import AlgoSaurus from "../../../sections/work/projects/algoSaurus/AlgoSaurus";
 import projects from "../../../../constants/projects";
+import useGlobalStore from "../../../../utils/store/useGlobalStore";
 
 const NavigationMenuComponent = () => {
   const { setProjects } = useGlobalStore();
@@ -33,39 +29,21 @@ const NavigationMenuComponent = () => {
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List one">
-              <button
-                tabIndex={-1}
-                onClick={() => handleOpenProjectModal(<BasketballCenter />)}
-              >
-                <ListItem title="Basketball Center">
-                  {projects.basketballCenter.description}
-                </ListItem>
-              </button>
+              {Object.keys(projects).map((item) => {
+                const project = projects[item];
 
-              <button
-                tabIndex={-1}
-                onClick={() => handleOpenProjectModal(<WeEatCode />)}
-              >
-                <ListItem title="WeEatCode">
-                  {projects.weEatCode.description}
-                </ListItem>
-              </button>
-              <button
-                tabIndex={-1}
-                onClick={() => handleOpenProjectModal(<Protypist />)}
-              >
-                <ListItem title="ProTypist">
-                  {projects.proTypist.description}
-                </ListItem>
-              </button>
-              <button
-                tabIndex={-1}
-                onClick={() => handleOpenProjectModal(<AlgoSaurus />)}
-              >
-                <ListItem title="AlgoSaurus">
-                  {projects.algoSaurus.description}
-                </ListItem>
-              </button>
+                return (
+                  <button
+                    key={project.name}
+                    tabIndex={-1}
+                    onClick={() => handleOpenProjectModal(project.component)}
+                  >
+                    <ListItem title={project.name}>
+                      {projects.basketballCenter.description}
+                    </ListItem>
+                  </button>
+                );
+              })}
             </ul>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
