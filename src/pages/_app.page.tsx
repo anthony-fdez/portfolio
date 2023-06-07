@@ -20,6 +20,7 @@ import Header from "../components/ui/header/header";
 import Footer from "../components/ui/footer/footer";
 import ProjectsDialog from "../components/ui/ProjectsDialog/ProjectsDialog";
 import { MDXProvider } from "@mdx-js/react";
+import MDXComponents from "../components/ui/MDX/components";
 
 const TRANSITION_DURATION = 500;
 
@@ -59,7 +60,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
-      <MDXProvider>
+      <MDXProvider components={MDXComponents}>
         <Header />
         <AnimatePresence
           exitBeforeEnter

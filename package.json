@@ -16,6 +16,7 @@
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dialog": "^1.0.3",
     "@radix-ui/react-navigation-menu": "^1.1.2",
+    "@types/mdx": "^2.0.5",
     "classnames": "^2.3.2",
     "embla-carousel-react": "^8.0.0-rc05",
     "framer-motion": "^7.2.0",
@@ -36,7 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "17.0.33",
-    "@types/react": "17.0.2",
+    "@types/react": "^17.0.2",
     "@types/react-dom": "17.0.2",
     "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/react-responsive-masonry": "^2.1.0",
