@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../work2.module.css";
+import styles from "../work.module.css";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 import { ArrowRight } from "react-feather";

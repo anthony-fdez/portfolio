@@ -4,13 +4,12 @@ import Head from "next/head";
 import About from "../components/sections/about/about";
 import Jumbo from "../components/sections/jumbo/jumbo";
 import Skills from "../components/sections/skills/skills";
-import Work from "../components/sections/work/work";
 import styles from "../styles/Home.module.css";
 
 import AnimationWrapper from "../components/ui/animationWrapper/animationWrapper";
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 import { ChevronDown } from "react-feather";
-import Work2 from "../components/sections/work2/work2";
+import Work from "../components/sections/work/work";
 
 const Home: NextPage = () => {
   useScrollToTopOnLoad();
@@ -57,7 +56,6 @@ const Home: NextPage = () => {
           </div>
           <div style={{ zIndex: 51 }}>
             <About />
-            <Work2 />
             <Work />
             <Skills />
           </div>
