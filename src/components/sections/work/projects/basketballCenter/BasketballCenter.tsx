@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../project.module.css";
 
 import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
+import Alert from "../../../../ui/alert/Alert";
 
 const BasketballCenter = (): JSX.Element => {
   const images: string[] = [
@@ -19,6 +20,7 @@ const BasketballCenter = (): JSX.Element => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.header}>Basketball Center</h1>
+        <Alert title="Damn tahts too bad">test alert</Alert>
         <div className={styles.images_container}>
           <ImagesCarousel
             orientation="portrait"
