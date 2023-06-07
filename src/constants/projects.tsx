@@ -16,7 +16,7 @@ const projects: Record<string, IProject> = {
   basketballCenter: {
     name: "Basketball Center",
     bgImage: "basketball-center/home.png",
-    iconImage: "logos/BBALL_CENTER.png",
+    iconImage: "/logos/BBALL_CENTER.png",
     component: <BasketballCenter />,
     description: `Basketball Center is a mobile app built to help basketball
       fans to stay up to date with everything in the league.
@@ -27,8 +27,8 @@ const projects: Record<string, IProject> = {
   },
   weEatCode: {
     name: "WeEatCode",
-    bgImage: "basketball-center/home.png",
-    iconImage: "logos/BBALL_CENTER.png",
+    bgImage: "logos/weeatcode.png",
+    iconImage: "/logos/weeatcode.png",
     component: <WeEatCode />,
     description: `WeEatCode is a fullstack blog web application. Users can
     create an account, create a blog post, start a conversation
@@ -38,7 +38,7 @@ const projects: Record<string, IProject> = {
   proTypist: {
     name: "ProTypist",
     bgImage: "basketball-center/home.png",
-    iconImage: "logos/BBALL_CENTER.png",
+    iconImage: "/logos/protypist.png",
     component: <Protypist />,
     description: `ProTypist is a fully featured typing game, with a multiplayer
     mode and lots of other features`,
@@ -46,7 +46,7 @@ const projects: Record<string, IProject> = {
   algoSaurus: {
     name: "AlgoSaurus",
     bgImage: "basketball-center/home.png",
-    iconImage: "logos/BBALL_CENTER.png",
+    iconImage: "/logos/dino.gif",
     component: <AlgoSaurus />,
     description: `AlgoSaurus is a complex algorithms visualization tool to help
     people learn the basics about the most famous sorting
