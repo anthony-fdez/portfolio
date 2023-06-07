@@ -15,19 +15,6 @@ const withMDX = require("@next/mdx")({
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["page.tsx", "page.ts"],
-  webpack: (
-    config,
-    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
-  ) => {
-    return {
-      rules: [
-        {
-          test: /\.mdx$/,
-          use: ["babel-loader", "@mdx-js/loader"],
-        },
-      ],
-    };
-  },
 };
 
 module.exports = withMDX(nextConfig);
