@@ -8,6 +8,7 @@ import WeEatCode from "../../../sections/work/projects/weeatcode/WeEatCode";
 import Protypist from "../../../sections/work/projects/protypist/Protypist";
 import AlgoSaurus from "../../../sections/work/projects/algoSaurus/AlgoSaurus";
 import Dls from "../../../sections/work/projects/dls/Dls";
+import projects from "../../../../constants/projects";
 
 const NavigationMenuComponent = () => {
   const { setProjects } = useGlobalStore();
@@ -38,10 +39,7 @@ const NavigationMenuComponent = () => {
                 onClick={() => handleOpenProjectModal(<BasketballCenter />)}
               >
                 <ListItem title="Basketball Center">
-                  Basketball Center is a mobile app that keeps fans updated on
-                  league events, offering in-game chat, personalized
-                  notifications, and real-time player-specific shot-charts with
-                  play-by-play details.
+                  {projects.basketballCenter.description}
                 </ListItem>
               </button>
 
