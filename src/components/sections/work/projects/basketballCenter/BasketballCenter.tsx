@@ -3,6 +3,7 @@ import styles from "../project.module.css";
 
 import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
 import Alert from "../../../../ui/alert/Alert";
+import BasketballCenterMDX from "./BasketballCenterMDX.mdx";
 
 const BasketballCenter = (): JSX.Element => {
   const images: string[] = [
@@ -20,6 +21,7 @@ const BasketballCenter = (): JSX.Element => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.header}>Basketball Center</h1>
+        <BasketballCenterMDX />
         <Alert title="Damn tahts too bad">test alert</Alert>
         <div className={styles.images_container}>
           <ImagesCarousel

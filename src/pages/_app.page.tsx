@@ -19,6 +19,7 @@ import "../styles/ui/NavigationMenu.css";
 import Header from "../components/ui/header/header";
 import Footer from "../components/ui/footer/footer";
 import ProjectsDialog from "../components/ui/ProjectsDialog/ProjectsDialog";
+import { MDXProvider } from "@mdx-js/react";
 
 const TRANSITION_DURATION = 500;
 
@@ -58,16 +59,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
-      <Header />
-      <AnimatePresence
-        exitBeforeEnter
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
-        <ProjectsDialog />
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
-      <Footer />
+      <MDXProvider>
+        <Header />
+        <AnimatePresence
+          exitBeforeEnter
+          initial={false}
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+          <ProjectsDialog />
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
+        <Footer />
+      </MDXProvider>
     </>
   );
 }
