@@ -7,7 +7,6 @@ import BasketballCenter from "../../../sections/work/projects/basketballCenter/B
 import WeEatCode from "../../../sections/work/projects/weeatcode/WeEatCode";
 import Protypist from "../../../sections/work/projects/protypist/Protypist";
 import AlgoSaurus from "../../../sections/work/projects/algoSaurus/AlgoSaurus";
-import Dls from "../../../sections/work/projects/dls/Dls";
 import projects from "../../../../constants/projects";
 
 const NavigationMenuComponent = () => {
@@ -48,10 +47,7 @@ const NavigationMenuComponent = () => {
                 onClick={() => handleOpenProjectModal(<WeEatCode />)}
               >
                 <ListItem title="WeEatCode">
-                  WeEatCode is a fullstack blog web application. Users can
-                  create an account, create a blog post, start a conversation
-                  under any post and downvote and upvote any post or comment.
-                  Among many other features.
+                  {projects.weEatCode.description}
                 </ListItem>
               </button>
               <button
@@ -59,8 +55,7 @@ const NavigationMenuComponent = () => {
                 onClick={() => handleOpenProjectModal(<Protypist />)}
               >
                 <ListItem title="ProTypist">
-                  ProTypist is a fully featured typing game, with a multiplayer
-                  mode and lots of other features
+                  {projects.proTypist.description}
                 </ListItem>
               </button>
               <button
@@ -68,19 +63,7 @@ const NavigationMenuComponent = () => {
                 onClick={() => handleOpenProjectModal(<AlgoSaurus />)}
               >
                 <ListItem title="AlgoSaurus">
-                  AlgoSaurus is a complex algorithms visualization tool to help
-                  people learn the basics about the most famous sorting
-                  algorithms. This project placed top 3 at ShellHacks, one of
-                  the largest hackathons at Florida.
-                </ListItem>
-              </button>
-              <button
-                tabIndex={-1}
-                onClick={() => handleOpenProjectModal(<Dls />)}
-              >
-                <ListItem title="DLS Fixit">
-                  DLSFixit is a doors and locks repair and installation company
-                  located in the south Florida area.
+                  {projects.algoSaurus.description}
                 </ListItem>
               </button>
             </ul>
