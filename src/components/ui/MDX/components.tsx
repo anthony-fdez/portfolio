@@ -1,4 +1,5 @@
 import Heading from "./Heading/Heading";
+import Link from "./Link/Link";
 import Text from "./Text/Text";
 
 const MDXComponents = {
@@ -8,6 +9,7 @@ const MDXComponents = {
   h4: Heading.H4,
   h5: Heading.H5,
   p: Text,
+  a: Link,
 };
 
 export default MDXComponents;
