@@ -39,7 +39,7 @@ const NavigationMenuComponent = () => {
                     onClick={() => handleOpenProjectModal(project.component)}
                   >
                     <ListItem title={project.name}>
-                      {projects.basketballCenter.description}
+                      {project.description}
                     </ListItem>
                   </button>
                 );
