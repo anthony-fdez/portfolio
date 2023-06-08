@@ -39,21 +39,20 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                My LinkedIn Profile
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <Code className={styles.icon} />
+              <a
+                target="_blank"
+                href="https://github.com/anthony-fdez/portfolio"
+                rel="noreferrer"
+              >
+                This site's source code
               </a>
             </li>
           </ul>
-          <br></br>
-          <div className={styles.this_page_source_container}>
-            <Code />
-            <a
-              target="_blank"
-              href="https://github.com/anthony-fdez/portfolio"
-              rel="noreferrer"
-            >
-              See source code.
-            </a>
-          </div>
         </div>
       </Fade>
     </footer>

@@ -12,8 +12,8 @@
 }
 
 .button:focus-visible {
-  outline: 1px solid var(--third-color);
-  outline-offset: 2px;
+  outline: 2px solid var(--third-color);
+  outline-offset: 3px;
 }
 .button:active {
   transform: translateY(1px);
