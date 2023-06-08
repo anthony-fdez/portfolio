@@ -16,7 +16,11 @@
     "incremental": true,
     "baseUrl": "./src",
     "paths": {
-      "@/components/*": ["components/*"]
+      "@/projects/*": ["components/sections/work/projects/*"],
+      "@/mdx/*": ["components/ui/MDX/*"],
+      "@/ui/*": ["components/ui/*"],
+      "@/components/*": ["components/*"],
+      "@/sections/*": ["components/sections/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
