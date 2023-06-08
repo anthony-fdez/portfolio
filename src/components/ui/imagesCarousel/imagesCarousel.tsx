@@ -17,7 +17,7 @@ const ImagesCarousel = ({
   orientation = "landscape",
 }: Props): JSX.Element => {
   return (
-    <>
+    <div style={{ marginTop: "2rem" }}>
       <Swiper
         // modules={[Navigation, Pagination, Scrollbar, A11y]}
         modules={[Navigation]}
@@ -53,7 +53,7 @@ const ImagesCarousel = ({
         })}
       </Swiper>
       <p></p>
-    </>
+    </div>
   );
 };
 

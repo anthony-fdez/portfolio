@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../project.module.css";
 
-import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
+import ImagesCarousel from "../../../../ui/imagesCarousel/ImagesCarousel";
 
 const WeEatCode = (): JSX.Element => {
   const images: string[] = [

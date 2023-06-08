@@ -20,7 +20,8 @@
       "@/mdx/*": ["components/ui/MDX/*"],
       "@/ui/*": ["components/ui/*"],
       "@/components/*": ["components/*"],
-      "@/sections/*": ["components/sections/*"]
+      "@/sections/*": ["components/sections/*"],
+      "@/constants/*": ["constants/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
