@@ -2,6 +2,9 @@
   display: flex;
   padding: 15px;
   border-radius: 5px;
+  background-color: #e245301b;
+  color: #e24630;
+  margin-top: 1rem;
 }
 .icon_container {
   margin-right: 15px;

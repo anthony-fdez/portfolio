@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Zoom from "react-medium-image-zoom";
 import { Navigation } from "swiper";
 import styles from "./imagesCarousel.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -36,18 +35,16 @@ const ImagesCarousel = ({
                   : styles.slide_landscape
               }
             >
-              <Zoom>
-                <LazyLoadImage
-                  effect="blur"
-                  className={
-                    orientation === "portrait"
-                      ? styles.image_portrait
-                      : styles.image_landscape
-                  }
-                  alt={altText}
-                  src={image}
-                />
-              </Zoom>
+              <LazyLoadImage
+                effect="blur"
+                className={
+                  orientation === "portrait"
+                    ? styles.image_portrait
+                    : styles.image_landscape
+                }
+                alt={altText}
+                src={image}
+              />
             </SwiperSlide>
           );
         })}

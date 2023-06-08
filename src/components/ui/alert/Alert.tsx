@@ -9,13 +9,7 @@ interface IAlertProps {
 
 const Alert = ({ title, children }: IAlertProps) => {
   return (
-    <div
-      style={{
-        backgroundColor: "#e245301b",
-        color: "#e24630",
-      }}
-      className={styles.container}
-    >
+    <div className={styles.container}>
       <div className={styles.icon_container}>
         <AlertCircle size={20} />
       </div>
