@@ -8,13 +8,6 @@ const BasketballCenter = (): JSX.Element => {
     <div className={styles.container}>
       <main className={styles.main}>
         <BasketballCenterMDX />
-        {/* <div className={styles.images_container}>
-          <ImagesCarousel
-            orientation="portrait"
-            images={images}
-            altText={"Basketball Center Screenshot"}
-          />
-        </div> */}
       </main>
     </div>
   );

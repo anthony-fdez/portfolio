@@ -41,7 +41,12 @@ const projects: Record<string, IProject> = {
     bgImage: "logos/weeatcode.png",
     iconImage: "/logos/weeatcode.png",
     component: <WeEatCode />,
-    images: [],
+    images: [
+      "/weeatcode/1.png",
+      "/weeatcode/2.png",
+      "/weeatcode/3.png",
+      "/weeatcode/4.png",
+    ],
     description: `WeEatCode is a fullstack blog web application. Users can
     create an account, create a blog post, start a conversation
     under any post and downvote and upvote any post or comment.
@@ -52,7 +57,13 @@ const projects: Record<string, IProject> = {
     bgImage: "basketball-center/home.png",
     iconImage: "/logos/protypist.png",
     component: <Protypist />,
-    images: [],
+    images: [
+      "/protypist/1.png",
+      "/protypist/2.png",
+      "/protypist/3.png",
+      "/protypist/4.png",
+      "/protypist/5.png",
+    ],
     description: `ProTypist is a fully featured typing game, with a multiplayer
     mode and lots of other features`,
   },
@@ -61,7 +72,12 @@ const projects: Record<string, IProject> = {
     bgImage: "basketball-center/home.png",
     iconImage: "/logos/dino.gif",
     component: <AlgoSaurus />,
-    images: [],
+    images: [
+      "/algo-saurus/1.webp",
+      "/algo-saurus/2.webp",
+      "/algo-saurus/3.webp",
+      "/algo-saurus/4.webp",
+    ],
     description: `AlgoSaurus is a complex algorithms visualization tool to help
     people learn the basics about the most famous sorting
     algorithms. This project placed top 3 at ShellHacks, one of
