@@ -1,0 +1,49 @@
+import Alert from "@/ui/alert/Alert";
+import ImagesCarousel from "@/ui/imagesCarousel/ImagesCarousel";
+import projects from "@/constants/projects";
+
+# WeEatCode
+
+<ImagesCarousel
+  images={projects.weEatCode.images}
+  altText={"AlgoSaurus carousel"}
+/>
+
+WeEatCode is a fullstack blog web application. Users can create an
+account, create a blog post, start a conversation under any post and
+downvote and upvote any post or comment.
+
+The comment section was inspired by reddit, with infiiitely nestted comments.
+
+## Tech Stack
+
+### Frontend
+
+Front End was created with NextJS, so each post created by the users
+is indexed by google, improving SEO significantly. Implemented a
+what-you-see-is-what-you-get text editor for creating posts.
+
+- React
+- Typescript
+- NextJS
+- Redux
+- TipTap WYSIWYG Editor
+
+### Backend
+
+Implemented key infrastructure on the backend and created routes and
+models to handle user authentication, CRUD actions to the databases
+such as following users, and upvoting posts.
+
+- NodeJS
+- Express
+- PostgreSQL
+- Jest
+
+## Sources
+
+Unfortunatly, the website is no longer live (turns out its not really a smart finantial move to have QA and Prod instances and database, and no one using it), but you can still check
+out the source code, and run it locally if you want!
+
+- [Backend Source Code](https://github.com/anthony-fdez/weeatcode-backend)
+- [Frontend Source Code](https://github.com/anthony-fdez/weeatcode-frontend)
