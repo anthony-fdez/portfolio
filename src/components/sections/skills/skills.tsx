@@ -12,9 +12,7 @@ const Skills = () => {
         <div className={styles.columns}>
           <ul>
             {skills.map((skill) => (
-              <li key={`skill-${skill}`}>
-                <span>{skill}</span>
-              </li>
+              <li key={`skill-${skill}`}>{skill}</li>
             ))}
           </ul>
         </div>
