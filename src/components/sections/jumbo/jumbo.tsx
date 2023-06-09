@@ -68,15 +68,22 @@ const Jumbo = (): JSX.Element => {
       >
         <Wave
           className={styles.wave}
-          fill="rgb(20,20,20)"
+          fill="url(#gradient)"
           paused={false}
           options={{
-            height: 30,
-            amplitude: 80,
+            height: 10,
+            amplitude: 50,
             speed: 0.05,
-            points: 3,
+            points: 5,
           }}
-        />
+        >
+          <defs>
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+              <stop offset="10%" stopColor="rgb(10,10,10)" />
+              <stop offset="90%" stopColor="black" />
+            </linearGradient>
+          </defs>
+        </Wave>
         <div className={styles.wave_bg} />
       </motion.div>
     </div>

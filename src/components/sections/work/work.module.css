@@ -14,7 +14,7 @@
 .item {
   /* width: 100%; */
   position: relative;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(10, 10, 10);
   border: 1px solid rgb(40, 40, 40);
   padding: 15px;
   border-radius: 5px;

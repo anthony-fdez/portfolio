@@ -3,6 +3,7 @@
   position: absolute;
   width: 100%;
   left: 0px;
+  border-top: 1px solid rgb(40, 40, 40);
 }
 .contact_content > h1 {
   color: var(--third-color);

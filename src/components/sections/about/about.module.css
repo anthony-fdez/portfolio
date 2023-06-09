@@ -19,7 +19,6 @@
 
 .job_container {
   padding: 1rem;
-  border-left: 3px solid rgb(100, 100, 100);
 }
 .job_container h3 {
   font-size: 1.5rem;
@@ -82,19 +81,21 @@
   font-size: 15px;
   line-height: 1;
   color: white;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
 .AccordionTrigger:hover {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(15, 15, 15);
+  transition: 200ms;
 }
 
 .AccordionContent {
   overflow: hidden;
   font-size: 15px;
   color: white;
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(10, 10, 10);
+  border: 1px solid rgb(40, 40, 40);
 }
 .AccordionContent[data-state="open"] {
   animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);

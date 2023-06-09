@@ -30,11 +30,13 @@ input {
 
 .DialogContent {
   width: 90vw;
-  background: rgb(20, 20, 20);
+  background: rgb(0, 0, 0);
   padding: 30px;
+  border: 1px solid rgb(40, 40, 40);
+  box-shadow: 0px 0px 500px rgb(255, 255, 255, 0.1);
   border-radius: 5px;
   max-width: 900px;
-  animation: contentShow 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  animation: contentShow 1000ms cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
 }
 .DialogContent:focus {

@@ -8,7 +8,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ children, iconRight, ...args }: Props): JSX.Element => {
   return (
-    <button {...args} className={styles.button}>
+    <button style={{ color: "white" }} {...args} className={styles.button}>
       {children}
       {iconRight && <div className={styles.icon_right}>{iconRight}</div>}
     </button>
