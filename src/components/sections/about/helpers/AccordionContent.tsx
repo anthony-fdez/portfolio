@@ -13,6 +13,7 @@ const AccordionContent = React.forwardRef(
     <Accordion.Content
       className={classNames(styles.AccordionContent, className)}
       {...props}
+      // @ts-ignore
       ref={forwardedRef}
     >
       <div className={styles.AccordionContentText}>{children}</div>
