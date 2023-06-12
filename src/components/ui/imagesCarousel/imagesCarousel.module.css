@@ -7,11 +7,15 @@
     width: 100%;
   }
   .slide_landscape {
-    width: 500px !important;
+    width: 560px !important;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
   }
   .image_landscape {
-    height: 100%;
+    height: 400px;
     width: 100%;
+    object-fit: contain;
   }
 }
 

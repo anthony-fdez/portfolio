@@ -1,6 +1,7 @@
 import AlgoSaurus from "@/projects/algoSaurus/AlgoSaurus";
 import BasketballCenter from "@/projects/basketballCenter/BasketballCenter";
 import Protypist from "@/projects/protypist/Protypist";
+import SupaMessenger from "@/projects/supaMessenger/SupaMessenger";
 import WeEatCode from "@/projects/weeatcode/WeEatCode";
 import React from "react";
 
@@ -14,6 +15,22 @@ export interface IProject {
 }
 
 const projects: Record<string, IProject> = {
+  supaMessenger: {
+    name: "Supa Messenger",
+    bgImage: "",
+    iconImage: "/logos/supaMessenger.svg",
+    component: <SupaMessenger />,
+    images: [
+      "/supa-messenger/1.png",
+      "/supa-messenger/2.png",
+      "/supa-messenger/3.png",
+      "/supa-messenger/4.png",
+    ],
+    description: `Supa Messenger is a fullstack chat application. Users can
+    create an account, create a chat room, start a conversation
+    under any chat room and send messages to other users in real
+    time. Among many other features.`,
+  },
   basketballCenter: {
     name: "Basketball Center",
     bgImage: "basketball-center/home.png",
