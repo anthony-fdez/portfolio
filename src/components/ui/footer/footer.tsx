@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./footer.module.css";
-import { Code, GitHub, Linkedin, Mail } from "react-feather";
+import { GitHub, Linkedin, Mail } from "react-feather";
 
 const Contact = () => {
   return (
@@ -42,17 +42,21 @@ const Contact = () => {
                 LinkedIn
               </a>
             </li>
-            <li>
-              <Code className={styles.icon} />
+          </ul>
+          <div className={styles.footer_text}>
+            <p>
+              Made it to the bottom, huh? Nice! If you liked what you saw, why
+              not take a peek under the hood? Check out my{" "}
               <a
                 target="_blank"
-                href="https://github.com/anthony-fdez/portfolio"
                 rel="noreferrer"
+                href="https://github.com/anthony-fdez/portfolio"
+                style={{ color: "var(--secondary-color)" }}
               >
-                This site's source code
+                source code!
               </a>
-            </li>
-          </ul>
+            </p>
+          </div>
         </div>
       </Fade>
     </footer>

@@ -49,7 +49,6 @@ const ImagesCarousel = ({
           );
         })}
       </Swiper>
-      <p></p>
     </div>
   );
 };
