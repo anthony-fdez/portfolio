@@ -1,9 +1,9 @@
-import AlgoSaurus from "@/projects/algoSaurus/AlgoSaurus";
-import BasketballCenter from "@/projects/basketballCenter/BasketballCenter";
-import Protypist from "@/projects/protypist/Protypist";
-import SupaMessenger from "@/projects/supaMessenger/SupaMessenger";
-import WeEatCode from "@/projects/weeatcode/WeEatCode";
 import React from "react";
+import SupaMessenger from "../components/sections/work/projects/supaMessenger/SupaMessenger";
+import BasketballCenter from "../components/sections/work/projects/basketballCenter/BasketballCenter";
+import WeEatCode from "../components/sections/work/projects/weeatcode/WeEatCode";
+import Protypist from "../components/sections/work/projects/protypist/Protypist";
+import AlgoSaurus from "../components/sections/work/projects/algoSaurus/AlgoSaurus";
 
 export interface IProject {
   name: string;

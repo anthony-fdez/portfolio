@@ -13,7 +13,7 @@ const Jumbo = (): JSX.Element => {
   const windowDimensions = useWindowDimensions();
 
   const { scrollY } = useScroll();
-  // @ts-ignore
+  // @ts-expect-error
   const y = useTransform(scrollY, [0, 300], [0, -windowDimensions.height]);
   const isLoaded = useIsLoaded();
 

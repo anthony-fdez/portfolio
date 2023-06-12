@@ -16,7 +16,7 @@ const tagMap = {
 
 const Tag = ({ children, type }: Props) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+  // @ts-expect-error
   const TagElement = tagMap[type];
 
   return <TagElement>{children}</TagElement>;

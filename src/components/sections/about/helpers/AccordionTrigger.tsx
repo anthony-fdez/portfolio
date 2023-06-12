@@ -15,7 +15,7 @@ const AccordionTrigger = React.forwardRef(
       <Accordion.Trigger
         className={classNames(styles.AccordionTrigger, className)}
         {...props}
-        // @ts-ignore
+        // @ts-expect-error
         ref={forwardedRef}
       >
         {children}

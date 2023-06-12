@@ -13,7 +13,7 @@ export const fixTimeoutTransition = (timeout: number): void => {
       "link[rel=stylesheet], style:not([media=x])"
     );
 
-    // @ts-ignore
+    // @ts-expect-error
     const copies = [...nodes].map((el) => el.cloneNode(true) as HTMLElement);
 
     for (const copy of copies) {
