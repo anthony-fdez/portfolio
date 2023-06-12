@@ -19,6 +19,7 @@
 
 .job_container {
   padding: 1rem;
+  color: rgb(160, 160, 160);
 }
 .job_container h3 {
   font-size: 1.5rem;
