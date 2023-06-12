@@ -32,11 +32,11 @@ const Home: NextPage = () => {
     <AnimationWrapper>
       <div lang="en" className={styles.container}>
         <Head>
-          <title>Anthony Fernandez Web Developer Portfolio</title>
+          <title>Anthony Fernandez | Developer Portfolio</title>
           <meta
             lang="en"
             name="description"
-            content="Anthony Fernandez, fullstack software engineer with 3+ years of experience building enterprise applications."
+            content="Anthony Fernandez, fullstack software engineer, proficient in React and NodeJS, with 3+ years of experience building scalable enterprise applications."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
