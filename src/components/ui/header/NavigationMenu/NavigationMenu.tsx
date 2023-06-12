@@ -116,7 +116,7 @@ const ListItem = React.forwardRef(
       <li>
         <NavigationMenu.Link asChild>
           <a
-            tabIndex={1}
+            tabIndex={0}
             {...props}
             className={classNames("ListItemLink", className)}
             href={href}

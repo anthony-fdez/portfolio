@@ -2,6 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import styles from "./footer.module.css";
 import { GitHub, Linkedin, Mail } from "react-feather";
+import Button from "../Button/Button";
 
 const Contact = () => {
   return (
@@ -11,35 +12,48 @@ const Contact = () => {
           <h1>Contact Me.</h1>
           <ul className={styles.contact_information_list}>
             <li>
-              <Mail className={styles.icon} />
               <a
                 href="mailto:anthonyfdez23@gmail.com"
                 target="_blank"
                 rel="noreferrer"
+                tabIndex={0}
               >
-                anthonyfdez23@gmail.com
+                <Button style={{ backgroundColor: "transparent" }}>
+                  <>
+                    <Mail className={styles.icon} />
+                    <span>anthonyfdez23@gmail.com</span>
+                  </>
+                </Button>
               </a>
             </li>
 
             <li>
-              <GitHub className={styles.icon} />
               <a
                 href="https://github.com/anthony-fdez"
                 target="_blank"
                 rel="noreferrer"
               >
-                anthony-fdez
+                <Button style={{ backgroundColor: "transparent" }}>
+                  <>
+                    <GitHub className={styles.icon} />
+                    <span> anthony-fdez</span>
+                  </>
+                </Button>
               </a>
             </li>
 
             <li>
-              <Linkedin className={styles.icon} />
               <a
                 href="https://www.linkedin.com/in/anthony-fernandez-556622201/"
                 target="_blank"
                 rel="noreferrer"
               >
-                LinkedIn
+                <Button style={{ backgroundColor: "transparent" }}>
+                  <>
+                    <Linkedin className={styles.icon} />
+                    <span>LinkedIn</span>
+                  </>
+                </Button>
               </a>
             </li>
           </ul>
