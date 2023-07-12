@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 
 import "react-medium-image-zoom/dist/styles.css";
 import { fixTimeoutTransition } from "../utils/fixTimeoutTransition";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // Import Swiper styles
 import "swiper/css";
@@ -60,6 +61,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
+      <GoogleAnalytics trackPageViews gaMeasurementId="G-7SKYBJ6PYQ" />
       <MDXProvider components={MDXComponents}>
         <Header />
         <AnimatePresence
@@ -68,6 +70,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           onExitComplete={() => window.scrollTo(0, 0)}
         >
           <ProjectsDialog />
+
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
         <Footer />
