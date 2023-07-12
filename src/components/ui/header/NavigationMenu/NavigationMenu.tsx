@@ -4,6 +4,7 @@ import React from "react";
 import { ChevronDown, GitHub, Linkedin, Mail } from "react-feather";
 import projects from "../../../../constants/projects";
 import useGlobalStore from "../../../../utils/store/useGlobalStore";
+import { event } from "nextjs-google-analytics";
 
 const NavigationMenuComponent = () => {
   const { setProjects } = useGlobalStore();
@@ -19,12 +20,35 @@ const NavigationMenuComponent = () => {
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
         <NavigationMenu.Item>
-          <NavigationMenu.Link href="#about" className="NavigationMenuTrigger">
+          <NavigationMenu.Link
+            onClick={() => {
+              event("click", {
+                category: "Header",
+                label: "Experience",
+              });
+            }}
+            onMouseOver={() => {
+              event("hover", {
+                category: "Header",
+                label: "Experience",
+              });
+            }}
+            href="#about"
+            className="NavigationMenuTrigger"
+          >
             Experience
           </NavigationMenu.Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+          <NavigationMenu.Trigger
+            onMouseOver={() => {
+              event("hover", {
+                category: "Header",
+                label: "Projects",
+              });
+            }}
+            className="NavigationMenuTrigger"
+          >
             Projects <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
@@ -36,7 +60,13 @@ const NavigationMenuComponent = () => {
                   <button
                     key={project.name}
                     tabIndex={-1}
-                    onClick={() => handleOpenProjectModal(project.component)}
+                    onClick={() => {
+                      handleOpenProjectModal(project.component);
+                      event("open_project", {
+                        category: "Header",
+                        label: project.name,
+                      });
+                    }}
                   >
                     <ListItem title={project.name}>
                       {project.description}
@@ -49,12 +79,27 @@ const NavigationMenuComponent = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="NavigationMenuTrigger">
+          <NavigationMenu.Trigger
+            onMouseOver={() => {
+              event("hover", {
+                category: "Header",
+                label: "Contact",
+              });
+            }}
+            className="NavigationMenuTrigger"
+          >
             Contact <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List two">
               <ListItem
+                // @ts-ignore
+                onClick={() => {
+                  event("click", {
+                    category: "Header",
+                    label: "Email",
+                  });
+                }}
                 icon={<Mail size={18} />}
                 href="mailto:anthonyfdez23@gmail.com"
                 title="Email"
@@ -62,6 +107,13 @@ const NavigationMenuComponent = () => {
                 anthonyfdez23@gmail.com
               </ListItem>
               <ListItem
+                // @ts-ignore
+                onClick={() => {
+                  event("click", {
+                    category: "Header",
+                    label: "GitHub",
+                  });
+                }}
                 icon={<GitHub size={18} />}
                 href="https://github.com/anthony-fdez"
                 title="GitHub"
@@ -69,6 +121,13 @@ const NavigationMenuComponent = () => {
                 anthony-fdez
               </ListItem>
               <ListItem
+                // @ts-ignore
+                onClick={() => {
+                  event("click", {
+                    category: "Header",
+                    label: "LinkedIn",
+                  });
+                }}
                 icon={<Linkedin size={18} />}
                 href="https://www.linkedin.com/in/anthony-fernandez-556622201/"
                 title="LinkedIn"
