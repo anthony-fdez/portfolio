@@ -7,6 +7,7 @@ import AccordionContent from "./helpers/AccordionContent";
 import UAIC from "./sections/UAIC.mdx";
 // import Unicity from "./sections/Unicity.mdx";
 import AboutMDX from "./sections/About.mdx";
+import { event } from "nextjs-google-analytics";
 
 const About = (): JSX.Element => {
   return (
@@ -31,7 +32,15 @@ const About = (): JSX.Element => {
             </AccordionContent>
           </Accordion.Item> */}
           <Accordion.Item className={styles.AccordionItem} value="item-2">
-            <AccordionTrigger>
+            <AccordionTrigger
+              // @ts-ignore
+              onClick={() => {
+                event("experience_expand", {
+                  category: "Experience",
+                  label: "UAIC",
+                });
+              }}
+            >
               2020-2022 United Automobile Insurance Company
             </AccordionTrigger>
             <AccordionContent>

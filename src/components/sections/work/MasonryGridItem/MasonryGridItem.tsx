@@ -6,6 +6,7 @@ import { ArrowRight } from "react-feather";
 import Button from "../../../ui/Button/Button";
 import { IProject } from "../../../../constants/projects";
 import useGlobalStore from "../../../../utils/store/useGlobalStore";
+import { event } from "nextjs-google-analytics";
 
 interface Props {
   project: IProject;
@@ -37,7 +38,14 @@ const MasonryGridItem = ({ project }: Props): JSX.Element => {
         <p className={styles.description_text}>{project.description}</p>
         <div className={styles.footer}>
           <Button
-            onClick={() => handleOpenProjectModal(project.component)}
+            onClick={() => {
+              handleOpenProjectModal(project.component);
+
+              event("open_project", {
+                category: "My Work",
+                label: project.name,
+              });
+            }}
             iconRight={<ArrowRight className={styles.icon_right} size={18} />}
           >
             Learn More
