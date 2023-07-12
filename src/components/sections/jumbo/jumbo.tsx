@@ -17,8 +17,6 @@ const Jumbo = (): JSX.Element => {
   const y = useTransform(scrollY, [0, 300], [0, -windowDimensions.height]);
   const isLoaded = useIsLoaded();
 
-  console.log(isLoaded);
-
   const smoothY = useSpring(y, {
     stiffness: 100,
     damping: 30,

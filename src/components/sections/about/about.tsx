@@ -5,6 +5,7 @@ import * as Accordion from "@radix-ui/react-accordion";
 import AccordionTrigger from "./helpers/AccordionTrigger";
 import AccordionContent from "./helpers/AccordionContent";
 import UAIC from "./sections/UAIC.mdx";
+// import Unicity from "./sections/Unicity.mdx";
 import AboutMDX from "./sections/About.mdx";
 
 const About = (): JSX.Element => {
@@ -25,7 +26,7 @@ const About = (): JSX.Element => {
             </AccordionTrigger>
             <AccordionContent>
               <div className={styles.job_container}>
-                <h3>Frontend Software Engineer</h3>
+                <Unicity />
               </div>
             </AccordionContent>
           </Accordion.Item> */}
