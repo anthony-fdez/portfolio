@@ -1,0 +1,136 @@
+.center {
+  text-align: center;
+  margin-top: 40px;
+}
+.about_container {
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 15px;
+  max-width: 600px;
+  padding-top: 100px;
+}
+.about_container h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.professional_experience_title {
+  margin-top: 5rem;
+}
+
+.job_container {
+  padding: 1rem;
+  color: rgb(160, 160, 160);
+}
+.job_container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 1201px) {
+  .about_container {
+    max-width: 1000px;
+  }
+}
+
+.AccordionRoot {
+  border-radius: 6px;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.AccordionItem {
+  overflow: hidden;
+  margin-top: 1px;
+}
+
+.AccordionItem:first-child {
+  margin-top: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.AccordionItem:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.AccordionItem:focus-within {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 20px rgb(10, 10, 10, 0.5);
+}
+
+.AccordionItem:focus-visible {
+  outline: 2px solid var(--third-color);
+  outline-offset: 2px;
+}
+
+.AccordionHeader {
+  display: flex;
+}
+
+.AccordionTrigger {
+  font-family: inherit;
+  background-color: transparent;
+  padding: 0 20px;
+  height: 45px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 1;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.AccordionTrigger:hover {
+  background-color: rgb(15, 15, 15);
+  transition: 200ms;
+}
+
+.AccordionContent {
+  overflow: hidden;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(10, 10, 10);
+  border: 1px solid rgb(40, 40, 40);
+}
+.AccordionContent[data-state="open"] {
+  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.AccordionContent[data-state="closed"] {
+  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.AccordionContentText {
+  padding: 15px 20px;
+}
+
+.AccordionChevron {
+  color: var(--violet10);
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+.AccordionTrigger[data-state="open"] > .AccordionChevron {
+  transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}

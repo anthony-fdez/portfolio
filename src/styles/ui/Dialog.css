@@ -1,0 +1,111 @@
+@import "@radix-ui/colors/blackA.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/orange.css";
+
+/* reset */
+button,
+fieldset,
+input {
+  all: unset;
+}
+
+.DialogOverlay {
+  background: rgba(0 0 0 / 0.5);
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(5px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+
+  z-index: 1000;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.DialogContent {
+  width: 90vw;
+  background: rgb(0, 0, 0);
+  padding: 30px;
+  border: 1px solid rgb(40, 40, 40);
+  box-shadow: 0px 0px 500px rgb(255, 255, 255, 0.1);
+  border-radius: 5px;
+  max-width: 900px;
+  animation: contentShow 1000ms cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+.DialogContent:focus {
+  outline: none;
+}
+
+.DialogTitle {
+  margin: 0;
+  font-weight: 500;
+  color: var(--mauve12);
+  font-size: 17px;
+}
+
+.DialogDescription {
+  margin: 10px 0 20px;
+  color: var(--mauve11);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 35px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.IconButton {
+  font-family: inherit;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.IconButton:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

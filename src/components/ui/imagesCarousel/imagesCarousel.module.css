@@ -1,0 +1,38 @@
+@media only screen and (min-width: 901px) {
+  .slide_portrait {
+    width: 200px !important;
+  }
+  .image_portrait {
+    height: 100%;
+    width: 100%;
+  }
+  .slide_landscape {
+    width: 560px !important;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .image_landscape {
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .slide_portrait {
+    width: 200px !important;
+  }
+  .image_portrait {
+    height: 100%;
+    width: 100%;
+  }
+  .slide_landscape {
+    width: 500px !important;
+    max-width: 100% !important;
+  }
+  .image_landscape {
+    height: 100%;
+    width: 100%;
+  }
+}

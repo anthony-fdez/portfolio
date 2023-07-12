@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,25 +12,38 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.4",
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-navigation-menu": "^1.1.2",
+    "@types/mdx": "^2.0.5",
+    "classnames": "^2.3.2",
+    "embla-carousel-react": "^8.0.0-rc05",
     "framer-motion": "^7.2.0",
+    "mdx-loader": "^3.0.2",
     "next": "12.1.6",
     "react": "^18.2.0",
     "react-awesome-reveal": "^3.8.1",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
+    "react-feather": "^2.0.10",
     "react-lazy-load-image-component": "^1.5.5",
     "react-medium-image-zoom": "^4.4.3",
-    "react-scroll-parallax": "^3.3.1",
+    "react-responsive-masonry": "^2.1.7",
     "react-wavify": "^1.6.1",
     "swiper": "^8.1.6",
-    "vercel": "^28.15.0"
+    "vercel": "^28.15.0",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@types/node": "17.0.33",
-    "@types/react": "17.0.2",
+    "@types/react": "^17.0.2",
     "@types/react-dom": "17.0.2",
     "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/react-responsive-masonry": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "eslint": "^8.15.0",

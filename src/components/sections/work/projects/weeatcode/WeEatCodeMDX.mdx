@@ -1,0 +1,55 @@
+import Alert from "../../../../ui/alert/Alert";
+import ImagesCarousel from "../../../../ui/imagesCarousel/imagesCarousel";
+import projects from "../../../../../constants/projects";
+
+# WeEatCode
+
+<ImagesCarousel
+  images={projects.weEatCode.images}
+  altText={"AlgoSaurus carousel"}
+/>
+
+WeEatCode is a fullstack blog web application. Users can create an
+account, create a blog post, start a conversation under any post and
+downvote and upvote any post or comment.
+
+The comment section was inspired by reddit, with infiiitely nestted comments.
+
+## Tech Stack
+
+### Frontend
+
+Front End was created with NextJS, so each post created by the users
+is indexed by google, improving SEO significantly. Implemented a
+what-you-see-is-what-you-get text editor for creating posts.
+
+- React
+- Typescript
+- NextJS
+- Redux
+- TipTap WYSIWYG Editor
+
+### Backend
+
+Implemented key infrastructure on the backend and created routes and
+models to handle user authentication, CRUD actions to the databases
+such as following users, and upvoting posts.
+
+- NodeJS
+- Express
+- PostgreSQL
+- Jest
+
+## Sources
+
+<Alert title="Heads up">
+  This website is no longer live. As it turns out, running QA and Prod ec2
+  instances and databases without an audience is about as financially savvy as
+  buying a yacht to sail in a desert. But don't despair! You can still get a
+  peek behind the curtain by checking out the source code. And if you're feeling
+  particularly adventurous, feel free to run it locally. It's like having your
+  very own ghost town website!
+</Alert>
+
+- [Backend Source Code](https://github.com/anthony-fdez/weeatcode-backend)
+- [Frontend Source Code](https://github.com/anthony-fdez/weeatcode-frontend)
