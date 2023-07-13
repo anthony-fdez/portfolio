@@ -29,9 +29,9 @@ input {
 }
 
 .DialogContent {
-  width: 90vw;
+  width: 95vw;
   background: rgb(0, 0, 0);
-  padding: 30px;
+  padding: 20px;
   border: 1px solid rgb(40, 40, 40);
   box-shadow: 0px 0px 500px rgb(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -88,6 +88,13 @@ input {
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .DialogContent {
+    width: 90vw;
+    padding: 30px;
+  }
 }
 
 @keyframes overlayShow {
