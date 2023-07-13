@@ -40,6 +40,13 @@
   margin-right: 10px;
 }
 
+.footer_text {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-size: 14px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 500px) {
   .contact_content > h1 {
     font-size: 36px;
@@ -49,11 +56,11 @@
     margin: auto;
     padding: 30px;
   }
-}
-
-.footer_text {
-  margin-top: 3rem;
-  font-size: 14px;
+  .footer_text {
+    margin-top: 3rem;
+    font-size: 14px;
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -61,5 +68,11 @@
     max-width: 1000px;
     margin: auto;
     padding: 30px;
+  }
+
+  .footer_text {
+    margin-top: 3rem;
+    font-size: 14px;
+    text-align: left;
   }
 }
