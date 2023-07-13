@@ -52,10 +52,19 @@ a {
 }
 
 p {
-  line-height: 2.5rem !important;
+  line-height: 2rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--third-color) !important;
+  transform: scale(0.5);
 }
 
 @media only screen and (min-width: 500px) {
+  p {
+    line-height: 2.5rem !important;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
