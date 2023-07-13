@@ -20,6 +20,8 @@
   z-index: 99;
   transition: 300ms;
   padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header_content {
   position: relative;
