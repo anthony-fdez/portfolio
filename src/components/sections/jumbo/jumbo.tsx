@@ -39,7 +39,7 @@ const Jumbo = (): JSX.Element => {
             { type: "heading3", text: "Hi, I'm Anthony!" },
             {
               type: "heading1",
-              text: "I'm a fullstack software engineer, proficient in React and NodeJS, with 3+ years of experience building scalable enterprise applications.",
+              text: "Fullstack software engineer, proficient in React and NodeJS, with many years of experience building scalable enterprise applications.",
             },
           ]}
         />

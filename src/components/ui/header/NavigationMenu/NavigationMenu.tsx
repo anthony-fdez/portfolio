@@ -19,7 +19,7 @@ const NavigationMenuComponent = () => {
   return (
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
-        <NavigationMenu.Item>
+        {/* <NavigationMenu.Item>
           <NavigationMenu.Link
             onClick={() => {
               event("click", {
@@ -38,7 +38,7 @@ const NavigationMenuComponent = () => {
           >
             Experience
           </NavigationMenu.Link>
-        </NavigationMenu.Item>
+        </NavigationMenu.Item> */}
         <NavigationMenu.Item>
           <NavigationMenu.Trigger
             onMouseOver={() => {
