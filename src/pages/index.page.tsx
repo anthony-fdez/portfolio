@@ -57,7 +57,7 @@ const Home: NextPage = () => {
           <div style={{ zIndex: 51 }}>
             <About />
             <Work />
-            <Skills />
+            {/* <Skills /> */}
           </div>
         </main>
       </div>
