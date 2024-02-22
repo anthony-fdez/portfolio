@@ -1,11 +1,10 @@
+import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { AnimatePresence } from "framer-motion";
 
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import "react-medium-image-zoom/dist/styles.css";
 import { fixTimeoutTransition } from "../utils/fixTimeoutTransition";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,9 +16,6 @@ import "swiper/css/scrollbar";
 import "../styles/ui/Dialog.css";
 import "../styles/ui/NavigationMenu.css";
 
-import Header from "../components/ui/header/header";
-import Footer from "../components/ui/footer/footer";
-import ProjectsDialog from "../components/ui/ProjectsDialog/ProjectsDialog";
 import { MDXProvider } from "@mdx-js/react";
 import MDXComponents from "../components/ui/MDX/components";
 
@@ -63,17 +59,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <>
       <GoogleAnalytics trackPageViews gaMeasurementId="G-7SKYBJ6PYQ" />
       <MDXProvider components={MDXComponents}>
-        <Header />
-        <AnimatePresence
-          exitBeforeEnter
-          initial={false}
-          onExitComplete={() => window.scrollTo(0, 0)}
-        >
-          <ProjectsDialog />
-
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-        <Footer />
+        <Component {...pageProps} key={router.route} />
       </MDXProvider>
     </>
   );

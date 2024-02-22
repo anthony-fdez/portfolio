@@ -15,6 +15,10 @@ body {
   scroll-behavior: smooth;
 }
 
+section {
+  margin-top: 3rem;
+}
+
 pre {
   background-color: rgb(10, 10, 10);
   padding: 1rem;
