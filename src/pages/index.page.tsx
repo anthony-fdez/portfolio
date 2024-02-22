@@ -9,6 +9,7 @@ import AnimationWrapper from "../components/ui/animationWrapper/animationWrapper
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 import { ChevronDown } from "react-feather";
 import Work from "../components/sections/work/work";
+import MainLayout from "../components/layouts/MainLayout";
 
 const Home: NextPage = () => {
   useScrollToTopOnLoad();
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <AnimationWrapper>
+    <MainLayout>
       <div lang="en" className={styles.container}>
         <Head>
           <title>Anthony Fernandez | Developer Portfolio</title>
@@ -60,7 +61,7 @@ const Home: NextPage = () => {
           </div>
         </main>
       </div>
-    </AnimationWrapper>
+    </MainLayout>
   );
 };
 
