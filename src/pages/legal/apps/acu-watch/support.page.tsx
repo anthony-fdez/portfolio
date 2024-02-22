@@ -9,11 +9,7 @@ const AcuWatchSupportPage: NextPage = () => {
     <StaticPageLayout title="AcuWatch">
       <Head>
         <title>AcuWatch Support</title>
-        <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-          key="desc"
-        />
+        <meta name="description" content="" key="desc" />
       </Head>
       <div className={styles.container}>
         <h1>AcuWatch Support</h1>
