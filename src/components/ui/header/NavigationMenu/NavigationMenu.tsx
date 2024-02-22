@@ -93,7 +93,7 @@ const NavigationMenuComponent = () => {
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List two">
               <ListItem
-                // @ts-ignore
+                // @ts-expect-error
                 onClick={() => {
                   event("click", {
                     category: "Header",
@@ -107,7 +107,7 @@ const NavigationMenuComponent = () => {
                 anthonyfdez23@gmail.com
               </ListItem>
               <ListItem
-                // @ts-ignore
+                // @ts-expect-error
                 onClick={() => {
                   event("click", {
                     category: "Header",
@@ -121,7 +121,7 @@ const NavigationMenuComponent = () => {
                 anthony-fdez
               </ListItem>
               <ListItem
-                // @ts-ignore
+                // @ts-expect-error
                 onClick={() => {
                   event("click", {
                     category: "Header",

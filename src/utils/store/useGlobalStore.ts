@@ -11,6 +11,7 @@ interface IGlobalStateValues {
 }
 
 interface IGlobalState extends IGlobalStateValues {
+  // eslint-disable-next-line no-unused-vars
   setProjects: (state: Partial<IProjects>) => void;
   clearState: () => void;
 }

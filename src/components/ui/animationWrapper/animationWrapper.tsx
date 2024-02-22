@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-type Props = {
+interface Props {
   children: React.ReactNode;
-};
+}
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
