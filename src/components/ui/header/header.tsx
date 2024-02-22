@@ -3,7 +3,12 @@ import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import NavigationMenuComponent from "./NavigationMenu/NavigationMenu";
 
-const Header = () => {
+interface Props {
+  title?: string;
+  simple?: boolean;
+}
+
+const Header = ({ title, simple }: Props) => {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
 
   const handleScroll = () => {
@@ -38,10 +43,10 @@ const Header = () => {
             style={{ cursor: "pointer" }}
             className={styles.header_title}
           >
-            Portfolio.
+            {title ? title : "Portfolio."}
           </span>
         </Link>
-        <NavigationMenuComponent />
+        {!simple && <NavigationMenuComponent />}
       </div>
     </header>
   );

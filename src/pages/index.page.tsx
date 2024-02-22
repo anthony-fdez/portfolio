@@ -5,7 +5,6 @@ import About from "../components/sections/about/about";
 import Jumbo from "../components/sections/jumbo/jumbo";
 import styles from "../styles/Home.module.css";
 
-import AnimationWrapper from "../components/ui/animationWrapper/animationWrapper";
 import { useScrollToTopOnLoad } from "../utils/useScrollToTopOnLoad";
 import { ChevronDown } from "react-feather";
 import Work from "../components/sections/work/work";

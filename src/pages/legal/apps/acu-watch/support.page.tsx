@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import React from "react";
-import styles from "../../../legalPage.module.css";
 import Head from "next/head";
+import styles from "../../../../styles/legalPage.module.css";
+import StaticPageLayout from "../../../../components/layouts/StaticPageLayout";
 
 const AcuWatchSupportPage: NextPage = () => {
   return (
-    <>
+    <StaticPageLayout title="AcuWatch">
       <Head>
         <title>AcuWatch Support</title>
         <meta
@@ -34,7 +35,7 @@ const AcuWatchSupportPage: NextPage = () => {
           </p>
         </footer>
       </div>
-    </>
+    </StaticPageLayout>
   );
 };
 
