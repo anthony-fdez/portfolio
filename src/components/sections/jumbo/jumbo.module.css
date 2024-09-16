@@ -75,7 +75,7 @@
   bottom: 0px;
   top: 0px;
   width: 100vw;
-  height: 150vh;
+  height: calc(100vh + 200px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

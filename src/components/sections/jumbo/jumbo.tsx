@@ -77,8 +77,8 @@ const Jumbo = (): JSX.Element => {
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
-              <stop offset="10%" stopColor="rgb(10,10,10)" />
-              <stop offset="90%" stopColor="black" />
+              <stop offset="5%" stopColor="rgb(20,20,20)" />
+              <stop offset="95%" stopColor="black" />
             </linearGradient>
           </defs>
         </Wave>
