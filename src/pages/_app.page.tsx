@@ -2,7 +2,6 @@ import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
 import "../styles/globals.css";
 
-import { GoogleAnalytics } from "nextjs-google-analytics";
 import "react-medium-image-zoom/dist/styles.css";
 import { fixTimeoutTransition } from "../utils/fixTimeoutTransition";
 
@@ -57,7 +56,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
-      <GoogleAnalytics trackPageViews gaMeasurementId="G-7SKYBJ6PYQ" />
       <MDXProvider components={MDXComponents}>
         <Component {...pageProps} key={router.route} />
       </MDXProvider>

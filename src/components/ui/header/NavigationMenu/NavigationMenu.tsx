@@ -4,7 +4,6 @@ import React from "react";
 import { ChevronDown, GitHub, Linkedin, Mail } from "react-feather";
 import projects from "../../../../constants/projects";
 import useGlobalStore from "../../../../utils/store/useGlobalStore";
-import { event } from "nextjs-google-analytics";
 
 const NavigationMenuComponent = () => {
   const { setProjects } = useGlobalStore();
@@ -40,15 +39,7 @@ const NavigationMenuComponent = () => {
           </NavigationMenu.Link>
         </NavigationMenu.Item> */}
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger
-            onMouseOver={() => {
-              event("hover", {
-                category: "Header",
-                label: "Projects",
-              });
-            }}
-            className="NavigationMenuTrigger"
-          >
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
             Projects <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
@@ -62,10 +53,6 @@ const NavigationMenuComponent = () => {
                     tabIndex={-1}
                     onClick={() => {
                       handleOpenProjectModal(project.component);
-                      event("open_project", {
-                        category: "Header",
-                        label: project.name,
-                      });
                     }}
                   >
                     <ListItem title={project.name}>
@@ -79,27 +66,12 @@ const NavigationMenuComponent = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger
-            onMouseOver={() => {
-              event("hover", {
-                category: "Header",
-                label: "Contact",
-              });
-            }}
-            className="NavigationMenuTrigger"
-          >
+          <NavigationMenu.Trigger className="NavigationMenuTrigger">
             Contact <ChevronDown className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List two">
               <ListItem
-                // @ts-expect-error
-                onClick={() => {
-                  event("click", {
-                    category: "Header",
-                    label: "Email",
-                  });
-                }}
                 icon={<Mail size={18} />}
                 href="mailto:anthonyfdez23@gmail.com"
                 title="Email"
@@ -107,13 +79,6 @@ const NavigationMenuComponent = () => {
                 anthonyfdez23@gmail.com
               </ListItem>
               <ListItem
-                // @ts-expect-error
-                onClick={() => {
-                  event("click", {
-                    category: "Header",
-                    label: "GitHub",
-                  });
-                }}
                 icon={<GitHub size={18} />}
                 href="https://github.com/anthony-fdez"
                 title="GitHub"
@@ -121,13 +86,6 @@ const NavigationMenuComponent = () => {
                 anthony-fdez
               </ListItem>
               <ListItem
-                // @ts-expect-error
-                onClick={() => {
-                  event("click", {
-                    category: "Header",
-                    label: "LinkedIn",
-                  });
-                }}
                 icon={<Linkedin size={18} />}
                 href="https://www.linkedin.com/in/anthony-fernandez-556622201/"
                 title="LinkedIn"
