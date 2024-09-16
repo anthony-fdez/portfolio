@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import ProjectsDialog from "../ui/ProjectsDialog/ProjectsDialog";
 import AnimationWrapper from "../ui/animationWrapper/animationWrapper";
 import Contact from "../ui/footer/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -16,6 +17,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       >
         <ProjectsDialog />
         <AnimationWrapper>{children}</AnimationWrapper>
+        <Analytics />
       </AnimatePresence>
       <Contact />
     </>
